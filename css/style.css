@@ -730,6 +730,80 @@ text-align: center;
         font-size: 25px;
         bottom: 3%;
     }
+  /*  MAN imagen y estdistica Section   */
+
+  .man__new__collection__stadistic__wrap {
+    width: 100vw;
+    padding: 16px;
+    background-color: rgb(252, 252, 252);
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+.man__new__collection__stadistic__wrap .man__new__collection-stadistic {
+    display: inline-flex;
+}
+
+.man__new__collection-stadistic .man__new__collection-image {
+    width: 190px;
+    height: 250px;
+}
+.man__new__collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-top-right-radius: 100px;
+}
+
+.man__new__collection__advertising {
+    width: 180px;
+    height: 100px;
+}
+
+.man__new__collection__advertising h3 {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 25px;
+    color: rgb(70, 69, 69);
+}
+.man__new__collection__stadistic__numbers__wrap {
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    width: 270px;
+    height: 66px;
+    border-radius: 3px;
+    justify-self: center;
+    bottom: 30px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center; 
+}
+
+.man__new__collection__stadistic-numbers {
+    font-family: "calibri";
+    color: rgb(70, 69, 69);
+    text-align: center;
+    border-right-style:solid;
+    border-right-width: 1px;
+    border-right-color: rgb(70, 69, 69);
+}
+
+.man__new__collection__stadistic-number, .last{
+    border-right-style:none;
+}
+
+.man__new__collection__stadistic-numbers .number {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.man__new__collection__stadistic-numbers .detail {
+    font-size: 11px;
+}
+
 
 /* ---  ESTUILO UNDER CONSTRUCTION   --- */
 
@@ -1169,10 +1243,23 @@ text-align: center;
 
     /*  MAN New Collection Section   */
 
+    .man__new__collection-title{
+        padding: 3% 0% 1% 0%;
+    }
+
     .man__new__collection__wrap{
         background-color: whitesmoke;
         display: grid;
         grid-template-rows: 0.5fr 1fr;
+    }
+
+    .man__new__collection-title h3{
+        font-size: 40px;
+    }
+
+    .man__new__collection-title p{
+        font-size: 20px;
+        padding-top: 1%;
     }
     
 
@@ -1183,6 +1270,57 @@ text-align: center;
         gap: 20px;
         align-items: center;
     }
+    .man__new__collection-button a:hover{
+        transform: scale(1.05);
+        background-color: rgb(212, 212, 212);
+    }
+
+        /*  MAN imagen y estdistica Section   */
+
+        .man__new__collection__stadistic__wrap {
+            height: 100vh;
+            padding: 30px;
+        }
+    
+        .man__new__collection-stadistic{
+            padding-left: 100px;
+        }
+            
+        .man__new__collection-stadistic .man__new__collection-image {
+            width: 611px;
+            height: 650px;
+        }
+        .man__new__collection-image img {
+            border-top-right-radius: 250px;
+        }
+    
+        .man__new__collection__advertising {
+            width: 600px;
+            height: 100px;
+        }
+    
+        .man__new__collection__advertising h3 {
+            padding-top: 100px;
+            padding-left: 80px;
+            font-size: 80px;
+        }
+    
+        .man__new__collection__stadistic__numbers__wrap {
+            width: 555px;
+            height: 150px;
+            border-radius: 8px;
+            bottom: 80px; 
+        }
+    
+        .man__new__collection__stadistic-numbers .number {
+            font-weight: 700;
+            font-size: 40px;
+        }
+    
+        .man__new__collection__stadistic-numbers .detail {
+            font-size: 18px;
+        }
+
     /*  ---- ESTILO PAGINA CONTACTO -----  */
     /*  LOG IN  */
 
