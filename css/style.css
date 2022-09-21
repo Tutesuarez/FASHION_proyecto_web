@@ -804,6 +804,234 @@ text-align: center;
     font-size: 11px;
 }
 
+/* best seller section*/
+
+.man__best__seller__wrap {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 100vw;
+    background-color: #A57F6C;
+    padding-bottom: 20px;
+}
+
+.man__best__seller-title {
+    width: 370px;
+    height: 275px;
+    padding-top: 30px;
+    padding-left: 16px;
+    color: whitesmoke;
+}
+
+.man__best__seller-title h3 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 40px;
+}
+
+.man__best__seller-title p {
+    padding-top: 10px;
+    font-family: "calibri";
+    font-size: 17px;
+}
+.man__best__seller-button{
+    margin-top: 20px;
+}
+.man__best__seller-button a{
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: rgb(70, 69, 69);
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: "calibri";
+    text-decoration: none;
+}
+
+.man__best__seller__cards__wrap {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    padding: 0px 50px;
+}
+
+.man__best__seller-card{
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.man__best__seller-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.man__best__seller-price{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: "calibri";
+    color: rgb(70, 69, 69);
+}
+
+.man__best__seller-price p {
+    text-align: center;
+    padding-top: 3px;
+}
+
+/*   MAN Our products */
+.man__our__product__wrap {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 0.4fr 8fr;
+}
+
+.man__our__product__links {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.man__our__product__links h3 {
+    font-family: "MADE TOMMY ExtraBold";
+    color: rgb(70, 69, 69);
+    font-size: 25px;
+    padding-bottom: 15px;
+
+}
+
+.man__our__product__links a {
+    text-decoration: none;
+    font-family: "calibri";
+    text-transform: uppercase;
+    color: rgb(70, 69, 69);
+    font-weight: 700;
+    padding: 10px;
+}
+
+.man__our__product__cards__wrap{
+    padding-top: 30px;
+}
+.man__our__product__cards {
+    display: grid;
+    grid-template-rows: repeat(8 1fr);
+    justify-items: center;
+    gap: 20px;
+    
+}
+
+.man__our__product__cards-card {
+    position: relative;
+    display: flex;
+    width: 290.4px;
+    height:auto;
+    align-items: end;
+    
+}
+
+.man__our__product__cards-card img {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.man__our__product__cards-data {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    font-family: "calibri";
+}
+.man__our__product__cards-data .our__product-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+.man__our__product__cards-data .our__product-price {
+    font-size: 18px;
+}
+
+/*estilo seccion   man deal*/
+
+.man__deal__promotion__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    background-color:#1F8963;
+    padding: 16px;
+}
+
+.man__deal__promotion__title {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+
+.man__deal__promotion__title-title {
+    color: whitesmoke;
+    width: 160px;
+}
+
+.man__deal__promotion__title-title h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 30px;
+}
+
+.man__deal__promotion__title-title p {
+    padding-top: 20px;
+    font-family: "calibri";
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.man__deal__promotion__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 190px;
+text-align: center;
+}
+
+.man__deal__promotion__box .man__deal__promotion__box-box {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    width: 60px;
+    height: 40px;
+    color: rgb(70, 69, 69);
+    font-family: "calibri";
+    line-height: 15px;
+    padding-top: 5px;
+
+}
+
+.man__deal__promotion__box-box .number {
+    font-weight: 700;
+    font-size: 17px;
+}
+.man__deal__promotion__box-box .time{
+    font-size: 16px;
+}
+
+.man__deal__promotion-button {
+    margin-top: 20px;
+}
+
+.man__deal__promotion-button a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-family: "calibri";
+    padding: 8px;
+    border-radius: 8px;
+}
+.man__deal__promotion-img{
+    justify-self: end;
+    width: 160px;
+    height: auto;
+}
+.man__deal__promotion-img img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: -200px;    
+}
 
 /* ---  ESTUILO UNDER CONSTRUCTION   --- */
 
@@ -1320,6 +1548,123 @@ text-align: center;
         .man__new__collection__stadistic-numbers .detail {
             font-size: 18px;
         }
+
+            /*  Our products */
+    .man__our__product__wrap {
+        grid-template-rows: 0.4fr 2fr;
+        justify-items: center;
+       
+}
+
+    .man__our__product__links h3 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .man__our__product__links a {
+        letter-spacing: 4px;
+    }
+
+    .man__our__product__cards__wrap{
+        padding: 30px;
+        width: 1400px;
+    }
+    .man__our__product__cards-card {
+        width: 290.4px;
+        height:334.08px;
+        
+    }
+    .man__our__product__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 15px;
+    }
+            /* best seller section*/
+
+    .man__best__seller__wrap {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        padding: 40px 0px 50px 30px;
+    }
+
+    .man__best__seller-title {
+        padding-left: 60px;
+ 
+    }
+
+    .man__best__seller-title p {
+        font-size: 20px;
+    }
+
+    .man__best__seller-button {
+        margin-top: 30px;
+    }
+
+    .man__best__seller__cards__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        width: 1050px;
+    }
+
+    .man__deal__promotion__wrap{
+        padding: 30px;
+    }
+
+    .man__deal__promotion__title {
+        width: 700px;
+        align-items: start;
+        padding-left: 200px;
+    }
+    .man__deal__promotion__title-title {
+        width: 520px;
+    }
+    .man__deal__promotion__title-title h2 {
+        font-size: 70px;
+    }
+    .man__deal__promotion__title-title p {
+        padding-bottom: 40px;
+    }
+    .man__deal__promotion__box {
+        width: 360px;
+
+    }
+
+    .man__deal__promotion__box .man__deal__promotion__box-box {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 80px;
+        justify-content: center;
+        line-height: 20px;
+    }
+
+    .man__deal__promotion__box-box .number {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .man__deal__promotion__box-box .time{
+        font-size: 20px;
+    }
+    .man__deal__promotion-button {
+        margin-top: 40px;
+        
+    }
+
+    .man__deal__promotion-button a {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .man__deal__promotion__wrap img {
+        float: right;
+        height: 500px;
+        width: auto;
+        padding-right: 10px;
+
+    }
+
 
     /*  ---- ESTILO PAGINA CONTACTO -----  */
     /*  LOG IN  */
