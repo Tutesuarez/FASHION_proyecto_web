@@ -21,49 +21,14 @@
 
 .header {
     position: absolute;
-    display: flex;
-    flex-wrap: wrap;
     width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9));
-    padding: 16px;
     z-index: 2;
 }
 
-.header .logo{
-    padding-top: 10px;
-}
-
-.header__nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    width: 100vw;
-    padding-top: 10px;
+.navbar {
     font-family: "calibri";
-    font-size: 12px;
-}
-
-.header__nav ul {
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 auto;
-    padding-left: 0px;
-    flex-basis: 120px;
-}
-
-.header__nav .header__nav__list__rigth {
-    justify-content: end;
-    padding-right: 10px;
-}
-
-.header__nav ul li a {
-    padding: 3px;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "calibri";
+    font-size: 20px;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9));
 }
 
 /* ---->  ESTILO MAIN  <---- */
@@ -97,6 +62,7 @@
     transform: translate(-50%, -50%);
     filter: sepia(0.2);
 }
+
 .main__video::after {
     content: "";
     position: absolute;
@@ -142,63 +108,30 @@
     color: whitesmoke;
 }
 
-.main__titulo-shopbtn a:hover{
+.main__titulo-shopbtn a:hover {
     background: whitesmoke;
     color: rgb(70, 69, 69);
 }
 
 /* ----  ESTILO FOOTER  ----  */
-
 .footer {
-    padding: 16px;
     background: #A57F6C;
 }
 
-.footer__datos-img {
-    display: none;
+.footer p {
+    font-family: "calibri";
 }
 
-.footer__datos__wrap {
-    padding-top: 30px;
+.footer .img__footer img {
+
+    width: 394px;
+    height: 400px;
+    object-fit: contain;
 }
-.footer__datos__inscription__wrap {
-    font-family: "calibri";
-    color: rgb(37, 37, 37)
-}
-.footer__datos__inscription {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-.footer__datos__inscription-form{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-.footer__datos__inscription input {   
-    border-style: none;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: "calibri";
-}
-.footer__datos__inscription__wrap .footer__datos__links{
-    padding-bottom: 20px;
-}
-.footer__rigths__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-}
-.footer__rigths p {
-    font-size: 20px;
-}
-.footer__rigths__wrap .social {
+
+.social {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
 /*----  ESTILO WOMAN  ----  */
@@ -212,11 +145,11 @@
 .main__woman-title {
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     padding-top: 34%;
     margin-left: 16px;
     width: 255px;
-    
+
 }
 
 .main__woman-title h2 {
@@ -249,11 +182,13 @@
     border-radius: 8px;
     padding: 10px 15px;
 }
-.main__woman-image{
+
+.main__woman-image {
     width: 100vw;
-    display: flex;    
+    display: flex;
     justify-content: end;
 }
+
 .main__woman-image img {
     width: 266px;
     height: auto;
@@ -271,12 +206,14 @@
     padding: 30px;
     background-color: whitesmoke;
 }
+
 .new__collection__wrap .new__collection-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5% 0% 3% 0%;
 }
+
 .new__collection-title .title {
     font-family: "MADE TOMMY ExtraBold";
     font-size: 25px;
@@ -297,24 +234,26 @@
     grid-gap: 30px;
     justify-content: center;
 }
-.new__collection-img{
+
+.new__collection-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
-.new__collection__card{
+.new__collection__card {
     position: relative;
 }
-.new__collection-button{    
+
+.new__collection-button {
     display: flex;
     justify-content: center;
 }
-    
-.new__collection-button a{
+
+.new__collection-button a {
     bottom: 3%;
-    position: absolute; 
+    position: absolute;
     text-decoration: none;
     font-family: "calibri";
     color: rgb(70, 69, 69);
@@ -324,16 +263,16 @@
     font-size: 25px;
 }
 
- /*  IMAGEN Y ESTADISTICA*/
+/*  IMAGEN Y ESTADISTICA*/
 
- .new__collection__stadistic__wrap {
+.new__collection__stadistic__wrap {
     width: 100vw;
     padding: 16px;
     background-color: rgb(252, 252, 252);
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
-    
+
 }
 
 .new__collection__stadistic__wrap .new__collection-stadistic {
@@ -344,6 +283,7 @@
     width: 190px;
     height: auto;
 }
+
 .new__collection-image img {
     width: 100%;
     height: 100%;
@@ -370,24 +310,25 @@
     height: 66px;
     border-radius: 3px;
     justify-self: center;
-    bottom: 30px; 
+    bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .new__collection__stadistic-numbers {
     font-family: "calibri";
     color: rgb(70, 69, 69);
     text-align: center;
-    border-right-style:solid;
+    border-right-style: solid;
     border-right-width: 1px;
     border-right-color: rgb(70, 69, 69);
 }
 
-.new__collection__stadistic-number, .last{
-    border-right-style:none;
+.new__collection__stadistic-number,
+.last {
+    border-right-style: none;
 }
 
 .new__collection__stadistic-numbers .number {
@@ -427,10 +368,12 @@
     font-family: "calibri";
     font-size: 17px;
 }
-.best__seller-button{
+
+.best__seller-button {
     margin-top: 20px;
 }
-.best__seller-button a{
+
+.best__seller-button a {
     padding: 10px 20px;
     background-color: whitesmoke;
     color: rgb(70, 69, 69);
@@ -448,7 +391,7 @@
     padding: 0px 50px;
 }
 
-.best__seller-card{
+.best__seller-card {
     position: relative;
     display: flex;
     align-items: end;
@@ -460,7 +403,8 @@
     height: 100%;
     object-fit: cover;
 }
-.best__seller-price{
+
+.best__seller-price {
     position: absolute;
     width: 100%;
     height: auto;
@@ -503,30 +447,31 @@
     padding: 10px;
 }
 
-.our__product__cards__wrap{
+.our__product__cards__wrap {
     padding-top: 30px;
 }
+
 .our__product__cards {
     display: grid;
     grid-template-rows: repeat(8 1fr);
     justify-items: center;
     gap: 20px;
-    
+
 }
 
 .our__product__cards-card {
     position: relative;
     display: flex;
     width: 290.4px;
-    height:auto;
+    height: auto;
     align-items: end;
-    
+
 }
 
 .our__product__cards-card img {
     width: 100%;
-    height:100%;
-    object-fit:cover;
+    height: 100%;
+    object-fit: cover;
 }
 
 .our__product__cards-data {
@@ -536,10 +481,12 @@
     height: 50px;
     font-family: "calibri";
 }
+
 .our__product-title {
     font-weight: 700;
     font-size: 20px;
 }
+
 .our__product-price {
     font-size: 18px;
 }
@@ -581,7 +528,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 190px;
-text-align: center;
+    text-align: center;
 }
 
 .deal__promotion__box .deal__promotion__box-box {
@@ -600,7 +547,8 @@ text-align: center;
     font-weight: 700;
     font-size: 17px;
 }
-.deal__promotion__box-box .time{
+
+.deal__promotion__box-box .time {
     font-size: 16px;
 }
 
@@ -616,128 +564,137 @@ text-align: center;
     padding: 8px;
     border-radius: 8px;
 }
-.deal__promotion-img{
+
+.deal__promotion-img {
     justify-self: end;
     width: 160px;
     height: auto;
 }
-.deal__promotion-img img{
+
+.deal__promotion-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+
 }
+
 /* ----   ESTILO PAGINA HOMBRES  ---- */
-    .main__man__wrap{
-        width: 100vw;
-        display: flex;
-        align-items: center;
-    }
-    .main__man__background-img{
-        width: 100vw;
-        height: 900px;
-    }
-    .main__man__background-img img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .main__man__title{
-        position: absolute;
-        padding: 16px;
-        width: 350px;
-    }
-    .main__man__title h2{
-        font-size: 60px;
-        color: whitesmoke;
-        text-shadow:1px 2px rgba(0, 0, 0, 0.2);
-    }
+.main__man__wrap {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
 
-    .main__man__title p{
-        color: rgb(70, 69, 69);
-        padding: 15px 0px;
-    }
+.main__man__background-img {
+    width: 100vw;
+    height: 900px;
+}
 
-    .main__man-button{
-        margin-top: 25px;
-    }
-    .main__man-button a{
-        text-decoration: none;
-        font-family: "calibri";
-        color: whitesmoke;
-        background-color: #1F8963;
-        border-radius: 8px;
-        padding: 10px 15px
-    }
+.main__man__background-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    /*  MAN New Colletion section  */
+.main__man__title {
+    position: absolute;
+    padding: 16px;
+    width: 350px;
+}
 
-    .man__new__collection__wrap{
-        background-color: whitesmoke;
-        display: grid;
-        grid-template-rows: 0.5fr 3fr;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-    }
+.main__man__title h2 {
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
 
-    .man__new__collection-title{
-        padding: 30px 0px;
-        color: rgb(70, 69, 69);
-    }
+.main__man__title p {
+    color: rgb(70, 69, 69);
+    padding: 15px 0px;
+}
 
-    .man__new__collection-title h3{
-        font-family: "MADE TOMMY ExtraBold";
-        font-size: 25px;
-    }
+.main__man-button {
+    margin-top: 25px;
+}
 
-    .man__new__collection-title p{
-        font-family: "calibri";
-        font-size: 16px;
-        padding-top: 1px;
-    }
- 
-    .man__new__collection__images__wrap{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 5px;
-    }
+.main__man-button a {
+    text-decoration: none;
+    font-family: "calibri";
+    color: whitesmoke;
+    background-color: #1F8963;
+    border-radius: 8px;
+    padding: 10px 15px
+}
 
-    .man__new__collection__cards{
-        width: 340px;
-        position: relative;
-    }
+/*  MAN New Colletion section  */
 
-    .man__new__collection__cards img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.man__new__collection__wrap {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
 
-    .man__new__collection-button{
-        display: flex;
-        justify-content: center;
-    }
+.man__new__collection-title {
+    padding: 30px 0px;
+    color: rgb(70, 69, 69);
+}
 
-    .man__new__collection-button a{
-        position: absolute;
-        text-decoration: none;
-        font-family: "calibri";
-        background-color: rgb(235, 235, 235);
-        color: rgb(70, 69, 69);
-        padding: 10px 15px;
-        border-radius: 5px;
-        font-size: 25px;
-        bottom: 3%;
-    }
-  /*  MAN imagen y estdistica Section   */
+.man__new__collection-title h3 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 25px;
+}
 
-  .man__new__collection__stadistic__wrap {
+.man__new__collection-title p {
+    font-family: "calibri";
+    font-size: 16px;
+    padding-top: 1px;
+}
+
+.man__new__collection__images__wrap {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.man__new__collection__cards {
+    width: 340px;
+    position: relative;
+}
+
+.man__new__collection__cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.man__new__collection-button {
+    display: flex;
+    justify-content: center;
+}
+
+.man__new__collection-button a {
+    position: absolute;
+    text-decoration: none;
+    font-family: "calibri";
+    background-color: rgb(235, 235, 235);
+    color: rgb(70, 69, 69);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    bottom: 3%;
+}
+
+/*  MAN imagen y estdistica Section   */
+
+.man__new__collection__stadistic__wrap {
     width: 100vw;
     padding: 16px;
     background-color: rgb(252, 252, 252);
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
 }
 
@@ -749,10 +706,11 @@ text-align: center;
     width: 190px;
     height: 250px;
 }
+
 .man__new__collection-image img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border-top-right-radius: 100px;
 }
 
@@ -768,6 +726,7 @@ text-align: center;
     font-size: 25px;
     color: rgb(70, 69, 69);
 }
+
 .man__new__collection__stadistic__numbers__wrap {
     position: absolute;
     background-color: rgb(235, 235, 235);
@@ -775,24 +734,25 @@ text-align: center;
     height: 66px;
     border-radius: 3px;
     justify-self: center;
-    bottom: 30px; 
+    bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .man__new__collection__stadistic-numbers {
     font-family: "calibri";
     color: rgb(70, 69, 69);
     text-align: center;
-    border-right-style:solid;
+    border-right-style: solid;
     border-right-width: 1px;
     border-right-color: rgb(70, 69, 69);
 }
 
-.man__new__collection__stadistic-number, .last{
-    border-right-style:none;
+.man__new__collection__stadistic-number,
+.last {
+    border-right-style: none;
 }
 
 .man__new__collection__stadistic-numbers .number {
@@ -832,10 +792,12 @@ text-align: center;
     font-family: "calibri";
     font-size: 17px;
 }
-.man__best__seller-button{
+
+.man__best__seller-button {
     margin-top: 20px;
 }
-.man__best__seller-button a{
+
+.man__best__seller-button a {
     padding: 10px 20px;
     background-color: whitesmoke;
     color: rgb(70, 69, 69);
@@ -853,7 +815,7 @@ text-align: center;
     padding: 0px 50px;
 }
 
-.man__best__seller-card{
+.man__best__seller-card {
     position: relative;
     display: flex;
     align-items: end;
@@ -865,7 +827,8 @@ text-align: center;
     height: 100%;
     object-fit: cover;
 }
-.man__best__seller-price{
+
+.man__best__seller-price {
     position: absolute;
     width: 100%;
     height: auto;
@@ -908,30 +871,31 @@ text-align: center;
     padding: 10px;
 }
 
-.man__our__product__cards__wrap{
+.man__our__product__cards__wrap {
     padding-top: 30px;
 }
+
 .man__our__product__cards {
     display: grid;
     grid-template-rows: repeat(8 1fr);
     justify-items: center;
     gap: 20px;
-    
+
 }
 
 .man__our__product__cards-card {
     position: relative;
     display: flex;
     width: 290.4px;
-    height:auto;
+    height: auto;
     align-items: end;
-    
+
 }
 
 .man__our__product__cards-card img {
     width: 100%;
-    height:100%;
-    object-fit:cover;
+    height: 100%;
+    object-fit: cover;
 }
 
 .man__our__product__cards-data {
@@ -941,11 +905,14 @@ text-align: center;
     height: 50px;
     font-family: "calibri";
 }
+
 .man__our__product__cards-data .our__product-title {
     font-weight: 700;
     font-size: 20px;
 }
+
 .man__our__product__cards-data .our__product-price {
+    line-height: 0px;
     font-size: 18px;
 }
 
@@ -955,7 +922,7 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
-    background-color:#1F8963;
+    background-color: #1F8963;
     padding: 16px;
 }
 
@@ -986,7 +953,7 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 190px;
-text-align: center;
+    text-align: center;
 }
 
 .man__deal__promotion__box .man__deal__promotion__box-box {
@@ -996,7 +963,7 @@ text-align: center;
     height: 40px;
     color: rgb(70, 69, 69);
     font-family: "calibri";
-    line-height: 15px;
+    line-height: 5px;
     padding-top: 5px;
 
 }
@@ -1005,7 +972,8 @@ text-align: center;
     font-weight: 700;
     font-size: 17px;
 }
-.man__deal__promotion__box-box .time{
+
+.man__deal__promotion__box-box .time {
     font-size: 16px;
 }
 
@@ -1021,49 +989,193 @@ text-align: center;
     padding: 8px;
     border-radius: 8px;
 }
-.man__deal__promotion-img{
+
+.man__deal__promotion-img {
     justify-self: end;
     width: 160px;
     height: auto;
 }
-.man__deal__promotion-img img{
+
+.man__deal__promotion-img img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
-    object-position: -200px;    
+    object-fit: cover;
+    object-position: -292px;
 }
 
-/* ---  ESTUILO UNDER CONSTRUCTION   --- */
+/*  ---   ESTILO KIDS      ----  */
+/*  ---    main section ----*/
 
-.under__construction__wrap{
+.main__kids__wrap {
+    background-image: url('../asset/img/main_kids.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.main__kids-title {
+    height: 100vmin;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main__kids__wrap h1 {
+    font-size: 60px;
+    font-family: "MADE TOMMY ExtraBold";
+}
+
+.main__kids__wrap p {
+    font-size: 30px;
+    font-family: "calibri";
+    font-weight: 400;
+}
+
+.main__kids__wrap a {
+    font-family: "calibri";
+    font-weight: 700;
+}
+
+/*        new collection section      */
+
+.new__collection__kids-title h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 25px;
+}
+
+.new__collection__kids-title p {
+    font-family: "calibri";
+    font-size: 18px;
+}
+
+
+/*--- best seller section---*/
+
+.best__seller__kids__wrap {
+    background-color: #A57F6C;
+}
+
+.best__seller__kids__wrap h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+.best__seller__kids-title p {
+    font-family: "calibri";
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+/*--- deal section---*/
+.deal__kids__wrap {
+    background-color: #1F8963;
+}
+
+.deal__kids-title h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+.deal__kids-title h5 {
+    font-family: "MADE TOMMY ExtraBold";
+    margin: 0;
+}
+
+.deal__kids-detail {
+    color: whitesmoke;
+}
+
+.card {
+    width: 59px;
+    padding: 0px;
+}
+
+.card-body {
+    width: 100%;
+    padding: 0px;
+}
+
+.card-text {
+    font-family: "calibri";
+    font-size: 13px;
+}
+
+.deal__kids__wrap a {
+    font-family: "calibri";
+}
+
+.deal__kids-img {
+    width: 180px;
+    height: auto;
+}
+
+.deal__kids-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: -260px;
+}
+
+/* --- ESTILO PAGINA CONTACTO ---*/
+.form__login__wrap {
+    height: 500px;
+    padding-top: 20%;
+    background-color: #1F8963;
+}
+
+.form__login-button {
+    font-family: "calibri";
+}
+
+/* --- formulario de contacto y mapa --*/
+.contact__form__maps {
+    background-color: #1F8963;
+}
+
+.contact__form__maps .adress {
+    font-family: "calibri";
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.adress h2 {
+    font-weight: 700;
+}
+
+/* ---  ESTILO UNDER CONSTRUCTION   --- */
+
+.under__construction__wrap {
     background: whitesmoke;
     width: 100vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
-.under__construction-img{
+.under__construction-img {
     width: 320px;
     height: auto;
     padding: 15px;
     margin-top: 100px;
 }
-.under__construction-img img{
+
+.under__construction-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.message-construction{
+
+.message-construction {
     width: 310px;
     height: auto;
     justify-self: center;
 }
-.message-construction h1{
+
+.message-construction h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: 700;
 }
-.message-construction h2{
+
+.message-construction h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 50px;
@@ -1079,45 +1191,17 @@ text-align: center;
 
     /*  ----- ESTILOS DEL HEADER  -----  */
 
-    .header{
-        flex-wrap: nowrap;
-    }
-    .header .logo {
-        
-        justify-content: left;
-        margin-right: 180px;
-        padding: 16px;
-    }
-    .header__nav{
-        padding-top: 0px;
-    }
-    .header__nav ul {
-        align-items:center;
-        justify-content: end;
+    .navbar img:hover{
+        transform: rotate(360deg);
+        transition: all 0.5s;
     }
 
-    .header__nav__list__centre {
-        justify-content: end;
-    }
-    .header__nav__list__rigth{
-        margin-left: auto;
-    }
-
-    .header__nav ul li {
-        margin: 5px;
-    }
-
-    .header__nav ul li a {
-        font-size: 20px;
-        padding: 10px;
-    }
-    .header__nav li a:hover {
-        background-color:#1F8963;
+    .navbar li a:hover {
+        background-color: #1F8963;
         border-radius: 5px;
         font-weight: bold;
     }
 
-    
     /* -----  ESTILOS DEL MAIN  -----  */
 
     .main__titulo {
@@ -1133,7 +1217,7 @@ text-align: center;
         text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
     }
 
-    .main__titulo .main__titulo-shopbtn {  
+    .main__titulo .main__titulo-shopbtn {
         margin-left: 40px;
     }
 
@@ -1141,43 +1225,6 @@ text-align: center;
         width: 160px;
         height: 45px;
         font-size: 28px;
-    }
-
-    /* ----- ESTILOS DEL FOOTER  -----  */
-    footer {
-        padding: 30px;
-        height: 550px;
-        width: 100vw;
-    }
-
-    .footer__datos__wrap{
-        display: flex;
-        justify-content: space-around;
-    }
-    .footer__datos__wrap .footer__datos-img {
-        display: flex;
-        height: 430px;
-        width: auto;
-        padding-left: 5%;
-    }
-
-    .footer__datos__inscription{
-        align-items: center;
-    }
-    .footer__datos__inscription input {
-        padding: 15px 80px;
-        border-radius: 15px;
-        margin: 3px;
-    }
-
-    .footer__datos__inscription p {
-        padding-top: 10px;
-    }
-
-    .footer__datos__links {
-        padding-top: 60px;
-        width: 710px;
-        height: 290px;
     }
 
 
@@ -1196,8 +1243,9 @@ text-align: center;
         padding-top: 100px;
         margin-left: 30px;
         width: 580px;
-        
+
     }
+
     .main__woman-title h2 {
         font-size: 130px;
         line-height: 130px;
@@ -1209,6 +1257,7 @@ text-align: center;
         padding-top: 20px;
         font-size: 30px;
     }
+
     .main__woman-title .link-shop {
         margin-top: 20px;
     }
@@ -1236,6 +1285,7 @@ text-align: center;
     .new__collection__wrap {
         height: 100vh;
     }
+
     .new__collection__wrap .new__collection-title {
         padding: 3% 0% 1% 0%;
     }
@@ -1251,21 +1301,24 @@ text-align: center;
 
     .new__collection__images {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 20px;
         align-items: center;
-        
+
     }
+
     .new__collection__card {
         width: 400px;
     }
+
     .new__collection__card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .new__collection-button a:hover{
+
+    .new__collection-button a:hover {
         transform: scale(1.05);
         background-color: rgb(212, 212, 212);
     }
@@ -1278,10 +1331,10 @@ text-align: center;
         padding: 30px;
     }
 
-    .new__collection-stadistic{
+    .new__collection-stadistic {
         padding-left: 100px;
     }
-        
+
     .new__collection-stadistic .new__collection-image {
         width: 611px;
     }
@@ -1301,7 +1354,7 @@ text-align: center;
         width: 555px;
         height: 150px;
         border-radius: 8px;
-        bottom: 80px; 
+        bottom: 80px;
     }
 
     .new__collection__stadistic-numbers .number {
@@ -1323,7 +1376,7 @@ text-align: center;
 
     .best__seller-title {
         padding-left: 60px;
- 
+
     }
 
     .best__seller-title p {
@@ -1341,13 +1394,13 @@ text-align: center;
         gap: 20px;
         width: 1050px;
     }
-    
+
     /*  Our products */
     .our__product__wrap {
         grid-template-rows: 0.4fr 2fr;
         justify-items: center;
-       
-}
+
+    }
 
     .our__product__links h3 {
         font-size: 40px;
@@ -1358,20 +1411,20 @@ text-align: center;
         letter-spacing: 4px;
     }
 
-    .our__product__cards__wrap{
+    .our__product__cards__wrap {
         padding: 30px;
         width: 1400px;
     }
 
     .our__product__cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 15px;
     }
 
     /*estilo seccion deal*/
 
-    .deal__promotion__wrap{
+    .deal__promotion__wrap {
         padding: 30px;
     }
 
@@ -1380,15 +1433,19 @@ text-align: center;
         align-items: start;
         padding-left: 200px;
     }
+
     .deal__promotion__title-title {
         width: 520px;
     }
+
     .deal__promotion__title-title h2 {
         font-size: 70px;
     }
+
     .deal__promotion__title-title p {
         padding-bottom: 40px;
     }
+
     .deal__promotion__box {
         width: 360px;
 
@@ -1407,12 +1464,14 @@ text-align: center;
         font-weight: 700;
         font-size: 30px;
     }
-    .deal__promotion__box-box .time{
+
+    .deal__promotion__box-box .time {
         font-size: 20px;
     }
+
     .deal__promotion-button {
         margin-top: 40px;
-        
+
     }
 
     .deal__promotion-button a {
@@ -1429,39 +1488,42 @@ text-align: center;
     }
 
     /*   ESTILO PAGINA HOMBRES */
-    .main__man__wrap{
+    .main__man__wrap {
         height: 100vh;
     }
-    .main__man__background-img{
+
+    .main__man__background-img {
         width: 100vw;
         height: 100vh;
     }
-    
-    .main__man__title{
+
+    .main__man__title {
         padding-left: 70px;
         width: 600px;
     }
-    .main__man__title h2{
+
+    .main__man__title h2 {
         font-size: 100px;
         color: white;
-        text-shadow:1px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
     }
 
-    .main__man__title p{
+    .main__man__title p {
         font-size: 20px;
         color: rgb(70, 69, 69);
         padding: 15px 0px;
     }
 
-    .main__man-button{
+    .main__man-button {
         margin-top: 25px;
     }
-    .main__man-button a{
+
+    .main__man-button a {
         font-size: 20px;
         padding: 15px 25px
     }
 
-    .main__man-button a:hover{
+    .main__man-button a:hover {
         color: rgb(70, 69, 69);
         background-color: whitesmoke;
         font-weight: 700;
@@ -1470,90 +1532,92 @@ text-align: center;
 
     /*  MAN New Collection Section   */
 
-    .man__new__collection-title{
+    .man__new__collection-title {
         padding: 3% 0% 1% 0%;
     }
 
-    .man__new__collection__wrap{
+    .man__new__collection__wrap {
         background-color: whitesmoke;
         display: grid;
         grid-template-rows: 0.5fr 1fr;
     }
 
-    .man__new__collection-title h3{
+    .man__new__collection-title h3 {
         font-size: 40px;
     }
 
-    .man__new__collection-title p{
+    .man__new__collection-title p {
         font-size: 20px;
         padding-top: 1%;
     }
-    
 
-    .man__new__collection__images__wrap{
+
+    .man__new__collection__images__wrap {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 20px;
         align-items: center;
     }
-    .man__new__collection-button a:hover{
+
+    .man__new__collection-button a:hover {
         transform: scale(1.05);
         background-color: rgb(212, 212, 212);
     }
 
-        /*  MAN imagen y estdistica Section   */
+    /*  MAN imagen y estdistica Section   */
 
-        .man__new__collection__stadistic__wrap {
-            height: 100vh;
-            padding: 30px;
-        }
-    
-        .man__new__collection-stadistic{
-            padding-left: 100px;
-        }
-            
-        .man__new__collection-stadistic .man__new__collection-image {
-            width: 611px;
-            height: 650px;
-        }
-        .man__new__collection-image img {
-            border-top-right-radius: 250px;
-        }
-    
-        .man__new__collection__advertising {
-            width: 600px;
-            height: 100px;
-        }
-    
-        .man__new__collection__advertising h3 {
-            padding-top: 100px;
-            padding-left: 80px;
-            font-size: 80px;
-        }
-    
-        .man__new__collection__stadistic__numbers__wrap {
-            width: 555px;
-            height: 150px;
-            border-radius: 8px;
-            bottom: 80px; 
-        }
-    
-        .man__new__collection__stadistic-numbers .number {
-            font-weight: 700;
-            font-size: 40px;
-        }
-    
-        .man__new__collection__stadistic-numbers .detail {
-            font-size: 18px;
-        }
+    .man__new__collection__stadistic__wrap {
+        height: 100vh;
+        padding: 30px;
+    }
 
-            /*  Our products */
+    .man__new__collection-stadistic {
+        padding-left: 100px;
+    }
+
+    .man__new__collection-stadistic .man__new__collection-image {
+        width: 611px;
+        height: 650px;
+    }
+
+    .man__new__collection-image img {
+        border-top-right-radius: 250px;
+    }
+
+    .man__new__collection__advertising {
+        width: 600px;
+        height: 100px;
+    }
+
+    .man__new__collection__advertising h3 {
+        padding-top: 100px;
+        padding-left: 80px;
+        font-size: 80px;
+    }
+
+    .man__new__collection__stadistic__numbers__wrap {
+        width: 555px;
+        height: 150px;
+        border-radius: 8px;
+        bottom: 80px;
+    }
+
+    .man__new__collection__stadistic-numbers .number {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .man__new__collection__stadistic-numbers .detail {
+        font-size: 18px;
+    }
+
+    /*  Our products */
     .man__our__product__wrap {
         grid-template-rows: 0.4fr 2fr;
         justify-items: center;
-       
-}
+
+    }
 
     .man__our__product__links h3 {
         font-size: 40px;
@@ -1564,21 +1628,24 @@ text-align: center;
         letter-spacing: 4px;
     }
 
-    .man__our__product__cards__wrap{
+    .man__our__product__cards__wrap {
         padding: 30px;
         width: 1400px;
     }
+
     .man__our__product__cards-card {
         width: 290.4px;
-        height:334.08px;
-        
+        height: 334.08px;
+
     }
+
     .man__our__product__cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 15px;
     }
-            /* best seller section*/
+
+    /* best seller section*/
 
     .man__best__seller__wrap {
         grid-template-columns: 1fr 3fr;
@@ -1588,7 +1655,7 @@ text-align: center;
 
     .man__best__seller-title {
         padding-left: 60px;
- 
+
     }
 
     .man__best__seller-title p {
@@ -1607,7 +1674,7 @@ text-align: center;
         width: 1050px;
     }
 
-    .man__deal__promotion__wrap{
+    .man__deal__promotion__wrap {
         padding: 30px;
     }
 
@@ -1616,15 +1683,19 @@ text-align: center;
         align-items: start;
         padding-left: 200px;
     }
+
     .man__deal__promotion__title-title {
         width: 520px;
     }
+
     .man__deal__promotion__title-title h2 {
         font-size: 70px;
     }
+
     .man__deal__promotion__title-title p {
         padding-bottom: 40px;
     }
+
     .man__deal__promotion__box {
         width: 360px;
 
@@ -1643,12 +1714,14 @@ text-align: center;
         font-weight: 700;
         font-size: 30px;
     }
-    .man__deal__promotion__box-box .time{
+
+    .man__deal__promotion__box-box .time {
         font-size: 20px;
     }
+
     .man__deal__promotion-button {
         margin-top: 40px;
-        
+
     }
 
     .man__deal__promotion-button a {
@@ -1664,6 +1737,74 @@ text-align: center;
 
     }
 
+    /* ---- ESTILO PAGINA KIDS  ----*/
+    /*  ---    main section ----*/
+    .main__kids__wrap h1 {
+        font-size: 220px;
+    }
+
+    .main__kids__wrap p {
+
+        font-size: 30px;
+
+    }
+
+    /*  ---    new collection section ----*/
+
+    .new__collection__kids-title h2 {
+        font-size: 40px;
+    }
+
+    .new__collection__kids-title p {
+        font-size: 20px;
+    }
+
+    .best__seller__kids__wrap{
+        height: 580px;
+    }
+
+
+    /*  ---  deal section ----*/
+    .deal__kids-title h2 {
+        font-size: 70px;
+    }
+
+    .deal__kids-detail {
+        font-size: 18px;
+    }
+
+    .deal__kids__wrap .card {
+        width: 90px;
+        height: 60px;
+    }
+
+    .card_wrap {
+        padding-left: 10px;
+    }
+
+    .deal__kids-title h5 {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+
+    .deal__kids__wrap a {
+        font-size: 18px;
+    }
+
+    .deal__kids-img {
+        width: 600px;
+        height: auto;
+    }
+
+    .deal__kids-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: 0px;
+    }
 
     /*  ---- ESTILO PAGINA CONTACTO -----  */
     /*  LOG IN  */
@@ -1735,91 +1876,56 @@ text-align: center;
     }
 
     /*  CONTACTO   */
-
-
-    .contact {
+    .form__login__wrap {
         height: 100vh;
-        width: 100%;
-        background-color: #E37C73;
-        padding: 10px;
-        padding-top: 50px;
+        padding-top: 10%;
+        background-color: #1F8963;
     }
 
-    .contact__form__wrap {
-        float: left;
-        width: 600px;
-        height: 600px;
-        padding-left: 70px;
-        background-color: #FBDA97;
-        margin-left: 80px;
-        padding-right: 30px;
+    .form__login {
+        background-color: whitesmoke;
         color: rgb(70, 69, 69);
-        border-radius: 8px;
     }
 
-    .contact__form-title {
-        font-family: "calibri";
-
-    }
-
-    .contact__form-title h3 {
-        font-size: 25px;
-        padding-top: 25px;
-        padding-bottom: 5px;
-    }
-
-    .contact__form__wrap .contact__form {
-        padding-top: 10px;
-        line-height: 30px;
-    }
-
-    .contact__form__maps {
-        padding-left: 800px;
-    }
-
-    .contact__form__maps .adress {
-        font-family: "calibri";
-        font-size: 19px;
-        color: rgb(70, 69, 69);
-        width: 600px;
-        padding-top: 15px;
-        line-height: 30px;
-    }
 
     /*  ---- ESTILO PAGINA UNDER CONTRUCTION -----  */
 
-.under__construction__wrap{
-    background: whitesmoke;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
+    .under__construction__wrap {
+        background: whitesmoke;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 
-.under__construction-img{
-    width: 600px;
-    height: auto;
-    padding: 30px;
-    transform: skewY(5deg);
-}
-.under__construction-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.message-construction{
-    width: 700px;
-    justify-self: start;
-}
-.message-construction h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 90px;
-    font-weight: 700;
-}
-.message-construction h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    line-height: 50px;
-    text-transform: uppercase;
-}
+    .under__construction-img {
+        width: 600px;
+        height: auto;
+        padding: 30px;
+        transform: skewY(5deg);
+    }
+
+    .under__construction-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .message-construction {
+        width: 700px;
+        justify-self: start;
+    }
+
+    .message-construction h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    .message-construction h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
 }

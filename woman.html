@@ -6,27 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="asset/img/favicon_FASHION.svg">
+
+    <!-- CSS only boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- link Css Style-->
     <link rel="stylesheet" href="css/style.css">
     <title>FASHION</title>
 </head>
 
 <body>
+    <!--Header con menu de navegacion-->
     <header class="header">
-        <a href="index.html" class="header-logo"><img src="asset/img/LOGO.svg" alt="logo"
-                class="logo"></a>
-        <nav class="header__nav">
-            <ul class="header__nav__list__rigth">
-                <li><a href="inconstruction.html"><img src="asset/img/001-comprar.png" alt="carrito-compra"></a>
-                </li>
-                <li><a href="contact.html">Login</a></li>
-            </ul>
-            <ul class="header__nav__list__centre">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="woman.html">Woman</a></li>
-                <li><a href="man.html">Mens</a></li>
-                <li><a href="kids.html">Kids</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid ">
+                <a class="navbar-brand ps-3" href="index.html"><img src="asset/img/LOGO.svg" alt="logo"
+                        class="d-inline-block align-top"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active me-3" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3" href="woman.html">Woman</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3" href="man.html">Mens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class=" nav-link text-white me-3" aria-current="page" href="inconstruction.html"><img
+                                    src="asset/img/001-comprar.png" alt="carrito-compra"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link text-white me-3" aria-current="page" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -47,9 +78,7 @@
     </section>
 
     <!-- SECCION NEW COLLECTION-->
-
-
-
+    
     <section class="new__collection__wrap">
         <div class="new__collection-title">
             <h3 class="title">New Collection</h3>
@@ -59,26 +88,29 @@
         <div class="new__collection__images">
             <div class="new__collection__card">
                 <div class="new__collection-button">
-                    <a href="inconstruction.html"><h4>Dresses</h4> </a>
+                    <a href="inconstruction.html">
+                        <h4>Dresses</h4>
+                    </a>
                 </div>
-                <img class="new__collection-img" src="asset/img/newcollection01.png"
-                    alt="Mujere posando abrigo">
+                <img class="new__collection-img" src="asset/img/newcollection01.png" alt="Mujere posando abrigo">
             </div>
 
             <div class="new__collection__card">
                 <div class="new__collection-button">
-                    <a href="inconstruction.html"><h4>T-Shirt</h4></a>
+                    <a href="inconstruction.html">
+                        <h4>T-Shirt</h4>
+                    </a>
                 </div>
-                <img class="new__collection-img" src="asset/img/newcollection02.png"
-                    alt="Mujere posando remera">
+                <img class="new__collection-img" src="asset/img/newcollection02.png" alt="Mujere posando remera">
             </div>
 
             <div class="new__collection__card">
                 <div class="new__collection-button">
-                    <a href="inconstruction.html"><h4>Jackets</h4></a>
+                    <a href="inconstruction.html">
+                        <h4>Jackets</h4>
+                    </a>
                 </div>
-                <img class="new__collection-img" src="asset/img/newcollection03.png"
-                    alt="Mujere posando vestidos">
+                <img class="new__collection-img" src="asset/img/newcollection03.png" alt="Mujere posando vestidos">
             </div>
         </div>
     </section>
@@ -104,7 +136,7 @@
             </div>
             <div class="new__collection__stadistic-numbers last">
                 <p class="number">19600</p>
-                <p class="detail">Sales a Month   </p>
+                <p class="detail">Sales a Month </p>
             </div>
         </div>
     </section>
@@ -112,7 +144,7 @@
     <!-- SECCION BEST SELLER-->
 
     <section class="best__seller__wrap">
-    
+
         <div class="best__seller-title">
             <h3>Best Seller Product</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae magnam quam.</p>
@@ -156,56 +188,56 @@
         <div class="our__product__cards__wrap">
             <div class="our__product__cards">
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img  src="asset/img/pr-01.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-01.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Perfume</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-02.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-02.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Bags</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-03.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-03.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Lipsticks</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-04.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-04.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Watches</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-05.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-05.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Brushes</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-06.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-06.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Sunglasses</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-07.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-07.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Footwear</p>
                         <p class="our__product-price">$250</p>
                     </div>
                 </div>
                 <div class="our__product__cards-card">
-                    <a href="inconstruction.html" ><img src="asset/img/pr-08.png" alt="descripcion producto"></a>
+                    <a href="inconstruction.html"><img src="asset/img/pr-08.png" alt="descripcion producto"></a>
                     <div class="our__product__cards-data">
                         <p class="our__product-title">Jewellery</p>
                         <p class="our__product-price">$250</p>
@@ -244,54 +276,107 @@
             </div>
         </div>
         <div class="deal__promotion-img">
-        <img src="asset/img/deal-image.png" alt="mujer sentada posando antejos">
-    </div>
+            <img src="asset/img/deal-image.png" alt="mujer sentada posando antejos">
+        </div>
     </section>
 
     <!-- SECCION FOOTER-->
 
-    <footer class="footer">
-        <div class="footer__datos__wrap">
-            <img class="footer__datos-img" src="asset/img/mujer con flor.svg"
-                alt="foto-mujer-flores">
-            <div class="footer__datos__inscription__wrap">
-                <div class="footer__datos__inscription">
-                    <div class="footer__datos__inscription-form">
-                    <input type="email" name="" placeholder="Your e-mail">
-                    <input id="footer__datos-button" type="submit" value="Suscribe Now!">
+    <footer class="footer container-fluid">
+        <div class="container-fluid p-3 pt-md-5 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="img__footer d-none d-sm-none d-md-block col-md-4">
+                    <img class="rounded-1" src="asset/img/mujer con flor.svg" alt="niña saltando">
                 </div>
-                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam perferendis
-                        repellendus quae quia excepturi.</p>
-                </div>
-                <div class="footer__datos__links">
-                    <p>Aca van linkss!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore adipisci labore
-                        nesciunt beatae fugit nihil necessitatibus ex harum earum, nostrum soluta sed deleniti
-                        recusandae
-                        aliquam voluptate quisquam, at, quos odit. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Rem reiciendis, assumenda necessitatibus magnam impedit quasi. Quasi, nostrum veniam corporis ex
-                        esse laudantium odio animi magni ipsa amet, alias odit dolorem? Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Quam corporis asperiores obcaecati quia laudantium. A error
-                        recusandae
-                        fugit culpa nesciunt, assumenda libero quam praesentium eum atque. Consectetur accusantium quasi
-                        fuga.</p>
-                </div>
-                <hr>
-                <div class="footer__rigths__wrap">
-                    <p class="footer__rigths">
-                        All rigths reserved 2022                       
-                    </p>
-                    <div class="footer__social__wrap">
-                    <a href="https://www.facebook.com/"><img src="asset/img/facebook.png"
-                        class="social"></a>
-                    <a href="https://www.instagram.com/"><img
-                        src="asset/img/instagram.png" class="social"></a>
+                <div class="col-12 col-md-6">
+                    <div class="pt-md-5 pb-md-5">
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">Suscribe Now!</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="pt-1 ">Get all our offers before anyone else</p>
+                        </div>
+                    </div>
+                    <div
+                        class="row justify-content-around align-content-md-center border-bottom border-dark pb-3 h-md-50">
+                        <div class="col-6  col-md-3 pb-3">
+                            <ul>
+                                <li>
+                                    <p class="fw-bold mb-0">Woman</p>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                        Collection</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                        Seller</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Our
+                                        Products</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6  col-md-3 pb-3">
+                            <ul>
+                                <li>
+                                    <p class="fw-bold mb-0">Mens</p>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                        Collection</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                        Seller</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Our
+                                        Products</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6  col-md-3 pb-3">
+                            <ul>
+                                <li>
+                                    <p class="fw-bold mb-0">Kids</p>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                        Collection</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                        Seller</a></li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6  col-md-3 pb-3">
+                            <ul>
+                                <li>
+                                    <p class="fw-bold mb-0">Contact</p>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Login</a>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Adress</a>
+                                </li>
+                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Cotact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-8 col-md-10 ">
+                            <p class="">All rigths reserved 2022</p>
+                        </div>
+                        <div class="col-4 col-md-2 ">
+                            <a href="https://www.facebook.com/"><img src="asset/img/facebook.png" class="social"></a>
+                            <a href="https://www.instagram.com/"><img src="asset/img/instagram.png" class="social"></a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </footer>
 </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
 </html>
