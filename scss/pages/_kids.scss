@@ -1,0 +1,191 @@
+/*-------------------------------*/
+/*  ---   ESTILO KIDS      ----  */
+/*-------------------------------*/
+
+/*  ---    main section ----*/
+
+.main__kids__wrap {
+    background-image: url('../asset/img/main_kids.jpg');
+    background-position: center;
+    background-size: cover;
+
+    &-title {
+        height: 100vmin;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &h1{
+        font-size: 60px;
+        font-family: "MADE TOMMY ExtraBold";
+    }
+    
+    &p{
+        font-size: 30px;
+        font-family: "calibri";
+        font-weight: 400;
+    }
+    &a {
+        font-family: "calibri";
+        font-weight: 700;
+    }
+}
+
+/*  ---   New collection section  ---  */
+
+.new__collection__kids-title{ 
+    &h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 25px;
+    }
+    
+    &p {
+    font-family: "calibri";
+    font-size: 18px;
+    }
+}
+
+/*--- best seller section---*/
+
+.best__seller__kids__wrap {
+    background-color: #A57F6C;
+    
+    &h2 {
+        font-family: "MADE TOMMY ExtraBold";
+        color: whitesmoke;
+        font-size: 60px;
+    }
+    &-title p {
+        font-family: "calibri";
+        color: whitesmoke;
+        font-size: 25px;
+    }
+}
+
+
+/*--- deal section---*/
+
+.deal__kids__wrap {
+    background-color: #1F8963;
+    &a {
+        font-family: "calibri";
+    }
+
+    &-title{
+        &h2 {
+            font-family: "MADE TOMMY ExtraBold";
+            font-size: 35px;
+            color: whitesmoke;
+        }
+        &h5 {
+            font-family: "MADE TOMMY ExtraBold";
+            margin: 0;
+        }
+
+    }
+
+    &-detail {
+        color: whitesmoke;
+    }
+
+    &-img {
+        width: 180px;
+        height: auto;
+
+        &img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.card {
+    width: 59px;
+    padding: 0px;
+
+    &.card-body {
+        width: 100%;
+        padding: 0px;
+
+        &.card-text {
+            font-family: "calibri";
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    
+    /* ---- ESTILO PAGINA KIDS  ----*/
+    /*  ---    main section ----*/
+    .main__kids__wrap{
+        &h1 {
+        font-size: 220px;
+    }
+        &p {
+            font-size: 30px;
+        }
+    }
+
+    /*  ---    new collection section ----*/
+
+    .new__collection__kids-title{ 
+        &h2 {
+            font-size: 40px;
+    }
+        &p {
+            font-size: 20px;
+    }
+}
+
+/*  ---  Best seller section  ---  */
+    .best__seller__kids__wrap{
+        height: 580px;
+    }
+
+
+    /*  ---  Deal section ---  */
+
+    .deal__kids__wrap{ 
+        &-title{ 
+            &h2 {
+                font-size: 70px;
+            }
+            &h5 {
+                font-size: 30px;
+            }
+        &-detail {
+            font-size: 18px;
+        }
+        &a {
+            font-size: 18px;
+        }
+        &-img {
+            width: 600px;
+            height: auto;
+
+            &img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: 0px;
+            }
+        }
+        
+    }
+    
+    &.card_wrap {
+        padding-left: 10px;
+        
+        &.card {
+            width: 90px;
+            height: 60px;
+
+            &-text {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+}

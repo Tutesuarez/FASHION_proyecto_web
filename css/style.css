@@ -8381,34 +8381,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/*  -----  ESTILO GENERAL -----*/
-* {
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: "calibri";
-  src: url("../asset/fonts/calibri.ttf");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "MADE TOMMY ExtraBold";
-  src: url("../asset/fonts/MADE TOMMY ExtraBold.otf");
-  font-style: normal;
-  font-weight: 700; }
-
-.header {
-  position: absolute;
-  width: 100vw;
-  z-index: 2; }
-
-.navbar {
-  font-family: "calibri";
-  font-size: 20px;
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9)); }
-
 /* ---->  ESTILO MAIN  <---- */
 .main__main {
   position: relative;
@@ -8419,7 +8391,7 @@ textarea.form-control-lg {
   justify-content: center;
   text-align: center; }
 
-.main__video {
+.main__main__video {
   position: absolute;
   top: 0;
   left: 0;
@@ -8427,7 +8399,7 @@ textarea.form-control-lg {
   height: 100%;
   overflow: hidden; }
 
-.main__video video {
+.main__main__video video {
   min-height: 100%;
   min-width: 100%;
   object-fit: cover;
@@ -8437,7 +8409,7 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
   filter: sepia(0.2); }
 
-.main__video::after {
+.main__main__video::after {
   content: "";
   position: absolute;
   top: 0;
@@ -8446,16 +8418,7 @@ textarea.form-control-lg {
   height: 100%;
   background: rgba(0, 0, 0, 0.2); }
 
-.main__titulo {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-  top: 30%;
-  left: 0;
-  z-index: 1; }
-
-.main__titulo h1, .main__titulo .h1 {
+.main__main__title h1, .main__main__title .h1 {
   font-family: "MADE TOMMY ExtraBold";
   text-align: left;
   padding-left: 20px;
@@ -8464,7 +8427,7 @@ textarea.form-control-lg {
   color: white;
   text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); }
 
-.main__titulo-shopbtn a {
+.main__main__title-shopbtn a {
   font-family: "calibri";
   font-weight: bold;
   text-decoration: none;
@@ -8478,25 +8441,27 @@ textarea.form-control-lg {
   background: #1F8963;
   color: whitesmoke; }
 
-.main__titulo-shopbtn a:hover {
+.main__main__title-shopbtn a:hover {
   background: whitesmoke;
   color: #464545; }
 
-/* ----  ESTILO FOOTER  ----  */
-.footer {
-  background: #A57F6C; }
-
-.footer p {
-  font-family: "calibri"; }
-
-.footer .img__footer img {
-  width: 394px;
-  height: 400px;
-  object-fit: contain; }
-
-.social {
-  width: 30px;
-  height: 30px; }
+@media screen and (min-width: 992px) {
+  /* -----  ESTILOS DEL MAIN  -----  */
+  .main__titulo {
+    top: 10%;
+    width: 600px; }
+  .main__titulo h1, .main__titulo .h1 {
+    color: white;
+    margin-top: 10%;
+    padding-left: 50px;
+    font-size: 800%;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); }
+  .main__titulo .main__titulo-shopbtn {
+    margin-left: 40px; }
+  .main__titulo-shopbtn a {
+    width: 160px;
+    height: 45px;
+    font-size: 28px; } }
 
 /*----  ESTILO WOMAN  ----  */
 /*  main section  */
@@ -8551,7 +8516,6 @@ textarea.form-control-lg {
   padding-bottom: 30px; }
 
 /*  New Colletion section  */
-
 .new__collection__wrap {
   background-color: whitesmoke; }
 
@@ -8568,77 +8532,47 @@ textarea.form-control-lg {
 .new__collection-button a {
   font-family: "calibri";
   color: #464545;
-  background-color: #ebebeb;
- }
-  
+  background-color: #ebebeb; }
+
 /*  IMAGEN Y ESTADISTICA*/
+.new__collection__stadistic__wrap {
+  background-color: #fcfcfc; }
+
+.new__collection__advertising h3, .new__collection__advertising .h3 {
+  font-family: "MADE TOMMY ExtraBold";
+  font-size: 25px;
+  color: #464545; }
+
+.new__collection__stadistic__numbers__wrap {
+  width: 240px;
+  height: 66px; }
+
+.new__collection__stadistic-numbers {
+  font-family: "calibri";
+  color: #464545;
+  width: 220px; }
+
+.new__collection__stadistic-numbers .number {
+  font-weight: 700;
+  font-size: 18px; }
+
+.new__collection__stadistic-numbers .detail {
+  font-size: 16px; }
 
 /* best seller section*/
-
 .best__seller__wrap {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  width: 100vw;
-  background-color: #A57F6C;
-  padding-bottom: 20px; }
+  background-color: #A57F6C; }
 
 .best__seller-title {
-  width: 370px;
-  height: 275px;
-  padding-top: 30px;
-  padding-left: 16px;
   color: whitesmoke; }
 
-.best__seller-title h3, .best__seller-title .h3 {
+.best__seller-title h2, .best__seller-title .h2 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 40px; }
 
 .best__seller-title p {
-  padding-top: 10px;
   font-family: "calibri";
   font-size: 17px; }
-
-.best__seller-button {
-  margin-top: 20px; }
-
-.best__seller-button a {
-  padding: 10px 20px;
-  background-color: whitesmoke;
-  color: #464545;
-  border-radius: 8px;
-  font-weight: bold;
-  font-family: "calibri";
-  text-decoration: none; }
-
-.best__seller__cards__wrap {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
-  justify-items: center;
-  padding: 0px 50px; }
-
-.best__seller-card {
-  position: relative;
-  display: flex;
-  align-items: end;
-  justify-content: center; }
-
-.best__seller-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.best__seller-price {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: whitesmoke;
-  font-family: "calibri";
-  color: #464545; }
-
-.best__seller-price p {
-  text-align: center;
-  padding-top: 3px; }
 
 /*  Our products */
 .our__product__wrap {
@@ -8700,75 +8634,260 @@ textarea.form-control-lg {
   font-size: 18px; }
 
 /*estilo seccion deal*/
-.deal__promotion__wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  background-color: #E37C73;
-  padding: 16px; }
-
 .deal__promotion__title {
-  display: flex;
-  flex-direction: column;
-  width: 190px; }
+  background-color: #E37C73; }
 
-.deal__promotion__title-title {
-  color: whitesmoke;
-  width: 160px; }
-
-.deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
-  font-family: "MADE TOMMY ExtraBold";
-  font-size: 30px; }
-
-.deal__promotion__title-title p {
-  padding-top: 20px;
-  font-family: "calibri";
-  font-size: 18px;
-  padding-bottom: 20px; }
-
-.deal__promotion__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 190px;
-  text-align: center; }
-
-.deal__promotion__box .deal__promotion__box-box {
-  background-color: whitesmoke;
-  border-radius: 3px;
-  width: 60px;
-  height: 40px;
-  color: #464545;
-  font-family: "calibri";
-  line-height: 15px;
-  padding-top: 5px; }
-
-.deal__promotion__box-box .number {
-  font-weight: 700;
-  font-size: 17px; }
-
-.deal__promotion__box-box .time {
-  font-size: 16px; }
-
-.deal__promotion-button {
-  margin-top: 20px; }
-
-.deal__promotion-button a {
-  background-color: black;
-  text-decoration: none;
-  color: white;
-  font-family: "calibri";
-  padding: 8px;
-  border-radius: 8px; }
+.card {
+  width: 50px !important;
+  height: 50px;
+  margin: 3px; }
+  .cardh5 {
+    font-family: "calibri";
+    margin: 0;
+    padding: 0; }
+  .cardp {
+    font-family: "calibri";
+    margin: 0;
+    padding: 0; }
 
 .deal__promotion-img {
-  justify-self: end;
-  width: 160px;
+  width: 180px;
   height: auto; }
 
 .deal__promotion-img img {
   height: 100%;
   width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  object-position: -70px; }
+
+/*
+.deal__promotion__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    background-color: #E37C73;
+    padding: 16px;
+}
+
+.deal__promotion__title {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+
+.deal__promotion__title-title {
+    color: whitesmoke;
+    width: 160px;
+}
+
+.deal__promotion__title-title h2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 30px;
+}
+
+.deal__promotion__title-title p {
+    padding-top: 20px;
+    font-family: "calibri";
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.deal__promotion__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 190px;
+    text-align: center;
+}
+
+.deal__promotion__box .deal__promotion__box-box {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    width: 60px;
+    height: 40px;
+    color: rgb(70, 69, 69);
+    font-family: "calibri";
+    line-height: 15px;
+    padding-top: 5px;
+
+}
+
+.deal__promotion__box-box .number {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.deal__promotion__box-box .time {
+    font-size: 16px;
+}
+
+.deal__promotion-button {
+    margin-top: 20px;
+}
+
+.deal__promotion-button a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-family: "calibri";
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.deal__promotion-img {
+    justify-self: end;
+    width: 160px;
+    height: auto;
+}
+
+.deal__promotion-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+*/
+@media (min-width: 992px) {
+  /* --- ESTILO PAGINA WOMAN  ---- */
+  /* head */
+  .main__woman__wrap {
+    height: 100vh;
+    background-color: #E37C73;
+    display: flex; }
+  .main__woman-title {
+    display: flex;
+    padding-top: 100px;
+    margin-left: 30px;
+    width: 580px; }
+  .main__woman-title h2, .main__woman-title .h2 {
+    font-size: 130px;
+    line-height: 130px; }
+  .main__woman-title p {
+    width: 580px;
+    font-family: "calibri";
+    padding-top: 20px;
+    font-size: 30px; }
+  .main__woman-title .link-shop {
+    margin-top: 20px; }
+  .main__woman-title .link-shop a {
+    padding: 20px 30px; }
+  .main__woman-title .link-shop a:hover {
+    color: #464545;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: whitesmoke; }
+  .main__woman-image img {
+    width: 690px;
+    height: auto;
+    padding-top: 100px;
+    padding-right: 150px; }
+  /* seccion nueva coleccion */
+  .new__collection-title .title {
+    font-size: 40px; }
+  .new__collection-title p {
+    font-size: 20px; }
+  /*  IMAGEN Y ESTADISTICA*/
+  /*
+    .new__collection__stadistic__wrap {
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .new__collection-stadistic {
+        padding-left: 100px;
+    }
+
+    .new__collection-stadistic .new__collection-image {
+        width: 611px;
+    }
+
+    .new__collection__advertising {
+        width: 600px;
+        height: 100px;
+    }
+
+    .new__collection__advertising h3 {
+        padding-top: 100px;
+        padding-right: 50px;
+        font-size: 80px;
+    }
+
+    .new__collection__stadistic__numbers__wrap {
+        width: 555px;
+        height: 150px;
+        border-radius: 8px;
+        bottom: 80px;
+    }
+
+    .new__collection__stadistic-numbers .number {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .new__collection__stadistic-numbers .detail {
+        font-size: 18px;
+    }
+*/
+  /* best seller section*/
+  .best__seller-title h2, .best__seller-title .h2 {
+    font-size: 70px; }
+  .best__seller-title p {
+    font-size: 28px; }
+  .best__seller-title .btn {
+    --bs-btn-font-size: 1.5rem;
+    --bs-btn-font-family:"calibri"; }
+  /*  Our products */
+  .our__product__wrap {
+    grid-template-rows: 0.4fr 2fr;
+    justify-items: center; }
+  .our__product__links h3, .our__product__links .h3 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  .our__product__links a {
+    letter-spacing: 4px; }
+  .our__product__cards__wrap {
+    padding: 30px;
+    width: 1400px; }
+  .our__product__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 15px; }
+  /*estilo seccion deal*/
+  .deal__promotion__wrap {
+    padding: 30px; }
+  .deal__promotion__title {
+    width: 700px;
+    align-items: start;
+    padding-left: 200px; }
+  .deal__promotion__title-title {
+    width: 520px; }
+  .deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
+    font-size: 70px; }
+  .deal__promotion__title-title p {
+    padding-bottom: 40px; }
+  .deal__promotion__box {
+    width: 360px; }
+  .deal__promotion__box .deal__promotion__box-box {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 80px;
+    justify-content: center;
+    line-height: 20px; }
+  .deal__promotion__box-box .number {
+    font-weight: 700;
+    font-size: 30px; }
+  .deal__promotion__box-box .time {
+    font-size: 20px; }
+  .deal__promotion-button {
+    margin-top: 40px; }
+  .deal__promotion-button a {
+    padding: 15px;
+    font-size: 20px; }
+  .deal__promotion__wrap img {
+    float: right;
+    height: 500px;
+    width: auto;
+    padding-right: 180px; } }
 
 /* ----   ESTILO PAGINA HOMBRES  ---- */
 .main__man__wrap {
@@ -9124,294 +9243,7 @@ textarea.form-control-lg {
   object-fit: cover;
   object-position: -292px; }
 
-/*  ---   ESTILO KIDS      ----  */
-/*  ---    main section ----*/
-.main__kids__wrap {
-  background-image: url("../asset/img/main_kids.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.main__kids-title {
-  height: 100vmin;
-  background-color: rgba(0, 0, 0, 0.2); }
-
-.main__kids__wrap h1, .main__kids__wrap .h1 {
-  font-size: 60px;
-  font-family: "MADE TOMMY ExtraBold"; }
-
-.main__kids__wrap p {
-  font-size: 30px;
-  font-family: "calibri";
-  font-weight: 400; }
-
-.main__kids__wrap a {
-  font-family: "calibri";
-  font-weight: 700; }
-
-/*        new collection section      */
-.new__collection__kids-title h2, .new__collection__kids-title .h2 {
-  font-family: "MADE TOMMY ExtraBold";
-  font-size: 25px; }
-
-.new__collection__kids-title p {
-  font-family: "calibri";
-  font-size: 18px; }
-
-/*--- best seller section---*/
-.best__seller__kids__wrap {
-  background-color: #A57F6C; }
-
-.best__seller__kids__wrap h2, .best__seller__kids__wrap .h2 {
-  font-family: "MADE TOMMY ExtraBold";
-  color: whitesmoke;
-  font-size: 60px; }
-
-.best__seller__kids-title p {
-  font-family: "calibri";
-  color: whitesmoke;
-  font-size: 25px; }
-
-/*--- deal section---*/
-.deal__kids__wrap {
-  background-color: #1F8963; }
-
-.deal__kids-title h2, .deal__kids-title .h2 {
-  font-family: "MADE TOMMY ExtraBold";
-  font-size: 35px;
-  color: whitesmoke; }
-
-.deal__kids-title h5, .deal__kids-title .h5 {
-  font-family: "MADE TOMMY ExtraBold";
-  margin: 0; }
-
-.deal__kids-detail {
-  color: whitesmoke; }
-
-.card {
-  width: 59px;
-  padding: 0px; }
-
-.card-body {
-  width: 100%;
-  padding: 0px; }
-
-.card-text {
-  font-family: "calibri";
-  font-size: 13px; }
-
-.deal__kids__wrap a {
-  font-family: "calibri"; }
-
-.deal__kids-img {
-  width: 180px;
-  height: auto; }
-
-.deal__kids-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: -260px; }
-
-/* --- ESTILO PAGINA CONTACTO ---*/
-.form__login__wrap {
-  height: 500px;
-  padding-top: 20%;
-  background-color: #1F8963; }
-
-.form__login-button {
-  font-family: "calibri"; }
-
-/* --- formulario de contacto y mapa --*/
-.contact__form__maps {
-  background-color: #1F8963; }
-
-.contact__form__maps .adress {
-  font-family: "calibri";
-  color: whitesmoke;
-  font-size: 18px; }
-
-.adress h2, .adress .h2 {
-  font-weight: 700; }
-
-/* ---  ESTILO UNDER CONSTRUCTION   --- */
-.under__construction__wrap {
-  background: whitesmoke;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 1fr; }
-
-.under__construction-img {
-  width: 320px;
-  height: auto;
-  padding: 15px;
-  margin-top: 100px; }
-
-.under__construction-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.message-construction {
-  width: 310px;
-  height: auto;
-  justify-self: center; }
-
-.message-construction h1, .message-construction .h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-  font-weight: 700; }
-
-.message-construction h2, .message-construction .h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 50px;
-  text-transform: uppercase; }
-
-/*     ==========================================   */
-/*    =====>>>>>>> MEDIDA DESKTOP<<<<<<<==========  */
-/*     ==========================================   */
 @media (min-width: 992px) {
-  /*  ----- ESTILOS DEL HEADER  -----  */
-  .navbar img:hover {
-    transform: rotate(360deg);
-    transition: all 0.5s; }
-  .navbar li a:hover {
-    background-color: #1F8963;
-    border-radius: 5px;
-    font-weight: bold; }
-  /* -----  ESTILOS DEL MAIN  -----  */
-  .main__titulo {
-    top: 10%;
-    width: 600px; }
-  .main__titulo h1, .main__titulo .h1 {
-    color: white;
-    margin-top: 10%;
-    padding-left: 50px;
-    font-size: 800%;
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); }
-  .main__titulo .main__titulo-shopbtn {
-    margin-left: 40px; }
-  .main__titulo-shopbtn a {
-    width: 160px;
-    height: 45px;
-    font-size: 28px; }
-  /* ESTILO PAGINA WOMAN
-       head
-     */
-  .main__woman__wrap {
-    height: 100vh;
-    background-color: #E37C73;
-    display: flex; }
-  .main__woman-title {
-    display: flex;
-    padding-top: 100px;
-    margin-left: 30px;
-    width: 580px; }
-  .main__woman-title h2, .main__woman-title .h2 {
-    font-size: 130px;
-    line-height: 130px; }
-  .main__woman-title p {
-    width: 580px;
-    font-family: "calibri";
-    padding-top: 20px;
-    font-size: 30px; }
-  .main__woman-title .link-shop {
-    margin-top: 20px; }
-  .main__woman-title .link-shop a {
-    padding: 20px 30px; }
-  .main__woman-title .link-shop a:hover {
-    color: #464545;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: whitesmoke; }
-  .main__woman-image img {
-    width: 690px;
-    height: auto;
-    padding-top: 100px;
-    padding-right: 150px; }
-  /* seccion nueva coleccion */
-  
-
-  .new__collection-title .title {
-    font-size: 40px;}
-  .new__collection-title p {
-    font-size: 20px;
- }
-  
-   /*  IMAGEN Y ESTADISTICA*/
-
- 
-
-  /* best seller section*/
-  .best__seller__wrap {
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    padding: 40px 0px 50px 30px; }
-  .best__seller-title {
-    padding-left: 60px; }
-  .best__seller-title p {
-    font-size: 20px; }
-  .best__seller-button {
-    margin-top: 30px; }
-  .best__seller__cards__wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    width: 1050px; }
-  /*  Our products */
-  .our__product__wrap {
-    grid-template-rows: 0.4fr 2fr;
-    justify-items: center; }
-  .our__product__links h3, .our__product__links .h3 {
-    font-size: 40px;
-    letter-spacing: 2px; }
-  .our__product__links a {
-    letter-spacing: 4px; }
-  .our__product__cards__wrap {
-    padding: 30px;
-    width: 1400px; }
-  .our__product__cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 15px; }
-  /*estilo seccion deal*/
-  .deal__promotion__wrap {
-    padding: 30px; }
-  .deal__promotion__title {
-    width: 700px;
-    align-items: start;
-    padding-left: 200px; }
-  .deal__promotion__title-title {
-    width: 520px; }
-  .deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
-    font-size: 70px; }
-  .deal__promotion__title-title p {
-    padding-bottom: 40px; }
-  .deal__promotion__box {
-    width: 360px; }
-  .deal__promotion__box .deal__promotion__box-box {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 80px;
-    justify-content: center;
-    line-height: 20px; }
-  .deal__promotion__box-box .number {
-    font-weight: 700;
-    font-size: 30px; }
-  .deal__promotion__box-box .time {
-    font-size: 20px; }
-  .deal__promotion-button {
-    margin-top: 40px; }
-  .deal__promotion-button a {
-    padding: 15px;
-    font-size: 20px; }
-  .deal__promotion__wrap img {
-    float: right;
-    height: 500px;
-    width: auto;
-    padding-right: 180px; }
   /*   ESTILO PAGINA HOMBRES */
   .main__man__wrap {
     height: 100vh; }
@@ -9558,44 +9390,145 @@ textarea.form-control-lg {
     float: right;
     height: 500px;
     width: auto;
-    padding-right: 10px; }
+    padding-right: 10px; } }
+
+/*-------------------------------*/
+/*  ---   ESTILO KIDS      ----  */
+/*-------------------------------*/
+/*  ---    main section ----*/
+.main__kids__wrap {
+  background-image: url("../asset/img/main_kids.jpg");
+  background-position: center;
+  background-size: cover; }
+  .main__kids__wrap-title {
+    height: 100vmin;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .main__kids__wraph1 {
+    font-size: 60px;
+    font-family: "MADE TOMMY ExtraBold"; }
+  .main__kids__wrapp {
+    font-size: 30px;
+    font-family: "calibri";
+    font-weight: 400; }
+  .main__kids__wrapa {
+    font-family: "calibri";
+    font-weight: 700; }
+
+/*  ---   New collection section  ---  */
+.new__collection__kids-titleh2 {
+  font-family: "MADE TOMMY ExtraBold";
+  font-size: 25px; }
+
+.new__collection__kids-titlep {
+  font-family: "calibri";
+  font-size: 18px; }
+
+/*--- best seller section---*/
+.best__seller__kids__wrap {
+  background-color: #A57F6C; }
+  .best__seller__kids__wraph2 {
+    font-family: "MADE TOMMY ExtraBold";
+    color: whitesmoke;
+    font-size: 60px; }
+  .best__seller__kids__wrap-title p {
+    font-family: "calibri";
+    color: whitesmoke;
+    font-size: 25px; }
+
+/*--- deal section---*/
+.deal__kids__wrap {
+  background-color: #1F8963; }
+  .deal__kids__wrapa {
+    font-family: "calibri"; }
+  .deal__kids__wrap-titleh2 {
+    font-family: "MADE TOMMY ExtraBold";
+    font-size: 35px;
+    color: whitesmoke; }
+  .deal__kids__wrap-titleh5 {
+    font-family: "MADE TOMMY ExtraBold";
+    margin: 0; }
+  .deal__kids__wrap-detail {
+    color: whitesmoke; }
+  .deal__kids__wrap-img {
+    width: 180px;
+    height: auto; }
+    .deal__kids__wrap-imgimg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.card {
+  width: 59px;
+  padding: 0px; }
+  .card.card-body {
+    width: 100%;
+    padding: 0px; }
+    .card.card-body.card-text {
+      font-family: "calibri";
+      font-size: 13px; }
+
+@media (min-width: 992px) {
   /* ---- ESTILO PAGINA KIDS  ----*/
   /*  ---    main section ----*/
-  .main__kids__wrap h1, .main__kids__wrap .h1 {
+  .main__kids__wraph1 {
     font-size: 220px; }
-  .main__kids__wrap p {
+  .main__kids__wrapp {
     font-size: 30px; }
   /*  ---    new collection section ----*/
-  .new__collection__kids-title h2, .new__collection__kids-title .h2 {
+  .new__collection__kids-titleh2 {
     font-size: 40px; }
-  .new__collection__kids-title p {
+  .new__collection__kids-titlep {
     font-size: 20px; }
+  /*  ---  Best seller section  ---  */
   .best__seller__kids__wrap {
     height: 580px; }
-  /*  ---  deal section ----*/
-  .deal__kids-title h2, .deal__kids-title .h2 {
+  /*  ---  Deal section ---  */
+  .deal__kids__wrap-titleh2 {
     font-size: 70px; }
-  .deal__kids-detail {
-    font-size: 18px; }
-  .deal__kids__wrap .card {
-    width: 90px;
-    height: 60px; }
-  .card_wrap {
-    padding-left: 10px; }
-  .deal__kids-title h5, .deal__kids-title .h5 {
+  .deal__kids__wrap-titleh5 {
     font-size: 30px; }
-  .card-text {
-    font-size: 20px; }
-  .deal__kids__wrap a {
+  .deal__kids__wrap-title-detail {
     font-size: 18px; }
-  .deal__kids-img {
+  .deal__kids__wrap-titlea {
+    font-size: 18px; }
+  .deal__kids__wrap-title-img {
     width: 600px;
     height: auto; }
-  .deal__kids-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: 0px; }
+    .deal__kids__wrap-title-imgimg {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: 0px; }
+  .deal__kids__wrap.card_wrap {
+    padding-left: 10px; }
+    .deal__kids__wrap.card_wrap.card {
+      width: 90px;
+      height: 60px; }
+      .deal__kids__wrap.card_wrap.card-text {
+        font-size: 20px; } }
+
+/* --- ESTILO PAGINA CONTACTO ---*/
+.form__login__wrap {
+  height: 500px;
+  padding-top: 20%;
+  background-color: #1F8963; }
+
+.form__login-button {
+  font-family: "calibri"; }
+
+/* --- formulario de contacto y mapa --*/
+.contact__form__maps {
+  background-color: #1F8963; }
+
+.contact__form__maps .adress {
+  font-family: "calibri";
+  color: whitesmoke;
+  font-size: 18px; }
+
+.adress h2, .adress .h2 {
+  font-weight: 700; }
+
+@media (min-width: 992px) {
   /*  ---- ESTILO PAGINA CONTACTO -----  */
   /*  LOG IN  */
   .user {
@@ -9653,7 +9586,43 @@ textarea.form-control-lg {
     background-color: #1F8963; }
   .form__login {
     background-color: whitesmoke;
-    color: #464545; }
+    color: #464545; } }
+
+/* ---  ESTILO UNDER CONSTRUCTION   --- */
+.under__construction__wrap {
+  background: whitesmoke;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr; }
+
+.under__construction-img {
+  width: 320px;
+  height: auto;
+  padding: 15px;
+  margin-top: 100px; }
+
+.under__construction-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.message-construction {
+  width: 310px;
+  height: auto;
+  justify-self: center; }
+
+.message-construction h1, .message-construction .h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 700; }
+
+.message-construction h2, .message-construction .h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 50px;
+  text-transform: uppercase; }
+
+@media (min-width: 992px) {
   /*  ---- ESTILO PAGINA UNDER CONTRUCTION -----  */
   .under__construction__wrap {
     background: whitesmoke;
@@ -9682,3 +9651,60 @@ textarea.form-control-lg {
     font-size: 30px;
     line-height: 50px;
     text-transform: uppercase; } }
+
+/*  -----  ESTILO GENERAL -----*/
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "calibri";
+  src: url("../asset/fonts/calibri.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MADE TOMMY ExtraBold";
+  src: url("../asset/fonts/MADE TOMMY ExtraBold.otf");
+  font-style: normal;
+  font-weight: 700; }
+
+.header {
+  position: absolute;
+  width: 100vw;
+  z-index: 2; }
+
+.navbar {
+  font-family: "calibri";
+  font-size: 20px;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9)); }
+
+/* ----  ESTILO FOOTER  ----  */
+.footer {
+  background: #A57F6C; }
+
+.footer p {
+  font-family: "calibri"; }
+
+.footer .img__footer img {
+  width: 394px;
+  height: 400px;
+  object-fit: contain; }
+
+.social {
+  width: 30px;
+  height: 30px; }
+
+/*     ==========================================   */
+/*    =====>>>>>>> MEDIDA DESKTOP<<<<<<<==========  */
+/*     ==========================================   */
+@media screen and (min-width: 992px) {
+  /*  ----- ESTILOS DEL HEADER  -----  */
+  .navbar img:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s; }
+  .navbar li a:hover {
+    background-color: #1F8963;
+    border-radius: 5px;
+    font-weight: bold; } }

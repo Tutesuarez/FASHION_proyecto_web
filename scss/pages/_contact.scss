@@ -1,0 +1,111 @@
+
+/* --- ESTILO PAGINA CONTACTO ---*/
+.form__login__wrap {
+    height: 500px;
+    padding-top: 20%;
+    background-color: #1F8963;
+}
+
+.form__login-button {
+    font-family: "calibri";
+}
+
+/* --- formulario de contacto y mapa --*/
+.contact__form__maps {
+    background-color: #1F8963;
+}
+
+.contact__form__maps .adress {
+    font-family: "calibri";
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.adress h2 {
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+     /*  ---- ESTILO PAGINA CONTACTO -----  */
+    /*  LOG IN  */
+
+    .user {
+        height: 100vh;
+        background-color: #DFB7AF;
+    }
+
+    .user__form__wrap {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 580px;
+        width: 343px;
+        height: 250px;
+        background-color: #FBDA97;
+        border-radius: 15px;
+    }
+
+    .user__form__wrap .user__form-title {
+        font-family: "calibri";
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: rgb(70, 69, 69);
+    }
+
+    .user__form__wrap ul {
+        margin-top: 15px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+
+    .user__form__wrap ul li {
+        padding: 3px;
+    }
+
+    .user__form__only ul input {
+        text-align: center;
+        border-style: none;
+        border-radius: 15px;
+        height: 30px;
+        width: 220px;
+    }
+
+    .user__form__only .button {
+        height: 25px;
+        width: 75px;
+        text-align: center;
+        border-style: none;
+        border-radius: 15px;
+        margin-left: 137px;
+        background-color: #1F8963;
+        color: white;
+    }
+
+    .user__form__only .button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .user__form__wrap .account {
+        position: absolute;
+        padding-left: 100px;
+        padding-top: 15px;
+        text-decoration: none;
+        font-size: 15px;
+        color: brown;
+    }
+
+    /*  CONTACTO   */
+    .form__login__wrap {
+        height: 100vh;
+        padding-top: 10%;
+        background-color: #1F8963;
+    }
+
+    .form__login {
+        background-color: whitesmoke;
+        color: rgb(70, 69, 69);
+    }
+
+
+}

@@ -1,0 +1,85 @@
+
+/* ---  ESTILO UNDER CONSTRUCTION   --- */
+
+.under__construction__wrap {
+    background: whitesmoke;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.under__construction-img {
+    width: 320px;
+    height: auto;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.under__construction-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-construction {
+    width: 310px;
+    height: auto;
+    justify-self: center;
+}
+
+.message-construction h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.message-construction h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+     
+    /*  ---- ESTILO PAGINA UNDER CONTRUCTION -----  */
+
+    .under__construction__wrap {
+        background: whitesmoke;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .under__construction-img {
+        width: 600px;
+        height: auto;
+        padding: 30px;
+        transform: skewY(5deg);
+    }
+
+    .under__construction-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .message-construction {
+        width: 700px;
+        justify-self: start;
+    }
+
+    .message-construction h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    .message-construction h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+}
