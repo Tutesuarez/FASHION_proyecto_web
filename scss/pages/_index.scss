@@ -1,3 +1,18 @@
+
+
+
+.header {
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+}
+
+.navbar {
+    font-family: "calibri";
+    font-size: 20px;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9));
+}
+
 /* ---->  ESTILO MAIN  <---- */
 
 .main__main {
@@ -70,6 +85,27 @@
     color: rgb(70, 69, 69);
 }
 
+/* ----  ESTILO FOOTER  ----  */
+.footer {
+    background: #A57F6C;
+}
+
+.footer p {
+    font-family: "calibri";
+}
+
+.footer .img__footer img {
+
+    width: 394px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (min-width:992px) {
     /* -----  ESTILOS DEL MAIN  -----  */
 
@@ -95,5 +131,19 @@
         height: 45px;
         font-size: 28px;
     }
+
+     /*  ----- ESTILOS DEL HEADER  -----  */
+
+     .navbar img:hover{
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+
+    .navbar li a:hover {
+        background-color: #1F8963;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
 
 }
