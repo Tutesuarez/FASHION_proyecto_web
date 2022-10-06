@@ -8546,26 +8546,30 @@ textarea.form-control-lg {
 .new__collection__stadistic__wrap {
   background-color: #fcfcfc; }
 
+.new__collection__stadistic__numbers__wrap {
+  background-color: #ebebeb; }
+
+.new__collection-image .img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
 .new__collection__advertising h3, .new__collection__advertising .h3 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 25px;
-  color: #464545; }
-
-.new__collection__stadistic__numbers__wrap {
-  width: 270px;
-  height: 80px;
-  background-color: whitesmoke; }
+  color: #464545;
+  margin: 0 !important; }
 
 .new__collection__stadistic-numbers {
   font-family: "calibri";
-  color: #464545; }
-
-.new__collection__stadistic-numbers .number {
-  font-weight: 700;
-  font-size: 18px; }
-
-.new__collection__stadistic-numbers .detail {
-  font-size: 16px; }
+  color: #464545;
+  max-width: 80px; }
+  .new__collection__stadistic-numbers .number {
+    font-size: 17px;
+    margin: 0; }
+  .new__collection__stadistic-numbers .detail {
+    font-size: 14px;
+    margin: 0; }
 
 /* best seller section*/
 .best__seller__wrap {
@@ -8654,47 +8658,25 @@ textarea.form-control-lg {
   .new__collection-title p {
     font-size: 20px; }
   /*  IMAGEN Y ESTADISTICA*/
-  /*
-    .new__collection__stadistic__wrap {
-        height: 100vh;
-        padding: 30px;
-    }
-
-    .new__collection-stadistic {
-        padding-left: 100px;
-    }
-
-    .new__collection-stadistic .new__collection-image {
-        width: 611px;
-    }
-
-    .new__collection__advertising {
-        width: 600px;
-        height: 100px;
-    }
-
-    .new__collection__advertising h3 {
-        padding-top: 100px;
-        padding-right: 50px;
-        font-size: 80px;
-    }
-
-    .new__collection__stadistic__numbers__wrap {
-        width: 555px;
-        height: 150px;
-        border-radius: 8px;
-        bottom: 80px;
-    }
-
+  .new__collection__stadistic__wrap {
+    background-color: #fcfcfc; }
+  .new__collection__stadistic__numbers__wrap {
+    background-color: #ebebeb; }
+  .new__collection-image .img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain; }
+  .new__collection__advertising h3, .new__collection__advertising .h3 {
+    font-size: 100px; }
+  .new__collection__stadistic-numbers {
+    max-width: 230px;
+    padding: 10px !important; }
     .new__collection__stadistic-numbers .number {
-        font-weight: 700;
-        font-size: 40px;
-    }
-
+      font-size: 60px;
+      margin: 0; }
     .new__collection__stadistic-numbers .detail {
-        font-size: 18px;
-    }
-*/
+      font-size: 25px;
+      margin: 0; }
   /* best seller section*/
   .best__seller-title h2, .best__seller-title .h2 {
     font-size: 70px; }

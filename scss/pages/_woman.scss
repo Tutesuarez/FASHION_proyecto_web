@@ -56,42 +56,51 @@
 }
 
 /*  IMAGEN Y ESTADISTICA*/
-
-
-
-.new__collection__stadistic__wrap {
-    background-color: rgb(252, 252, 252);
+.new__collection{
+    &__stadistic{
+    &__wrap {
+        background-color: rgb(252, 252, 252);
+    }
+    &__numbers__wrap {
+        background-color:rgb(235, 235, 235);
+    }
+    }
+    &-image{ 
+        .img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
-
-.new__collection__advertising h3 {
-    font-family: "MADE TOMMY ExtraBold";
-    font-size: 25px;
-    color: rgb(70, 69, 69);
+    &__advertising{ 
+        h3 {
+        font-family: "MADE TOMMY ExtraBold";
+        font-size: 25px;
+        color: rgb(70, 69, 69);
+        margin: 0!important;
+    }
 }
-
-.new__collection__stadistic__numbers__wrap {
-    width: 270px;
-    height: 80px;
-    background-color: whitesmoke;
+    &__stadistic{
+    &-numbers {
+        font-family: "calibri";
+        color: rgb(70, 69, 69);
+        max-width: 80px;
+   
+        .number {
+            font-size: 17px;
+             margin: 0;
+        }
+        .detail {
+            font-size: 14px;
+            margin: 0;
+        
+        }
+    }
 }
+} 
 
-
-.new__collection__stadistic-numbers {
-    font-family: "calibri";
-    color: rgb(70, 69, 69);
-}
-
-.new__collection__stadistic-numbers .number {
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.new__collection__stadistic-numbers .detail {
-    font-size: 16px;
-}
 
 /* best seller section*/
-
 .best__seller{
         &__wrap {
             background-color: #A57F6C;
@@ -228,47 +237,44 @@
 
 
      /*  IMAGEN Y ESTADISTICA*/
-/*
-    .new__collection__stadistic__wrap {
-        height: 100vh;
-        padding: 30px;
+     .new__collection{
+        &__stadistic{
+        &__wrap {
+            background-color: rgb(252, 252, 252);
+        }
+        &__numbers__wrap {
+            background-color:rgb(235, 235, 235);
+        }
+        }
+        &-image{ 
+            .img{
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
     }
-
-    .new__collection-stadistic {
-        padding-left: 100px;
+        &__advertising{ 
+            h3 {
+            font-size: 100px;
+        }
     }
-
-    .new__collection-stadistic .new__collection-image {
-        width: 611px;
+        &__stadistic{
+        &-numbers {
+            max-width: 230px;
+            padding: 10px !important;
+       
+            .number {
+                font-size: 60px;
+                 margin: 0;
+            }
+            .detail {
+                font-size: 25px;
+                margin: 0;
+            
+            }
+        }
     }
-
-    .new__collection__advertising {
-        width: 600px;
-        height: 100px;
-    }
-
-    .new__collection__advertising h3 {
-        padding-top: 100px;
-        padding-right: 50px;
-        font-size: 80px;
-    }
-
-    .new__collection__stadistic__numbers__wrap {
-        width: 555px;
-        height: 150px;
-        border-radius: 8px;
-        bottom: 80px;
-    }
-
-    .new__collection__stadistic-numbers .number {
-        font-weight: 700;
-        font-size: 40px;
-    }
-
-    .new__collection__stadistic-numbers .detail {
-        font-size: 18px;
-    }
-*/
+    } 
 
     /* best seller section*/
     .best__seller-title {        
