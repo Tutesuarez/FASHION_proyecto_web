@@ -1,6 +1,3 @@
-
-
-
 .header {
     position: absolute;
     width: 100vw;
@@ -15,90 +12,85 @@
 
 /* ---->  ESTILO MAIN  <---- */
 
-.main__main {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.main {
+    &__wrap {
+        position: relative;
+        height: 100vh;
+    }
+
+    &__title {
+        h1 {
+            font-family: "MADE TOMMY ExtraBold";
+            font-size: 50px;
+            color: whitesmoke;
+            line-height: 75px;
+            text-shadow: black;
+        }
+
+        a {
+            font-size: 16px;
+            font-family: "calibri";
+        }
+    }
+
+    &__video {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        video {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+            filter: sepia(0.2);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
 }
 
-.main__main__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.main__main__video video {
-    min-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: sepia(0.2);
-}
-
-.main__main__video::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.main__main__title h1 {
-    font-family: "MADE TOMMY ExtraBold";
-    text-align: left;
-    padding-left: 20px;
-    margin-bottom: 15px;
-    font-size: 400%;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
-}
-
-.main__main__title-shopbtn a {
-    font-family: "calibri";
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(37, 37, 37);
-    font-size: 22px;
-    width: 120px;
-    height: 45px;
-    margin-left: 25px;
-    padding: 9px 15px;
-    border-radius: 10px;
-    background: #1F8963;
-    color: whitesmoke;
-}
-
-.main__main__title-shopbtn a:hover {
-    background: whitesmoke;
-    color: rgb(70, 69, 69);
-}
 
 /* ----  ESTILO FOOTER  ----  */
 .footer {
-    background: #A57F6C;
-}
+    &__wrap {
+        background: #a57f6c;
+    }
 
-.footer p {
-    font-family: "calibri";
-}
+    &__img {
+        img {
+            width: 394px;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
 
-.footer .img__footer img {
+    p {
+        font-family: "calibri";
+    }
 
-    width: 394px;
-    height: 400px;
-    object-fit: contain;
+    &__titles {
+        font-size: 18px;
+    }
+
+    &__coment {
+        color: whitesmoke;
+    }
 }
 
 .social {
@@ -106,44 +98,107 @@
     height: 30px;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
+
     /* -----  ESTILOS DEL MAIN  -----  */
+    .main {
+        &__title {
+            h1 {
+                font-size: 130px;
+                line-height: 120px;
+            }
 
-    .main__titulo {
-        top: 10%;
-        width: 600px;
+            a {
+                font-size: 25px;
+                font-family: "calibri";
+            }
+        }
     }
 
-    .main__titulo h1 {
-        color: rgb(255, 255, 255);
-        margin-top: 10%;
-        padding-left: 50px;
-        font-size: 800%;
-        text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+    .carousel {
+        &-item {
+            h2 {
+                font-family: "MADE TOMMY ExtraBold";
+                font-size: 40px;
+                color: rgb(70, 69, 69);
+            }
+        }
+
     }
 
-    .main__titulo .main__titulo-shopbtn {
-        margin-left: 40px;
+    /* seccion nueva*/
+    .homePageExtraInfoCont {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 1495px;
+        height: 3.364rem;
+        margin-top: 3vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .main__titulo-shopbtn a {
-        width: 160px;
-        height: 45px;
-        font-size: 28px;
+    .homePageExtraInfo {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100% !important;
+        height: 100%;
+        margin: auto;
     }
 
-     /*  ----- ESTILOS DEL HEADER  -----  */
+    .homePageExtraInfo a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: auto;
+        height: 100%;
+        color: #404040;
+        text-decoration: none;
+        font-size: 11px;
+    }
 
-     .navbar img:hover{
+    a span:last-child {
+        margin-left: 0.5rem;
+        padding-left: 0.34rem;
+        border-left: 1px solid #000000;
+        font-size: 13px;
+        line-height: 1.503rem;
+        letter-spacing: 0.5px;
+    }
+
+    .loaded {
+        padding-left: 20px;
+    }
+
+    .last__span {
+        width: 240px;
+    }
+
+    .carousel {
+        &__wrap {
+            max-width: 1500px !important;
+        }
+
+        &-item {
+            h1 {
+                max-width: 600px;
+                font-size: 60px;
+                line-height: 80px;
+                padding-left: 190px;
+            }
+        }
+    }
+
+    /*  ----- ESTILOS DEL HEADER  -----  */
+
+    .navbar img:hover {
         transform: rotate(360deg);
         transition: all 0.5s;
     }
 
     .navbar li a:hover {
-        background-color: #1F8963;
+        background-color: #1f8963;
         border-radius: 5px;
         font-weight: bold;
     }
-
-
 }

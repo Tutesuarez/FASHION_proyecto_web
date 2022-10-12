@@ -4,50 +4,59 @@
 
 /*  ---    main section ----*/
 
-.main__kids{
+.main__kids {
     &__wrap {
-    background-image: url('../asset/img/main_kids.jpg');
-    background-position: center;
-    background-size: cover;
+        background-image: url('../asset/img/fondo-kid.png');
+        background-position: center;
+        background-size: cover;
 
-    h1{
-        font-size: 60px;
-        font-family: "MADE TOMMY ExtraBold";
+        h1 {
+            font-size: 60px;
+            font-family: "MADE TOMMY ExtraBold";
+            text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+            line-height: 181px;
+        }
+
+        p {
+            font-size: 30px;
+            font-family: "calibri";
+            font-weight: 400;
+            color: white;
+        }
+
+        a {
+            font-family: "calibri";
+            font-weight: 700;
+        }
     }
-    
-    p{
-        font-size: 30px;
-        font-family: "calibri";
-        font-weight: 400;
-    }
-    a {
-        font-family: "calibri";
-        font-weight: 700;
-    }
-}
+
     &-title {
         height: 100vmin;
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
-    
+
 
 
 /*  ---   New collection section  ---  */
 
-.new__collection__kids{
-    &-title{ 
+.new__collection__kids {
+    &-title {
         h2 {
-        font-family: "MADE TOMMY ExtraBold";
-        font-size: 25px;
+            font-family: "MADE TOMMY ExtraBold";
+            font-size: 25px;
         }
+
         p {
-        font-family: "calibri";
-        font-size: 18px;
+            font-family: "calibri";
+            font-size: 18px;
         }
     }
-    &__wrap{
-        .card{
+
+    &__wrap {
+        background-color: whitesmoke;
+
+        .card {
             width: 320px !important;
             height: auto;
         }
@@ -56,25 +65,31 @@
 
 /*--- best seller section---*/
 
-.best__seller__kids{ 
+.best__seller__kids {
     &__wrap {
-    background-color: #A57F6C;
+        background-color: #A57F6C;
     }
-    
-    &-title{
+
+    &-title {
         h2 {
             font-family: "MADE TOMMY ExtraBold";
             color: whitesmoke;
             font-size: 40px;
-        } 
+        }
+
         p {
-        font-family: "calibri";
-        color: whitesmoke;
-        font-size: 25px;
+            font-family: "calibri";
+            color: whitesmoke;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 20px;
         }
     }
-    &-items{
-        .card{
+
+    &-items {
+        .card {
             width: 280px !important;
             height: auto;
         }
@@ -85,25 +100,30 @@
 
 /*--- deal section---*/
 
-.deal__kids{
+.deal__kids {
     &__wrap {
-    background-color: #1F8963;
-    a {
-        font-family: "calibri";
+        background-color: #1F8963;
+
+        a {
+            font-family: "calibri";
+        }
     }
-   }
-    &-title{
-         h2 {
+
+    &-title {
+        h2 {
             font-family: "MADE TOMMY ExtraBold";
             font-size: 35px;
             color: whitesmoke;
         }
+
         h5 {
             font-family: "MADE TOMMY ExtraBold";
             margin: 0;
         }
-        p{
+
+        p {
             font-family: "calibri";
+            font-size: 15px;
             margin: 0;
         }
 
@@ -121,117 +141,138 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            object-position: -250px;
+            object-position: -220px;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
         }
     }
 }
-.deal__kids__card__wrap{
+
+.deal__kids__card__wrap {
     .card {
         width: 59px;
         padding: 0px;
-    
-        .card-body {
+
+        &-body {
             width: 100%;
             padding: 0px;
-    
-            .card-text {
+
+            .number {
+                font-size: 20px;
+            }
+
+            &-text {
                 font-family: "calibri";
                 font-size: 13px;
+                line-height: 3px;
             }
         }
     }
 }
 
-@media screen and (min-width: 992px){
-    
+@media screen and (min-width: 992px) {
+
     /* ---- ESTILO PAGINA KIDS  ----*/
     /*  ---    main section ----*/
-    .main__kids__wrap{
+    .main__kids__wrap {
         h1 {
-        font-size: 220px;
-    }
+            font-size: 220px;
+        }
+
         p {
             font-size: 30px;
         }
 
-        a{
+        a {
             font-size: 25px;
         }
     }
 
     /*  ---    new collection section ----*/
 
-    .new__collection__kids-title{ 
+    .new__collection__kids-title {
         h2 {
             font-size: 40px;
-    }
+        }
+
         p {
             font-size: 20px;
-    }
-}
-
-/*  ---  Best seller section  ---  */
-
-    .best__seller__kids{ 
-        &__wrap {
-        height: 580px;
-        background-color: #A57F6C;
         }
-        
-        &-title{
+    }
+
+    /*  ---  Best seller section  ---  */
+
+    .best__seller__kids {
+        &__wrap {
+            height: 580px;
+            background-color: #A57F6C;
+        }
+
+        &-title {
             h2 {
                 font-size: 60px;
-            } 
+            }
+
             p {
-            font-size: 25px;
+                font-size: 25px;
             }
-            a{
-            font-size:20px ;
+
+            a {
+                font-size: 20px;
             }
-        }    
+        }
     }
 
 
     /*  ---  Deal section ---  */
 
-    .deal__kids{ 
-        &-title{ 
+    .deal__kids {
+        &-title {
             h2 {
                 font-size: 70px;
             }
+
             h5 {
                 font-size: 30px;
             }
-        &-detail {
-            font-size: 18px;
-        }
-        a {
-            font-size: 18px;
-        }
-    }
-         
-    &__card__wrap{
-        padding-left: 10px;
-        
-        .card {
-            width: 90px !important;
-            height: 60px;
 
-            &-text {
-                font-size: 20px;
+            &-detail {
+                font-size: 18px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+
+        &__card__wrap {
+            padding-left: 10px;
+
+            .card {
+                width: 90px !important;
+
+                .number {
+                    font-size: 25px;
+                }
+
+                &-text {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-img {
+            width: 600px;
+            height: auto;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: 0px;
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
             }
         }
     }
-    &-img {
-        width: 600px;
-        height: auto;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            object-position: 0px;
-        }
-    }
-}
 }

@@ -1,10 +1,3 @@
-<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-   /// - Se realizo con Bosstrap la Barra de navegacion, el Footer, la pagina kids.html y la pagina contact.html.///
-   /// - Animacion en el logo de la marca.                                                                       ///
-   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="clothing, coat, jacket, t-shirt, shirt, jean, shoes, sneakers, sunglasses, hats, jewelry, men, women, children, buso, hoodie, socks, discount, promo, makeup, perfume, belts, suits, dresses, caps, Watches, wallets, accesories, fashion">
+    <meta name="description" content="Fashion, online clothing store leader in the market. Make a sartorial statement with your stylish suits. From suits to sportswear, browse online & shop now. Access the best seasonal discounts and stay in fashion.">
     <link rel="shortcut icon" href="asset/img/favicon_FASHION.svg">
     <!-- CSS only boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,7 +24,7 @@
             <div class="container-fluid ">
                 <a class="navbar-brand ps-3" href="index.html"><img src="asset/img/LOGO.svg" alt="logo"
                         class="d-inline-block align-top"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +53,7 @@
                                     src="asset/img/001-comprar.png" alt="carrito-compra"></a>
                         </li>
                         <li class="nav-item">
-                            <a class=" nav-link text-white me-3" aria-current="page" href="contact.html">Login</a>
+                            <a class=" nav-link text-white me-3" aria-current="page" href="contact.html#login">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -69,27 +64,108 @@
     <!--SECCION MAIN-->
 
     <main>
-        <div class="main__main">
-            <div class="main__main__title">
-                <h1>Find The Best For You</h1>
-                <div class="main__main__title-shopbtn">
-                    <a href="woman.html">Shop Now</a>
+        <div class="main__wrap">
+            <div class="row container-fluid d-flex align-content-center h-100 p-0 m-0">
+                <div class="main__title col-8 col-md-6">
+                    <h1 class="ps-3">Find The Best For You</h1>
+                    <div class="main__title-shopbtn mt-4">
+                        <a class="btn btn-success ms-4 fw-bold" href="woman.html">Go to Shop</a>
+                    </div>
                 </div>
-            </div>
-            <div class="main__main__video">
-                <video src="asset/img/Videohombre.mp4" type="video/mp4" preload="auto" autoplay loop>
-                </video>
+                <div class="main__video col-12 p-0">
+                    <video src="asset/img/Videohombre.mp4" type="video/mp4" preload="auto" autoplay loop
+                        poster="asset/img/poster_main.png">
+                    </video>
+                </div>
             </div>
         </div>
     </main>
 
+    <section class="carousel__wrap container py-2 py-md-5 mt-md-5">
+        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item  active d-flex flex-row  align-items-center ">
+                    <h1 class="d-block position-absolute"> The best for this SEASON</h1>
+                    <img src="asset/img/slide01.png" class="d-block w-100" alt="Hombre posando">
+                </div>
+                <div class="carousel-item d-flex flex-row align-items-center justify-content-end">
+                    <div class="carousel-discount position-absolute ">
+                    <h2>50% OFF</h2>
+                    <p>on selected items</p>
+                    </div>
+                    <img src="asset/img/slide02.png" class="d-block w-100" alt="Mujer posando">
+                </div>
+                <div class="carousel-item">
+                    <h1 class=" position-absolute"> for you and them</h1>
+                    <img src="asset/img/slide03.png" class="d-block w-100" alt="niño posando">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="homePageExtraInfoCont py-5 d-none d-lg-block">
+            <div class="homePageExtraInfo">
+                <!-- ICONO-1 -->
+                <a  class="" href="inconstruction.html">
+                    <span style="height: 100%; display:flex; flex-flow: column; justify-content: center;"
+                        class="__web-inspector-hide-shortcut__"><img alt="Devolución icon" style="height: 2.727rem;"
+                            src="asset/img/DEVOLUCION-22-10-19.png" class="loaded"></span>
+                    <span> <b>RETURNS & EXCHANGES</b><br>FREE, NATIONWIDE </span>
+                </a>
+
+                <!-- ICONO-2 -->
+                <a href="inconstruction.html">
+                    <span style="height:  2.727rem;"><img alt="App icon" src="asset/img/DFTAPP-22-10-19.png"
+                            class="loaded"></span>
+                    <span><b>DOWNLOAD OUR APP</b><br> ANDROID &amp; IOS</span>
+                </a>
+
+                <!-- ICONO-3 -->
+                <a href="inconstruction.html">
+                    <span style="height: 100%;display: flex;flex-flow: column;justify-content: center;"><img
+                            alt="Envío icon" style="height: 2.727rem;" src="asset/img/1767bb4411226__MARCAS.png"
+                            class="loaded"></span>
+                    <span > <b>MORE THAN 500 BRANDS</b><br> LOCAL AND INTERNATIONAL</span>
+                </a>
+
+
+                <!-- ICONO-4 -->
+                <a href="inconstruction.html">
+                    <span style="height: 100%;display: flex;flex-flow: column;justify-content: center;"><img
+                            alt="Envío icon" style="height: 2.727rem;" src="asset/img/16b02a87cb6f__FINANACIAMIENTO.png"
+                            class="loaded"></span>
+                    <span> <b>MULTIPLE PAYMENT METHOD</b></span>
+                </a>
+
+
+                <!-- ICONO-5 -->
+                <a href="inconstruction.html">
+                    <span style="height: 100%;display: flex;flex-flow: column;justify-content: center;"><img
+                            alt="Envío icon" style="height: 2.727rem;" src="asset/img/f94d780b5cae__FORMASPAGO.png "
+                            class="loaded"></span>
+                    <span class="last__span">
+                        <b>FINANCING</b><br>
+                        3 Y 6 INSTALLMENTS WITHOUT INTEREST</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- INICIO FOOTER-->
 
-    <footer class="footer container-fluid">
+    <footer class="footer__wrap container-fluid">
         <div class="container-fluid p-3 pt-md-5 justify-content-center">
             <div class="row justify-content-center">
-                <div class="img__footer d-none d-sm-none d-md-block col-md-4">
+                <div class="footer__img d-none d-sm-none d-md-block col-md-4">
                     <img class="rounded-1" src="asset/img/mujer con flor.svg" alt="niña saltando">
                 </div>
                 <div class="col-12 col-md-6">
@@ -100,7 +176,7 @@
                             <span class="input-group-text" id="basic-addon2">Suscribe Now!</span>
                         </div>
                         <div class="text-center">
-                            <p class="pt-1 ">Get all our offers before anyone else</p>
+                            <p class="footer__coment pt-1 ">Get all our offers before anyone else</p>
                         </div>
                     </div>
                     <div
@@ -108,67 +184,67 @@
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
-                                    <p class="fw-bold mb-0">Woman</p>
+                                    <p class="footer__titles fw-bold mb-0">Woman</p>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                <li> <a href="woman.html#new_collection" class="text-reset text-decoration-none">New
                                         Collection</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                <li> <a href="woman.html#best_seller" class="text-reset text-decoration-none">Best
                                         Seller</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Our
+                                <li> <a href="woman.html#our_products" class="text-reset text-decoration-none">Our
                                         Products</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                <li> <a href="woman.html#deal" class="text-reset text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
-                                    <p class="fw-bold mb-0">Mens</p>
+                                    <p class="footer__titles  fw-bold mb-0">Mens</p>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                <li> <a href="man.html#man_new_collection" class="text-reset text-decoration-none">New
                                         Collection</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                <li> <a href="man.html#man_best_seller" class="text-reset text-decoration-none">Best
                                         Seller</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Our
+                                <li> <a href="man.html#man_our_products" class="text-reset text-decoration-none">Our
                                         Products</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                <li> <a href="man.html#man_deal" class="text-reset text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
-                                    <p class="fw-bold mb-0">Kids</p>
+                                    <p class="footer__titles  fw-bold mb-0">Kids</p>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">New
+                                <li> <a href="kids.html#kids_new_collection" class="text-reset text-decoration-none">New
                                         Collection</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Best
+                                <li> <a href="kids.html#kids_best_seller" class="text-reset text-decoration-none">Best
                                         Seller</a></li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Deals</a>
+                                <li> <a href="kids.html#kids_deals" class="text-reset text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
-                                    <p class="fw-bold mb-0">Contact</p>
+                                    <p class="footer__titles fw-bold mb-0">Contact</p>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Login</a>
+                                <li> <a href="contact.html#login" class="text-reset text-decoration-none">Login</a>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Adress</a>
+                                <li> <a href="contact.html#maps" class="text-reset text-decoration-none">Adress</a>
                                 </li>
-                                <li> <a href="inconstruction.html" class="text-reset text-decoration-none">Cotact us</a>
+                                <li> <a href="contact.html#contact" class="text-reset text-decoration-none">Cotact us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row pt-2">
                         <div class="col-8 col-md-10 ">
-                            <p class="">All rigths reserved 2022</p>
+                            <p>All rigths reserved 2022</p>
                         </div>
                         <div class="col-4 col-md-2 ">
-                            <a href="https://www.facebook.com/"><img src="asset/img/facebook.png" class="social"></a>
-                            <a href="https://www.instagram.com/"><img src="asset/img/instagram.png" class="social"></a>
+                            <a href="https://www.facebook.com/"><img src="asset/img/facebook.png" class="social" alt="icono-facebook"></a>
+                            <a href="https://www.instagram.com/"><img src="asset/img/instagram.png" class="social" alt="icono-instagram"></a>
                         </div>
                     </div>
                 </div>
