@@ -1,9 +1,14 @@
 
+@import "./complements/variables";
 // Include any default variable overrides here (though functions won't be available)
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 // Then add additional custom code here
-
-
+@import "./complements/funtions";
+@import "./complements/buttons";
+@import "./complements/fonts";
+@import "./Components/footer";
+@import "./Components/navbar";
 @import "./pages/index";
 @import "./pages/woman";
 @import "./pages/man";
@@ -19,17 +24,5 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "calibri";
-    src: url("../asset/fonts/calibri.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
 
-@font-face {
-    font-family: "MADE TOMMY ExtraBold";
-    src: url("../asset/fonts/MADE\ TOMMY\ ExtraBold.otf");
-    font-style: normal;
-    font-weight: 700;
-}
 

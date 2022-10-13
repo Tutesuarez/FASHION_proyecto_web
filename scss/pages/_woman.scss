@@ -1,4 +1,6 @@
 /*----  ESTILO WOMAN  ----  */
+
+
 /*  main section  */
 .main__woman {
     &__wrap {
@@ -116,7 +118,7 @@
 /* best seller section*/
 .best__seller {
     &__wrap {
-        background-color: #A57F6C;
+        background-color: #745a4d;
     }
 
     &-items {
@@ -228,12 +230,8 @@
         height: auto;
 
         img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            @include radio(40px, 40px);
             object-position: -70px;
-            border-top-left-radius: 40px;
-            border-bottom-right-radius: 40px;
         }
     }
 }
@@ -381,12 +379,8 @@
             height: 600px;
 
             img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
+                @include radio(100px,100px);
                 object-position: 0px;
-                border-top-left-radius: 100px;
-                border-bottom-right-radius: 100px;
             }
         }
     }

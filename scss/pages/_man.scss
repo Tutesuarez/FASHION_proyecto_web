@@ -2,7 +2,7 @@
 
 .man__main {
     &__wrap {
-        background-image: url("../../asset/img/fondo-hombre.png");
+        background-image: url("../asset/img/fondo-hombre.png");
         background-position: center;
         background-size: cover;
     }
@@ -122,7 +122,7 @@
 /* best seller section*/
 .man__best__seller {
     &__wrap {
-        background-color: #a57f6c;
+        background-color: #745a4d;
     }
 
     &-items {
@@ -237,12 +237,8 @@
         height: auto;
 
         img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            @include radio(40px, 40px);
             object-position: -100px;
-            border-top-left-radius: 40px;
-            border-bottom-right-radius: 40px;
         }
     }
 }
@@ -385,12 +381,8 @@
             height: 600px;
 
             img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
+                @include radio(100px, 100px);
                 object-position: 0px;
-                border-top-left-radius: 100px;
-                border-bottom-right-radius: 100px;
             }
         }
     }

@@ -1,0 +1,12 @@
+
+// Modificador de radios de una imagen incrustada.
+@mixin radio($radius,$radius2) {
+    border-top-left-radius:$radius;
+    border-bottom-right-radius: $radius2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+

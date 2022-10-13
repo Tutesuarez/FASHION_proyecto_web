@@ -1,0 +1,37 @@
+/* ----  ESTILO FOOTER  ----  */
+.footer {
+    &__wrap {
+        background: #745a4d;
+        p{
+            color:whitesmoke;
+        }
+        a{
+            color: whitesmoke;
+        }
+    }
+
+    &__img {
+        img {
+            width: 394px;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
+
+    p {
+        font-family: "calibri";
+        color: whitesmoke;
+    }
+
+    &__titles {
+        font-size: 18px;
+        color: whitesmoke;
+       
+    
+    }
+
+    &__coment {
+        color: whitesmoke;
+    }
+}
+

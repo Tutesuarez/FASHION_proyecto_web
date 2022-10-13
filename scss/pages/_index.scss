@@ -1,15 +1,3 @@
-.header {
-    position: absolute;
-    width: 100vw;
-    z-index: 2;
-}
-
-.navbar {
-    font-family: "calibri";
-    font-size: 20px;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9));
-}
-
 /* ---->  ESTILO MAIN  <---- */
 
 .main {
@@ -21,7 +9,7 @@
     &__title {
         h1 {
             font-family: "MADE TOMMY ExtraBold";
-            font-size: 50px;
+            font-size: 45px;
             color: whitesmoke;
             line-height: 75px;
             text-shadow: black;
@@ -30,6 +18,7 @@
         a {
             font-size: 16px;
             font-family: "calibri";
+
         }
     }
 
@@ -65,44 +54,33 @@
     }
 }
 
-
-/* ----  ESTILO FOOTER  ----  */
-.footer {
-    &__wrap {
-        background: #a57f6c;
-    }
-
-    &__img {
-        img {
-            width: 394px;
-            height: 400px;
-            object-fit: contain;
+.carousel {
+    &-item {
+        h2 {
+            font-family: "MADE TOMMY ExtraBold";
+            font-size: 20px;
+            color: rgb(70, 69, 69);
+            
+        }
+        p{
+            font-family: 'calibri';
+            font-size: 14px;
+        }
+        .text-kid{
+            font-size: 16px;
         }
     }
-
-    p {
-        font-family: "calibri";
-    }
-
-    &__titles {
-        font-size: 18px;
-    }
-
-    &__coment {
-        color: whitesmoke;
-    }
 }
 
-.social {
-    width: 30px;
-    height: 30px;
-}
+
+
 
 @media screen and (min-width: 992px) {
 
     /* -----  ESTILOS DEL MAIN  -----  */
     .main {
         &__title {
+
             h1 {
                 font-size: 130px;
                 line-height: 120px;
@@ -114,91 +92,76 @@
             }
         }
     }
-
-    .carousel {
-        &-item {
-            h2 {
-                font-family: "MADE TOMMY ExtraBold";
-                font-size: 40px;
-                color: rgb(70, 69, 69);
-            }
-        }
-
-    }
+    
 
     /* seccion nueva*/
-    .homePageExtraInfoCont {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 1495px;
-        height: 3.364rem;
-        margin-top: 3vw;
-        margin-left: auto;
-        margin-right: auto;
+    .homePageExtra {
+        &__Info {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            width: 100% !important;
+            height: 100%;
+            margin: auto;
+
+            a {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                width: auto;
+                height: 100%;
+                color: #404040;
+                text-decoration: none;
+                font-size: 11px;
+
+                span:last-child {
+                    margin-left: 0.5rem;
+                    padding-left: 0.34rem;
+                    border-left: 1px solid #000000;
+                    font-size: 13px;
+                    line-height: 1.503rem;
+                    letter-spacing: 0.5px;
+                }
+
+                .loaded {
+                    padding-left: 20px;
+                }
+
+                .last__span {
+                    width: 240px;
+                }
+            }
+            &__Cont {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 1495px;
+                height: 3.364rem;
+                margin-top: 3vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 
-    .homePageExtraInfo {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        width: 100% !important;
-        height: 100%;
-        margin: auto;
-    }
 
-    .homePageExtraInfo a {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        width: auto;
-        height: 100%;
-        color: #404040;
-        text-decoration: none;
-        font-size: 11px;
-    }
-
-    a span:last-child {
-        margin-left: 0.5rem;
-        padding-left: 0.34rem;
-        border-left: 1px solid #000000;
-        font-size: 13px;
-        line-height: 1.503rem;
-        letter-spacing: 0.5px;
-    }
-
-    .loaded {
-        padding-left: 20px;
-    }
-
-    .last__span {
-        width: 240px;
-    }
-
-    .carousel {
+.carousel {
         &__wrap {
             max-width: 1500px !important;
         }
-
         &-item {
-            h1 {
+            h2 {
                 max-width: 600px;
-                font-size: 60px;
+                font-size: 120px;
                 line-height: 80px;
-                padding-left: 190px;
+            }
+            p{
+                font-size: 30px;
+            }
+            .text-kid{
+                font-size: 50px;
             }
         }
     }
+    
 
-    /*  ----- ESTILOS DEL HEADER  -----  */
-
-    .navbar img:hover {
-        transform: rotate(360deg);
-        transition: all 0.5s;
-    }
-
-    .navbar li a:hover {
-        background-color: #1f8963;
-        border-radius: 5px;
-        font-weight: bold;
-    }
 }
