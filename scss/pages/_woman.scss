@@ -386,3 +386,42 @@
         }
     }
 }
+
+
+@media screen and (min-width: 1200px){
+    .main__woman {
+        &-title {
+            h1 {
+                font-size: 180px;
+                line-height: 178px;
+            }
+
+            p {
+                width: 580px;
+                font-size: 30px;
+            }
+
+            a {
+                font-size: 30px;
+            }
+        }
+
+        &-image img {
+            width: 706px;
+            height: auto;
+        }
+    }
+
+    .new__collection__stadistic__numbers__wrap{
+        margin-bottom: 9rem !important;
+    }
+
+    .deal__promotion__title-title{
+            max-width: 405px;
+        
+        h2 {
+            font-size: 90px;
+
+    }
+    }
+}

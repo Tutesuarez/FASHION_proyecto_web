@@ -387,3 +387,38 @@
         }
     }
 }
+
+@media screen and (min-width:1200px) {
+    .man__main {
+
+        &-title {
+            height: 350px;
+    
+            h1 {
+                font-size: 144px;
+                line-height: 10rem;
+            }
+    
+            p {
+                padding-top: 15px;
+            }
+    
+            a {
+                font-size: 30px;
+           }
+        }
+        
+    }
+    .man__new__collection__stadistic__numbers__wrap{
+        margin-bottom: 9rem !important;
+    }
+    .man__deal__promotion__title-title{
+        max-width: 405px;
+    
+    h2 {
+        font-size: 90px;
+
+}
+}
+    
+}
