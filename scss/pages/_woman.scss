@@ -388,7 +388,7 @@
 }
 
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1600px){
     .main__woman {
         &-title {
             h1 {
@@ -414,6 +414,9 @@
 
     .new__collection__stadistic__numbers__wrap{
         margin-bottom: 9rem !important;
+    }
+    .new__collection__advertising{
+        padding-top: 150px;
     }
 
     .deal__promotion__title-title{

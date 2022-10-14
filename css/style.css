@@ -8899,7 +8899,7 @@ textarea.form-control-lg {
   .carousel-item .text-kid {
     font-size: 50px; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .main__title h1, .main__title .h1 {
     font-size: 180px;
     line-height: 168px; }
@@ -9125,7 +9125,7 @@ textarea.form-control-lg {
       object-fit: cover;
       object-position: 0px; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .main__woman-title h1, .main__woman-title .h1 {
     font-size: 180px;
     line-height: 178px; }
@@ -9139,6 +9139,8 @@ textarea.form-control-lg {
     height: auto; }
   .new__collection__stadistic__numbers__wrap {
     margin-bottom: 9rem !important; }
+  .new__collection__advertising {
+    padding-top: 150px; }
   .deal__promotion__title-title {
     max-width: 405px; }
     .deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
@@ -9365,7 +9367,7 @@ textarea.form-control-lg {
       object-fit: cover;
       object-position: 0px; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .man__main-title {
     height: 350px; }
     .man__main-title h1, .man__main-title .h1 {
@@ -9377,6 +9379,8 @@ textarea.form-control-lg {
       font-size: 30px; }
   .man__new__collection__stadistic__numbers__wrap {
     margin-bottom: 9rem !important; }
+  .man__new__collection__advertising {
+    padding-top: 150px; }
   .man__deal__promotion__title-title {
     max-width: 405px; }
     .man__deal__promotion__title-title h2, .man__deal__promotion__title-title .h2 {

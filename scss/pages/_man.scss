@@ -388,7 +388,7 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1600px) {
     .man__main {
 
         &-title {
@@ -411,6 +411,9 @@
     }
     .man__new__collection__stadistic__numbers__wrap{
         margin-bottom: 9rem !important;
+    }
+    .man__new__collection__advertising{
+        padding-top: 150px;
     }
     .man__deal__promotion__title-title{
         max-width: 405px;
