@@ -8699,7 +8699,7 @@ textarea.form-control-lg {
 
 .detail__product__checkout-det h3, .detail__product__checkout-det .h3 {
   font-size: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  font-family: 'MADE TOMMY ExtraBold'; }
 
 .detail__product__checkout-price p {
   margin: 0; }
@@ -8751,6 +8751,8 @@ textarea.form-control-lg {
     color: whitesmoke; }
   .footer__wrap a {
     color: whitesmoke; }
+  .footer__wrap ul {
+    padding-left: 1.5rem; }
 
 .footer__img img {
   width: 394px;
@@ -9170,7 +9172,8 @@ textarea.form-control-lg {
 .man__new__collection-image .img {
   width: 100%;
   height: 100%;
-  object-fit: contain; }
+  object-fit: contain;
+  border-top-right-radius: 75px; }
 
 .man__new__collection__advertising h3, .man__new__collection__advertising .h3 {
   font-family: "MADE TOMMY ExtraBold";
@@ -9346,10 +9349,10 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover; }
   .main__kids__wrap h1, .main__kids__wrap .h1 {
-    font-size: 60px;
+    font-size: 100px;
     font-family: "MADE TOMMY ExtraBold";
     text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
-    line-height: 181px; }
+    line-height: 60px; }
   .main__kids__wrap p {
     font-size: 30px;
     font-family: "calibri";
@@ -9450,7 +9453,8 @@ textarea.form-control-lg {
   /* ---- ESTILO PAGINA KIDS  ----*/
   /*  ---    main section ----*/
   .main__kids__wrap h1, .main__kids__wrap .h1 {
-    font-size: 220px; }
+    font-size: 220px;
+    line-height: 180px; }
   .main__kids__wrap p {
     font-size: 30px; }
   .main__kids__wrap a {
@@ -9503,6 +9507,11 @@ textarea.form-control-lg {
   height: 500px;
   padding-top: 20%;
   background-color: #1F8963; }
+  .form__login__wrap .form-text {
+    color: rgba(255, 255, 255, 0.5); }
+
+.form__login-title h2, .form__login-title .h2 {
+  font-family: 'calibri'; }
 
 .form__login-button {
   font-family: "calibri"; }
@@ -9510,74 +9519,25 @@ textarea.form-control-lg {
 /* --- formulario de contacto y mapa --*/
 .contact__form__maps {
   background-color: #1F8963; }
-
-.contact__form__maps .adress {
-  font-family: "calibri";
-  color: whitesmoke;
-  font-size: 18px; }
-
-.adress h2, .adress .h2 {
-  font-weight: 700; }
+  .contact__form__maps .adress {
+    font-family: "calibri";
+    color: whitesmoke;
+    font-size: 18px; }
+    .contact__form__maps .adress h2, .contact__form__maps .adress .h2 {
+      font-weight: 700; }
 
 @media (min-width: 992px) {
   /*  ---- ESTILO PAGINA CONTACTO -----  */
   /*  LOG IN  */
-  .user {
-    height: 100vh;
-    background-color: #DFB7AF; }
-  .user__form__wrap {
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 580px;
-    width: 343px;
-    height: 250px;
-    background-color: #FBDA97;
-    border-radius: 15px; }
-  .user__form__wrap .user__form-title {
-    font-family: "calibri";
-    padding-top: 20px;
-    text-align: center;
-    font-weight: 700;
-    color: #464545; }
-  .user__form__wrap ul {
-    margin-top: 15px;
-    margin-left: 50px;
-    padding: 10px; }
-  .user__form__wrap ul li {
-    padding: 3px; }
-  .user__form__only ul input {
-    text-align: center;
-    border-style: none;
-    border-radius: 15px;
-    height: 30px;
-    width: 220px; }
-  .user__form__only .button {
-    height: 25px;
-    width: 75px;
-    text-align: center;
-    border-style: none;
-    border-radius: 15px;
-    margin-left: 137px;
-    background-color: #1F8963;
-    color: white; }
-  .user__form__only .button:hover {
-    background-color: white;
-    color: black; }
-  .user__form__wrap .account {
-    position: absolute;
-    padding-left: 100px;
-    padding-top: 15px;
-    text-decoration: none;
-    font-size: 15px;
-    color: brown; }
-  /*  CONTACTO   */
-  .form__login__wrap {
-    height: 100vh;
-    padding-top: 10%;
-    background-color: #1F8963; }
   .form__login {
     background-color: whitesmoke;
-    color: #464545; } }
+    color: #464545; }
+    .form__login__wrap {
+      height: 100vh;
+      padding-top: 10%;
+      background-color: #1F8963; }
+      .form__login__wrap .form-text {
+        color: rgba(0, 0, 0, 0.5); } }
 
 /* ---  ESTILO UNDER CONSTRUCTION   --- */
 .under__construction__wrap {

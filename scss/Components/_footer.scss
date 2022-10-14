@@ -8,6 +8,9 @@
         a{
             color: whitesmoke;
         }
+         ul{
+            padding-left: 1.5rem;
+        }
     }
 
     &__img {
@@ -22,6 +25,7 @@
         font-family: "calibri";
         color: whitesmoke;
     }
+    
 
     &__titles {
         font-size: 18px;
@@ -33,5 +37,6 @@
     &__coment {
         color: whitesmoke;
     }
+    
 }
 

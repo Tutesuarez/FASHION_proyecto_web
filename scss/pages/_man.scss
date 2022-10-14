@@ -88,6 +88,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            border-top-right-radius: 75px;
         }
     }
 
@@ -183,7 +184,6 @@
 
 .man__deal__promotion {
     &__wrap {
-       // background-color: #e37c73;
           background-color: $dark;
         a {
             font-family: "calibri";
