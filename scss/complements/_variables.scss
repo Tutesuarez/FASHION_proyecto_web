@@ -1,6 +1,6 @@
 // -->>>  Colores
 
-$blue:    #0d6efd;
+$blue:    #48acfd;
 $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #E37C73;    
@@ -42,6 +42,7 @@ $theme-colors:(
     "brhard":     $brhard,    // se creo la variable dentro del map theme-colors.
     "brsoft":     $brsoft,     // se creo la variable dentro del map theme-colors.
     "blanco":     $white,
+    "azul":       $blue,
     );
 
 

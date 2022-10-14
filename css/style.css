@@ -5,7 +5,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #48acfd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #E37C73;
@@ -39,6 +39,7 @@
   --bs-brhard: #745a4d;
   --bs-brsoft: #DFB7AF;
   --bs-blanco: #fff;
+  --bs-azul: #48acfd;
   --bs-primary-rgb: 17, 104, 78;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 31, 137, 99;
@@ -50,6 +51,7 @@
   --bs-brhard-rgb: 116, 90, 77;
   --bs-brsoft-rgb: 223, 183, 175;
   --bs-blanco-rgb: 255, 255, 255;
+  --bs-azul-rgb: 72, 172, 253;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2412,6 +2414,22 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #fff;
   --bs-btn-disabled-border-color: #fff; }
 
+.btn-azul {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #48acfd;
+  --bs-btn-border-color: #48acfd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #63b8fd;
+  --bs-btn-hover-border-color: #5ab4fd;
+  --bs-btn-focus-shadow-rgb: 61, 146, 215;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #6dbdfd;
+  --bs-btn-active-border-color: #5ab4fd;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #48acfd;
+  --bs-btn-disabled-border-color: #48acfd; }
+
 .btn-outline-primary {
   --bs-btn-color: #11684e;
   --bs-btn-border-color: #11684e;
@@ -2586,6 +2604,22 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #fff;
+  --bs-gradient: none; }
+
+.btn-outline-azul {
+  --bs-btn-color: #48acfd;
+  --bs-btn-border-color: #48acfd;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #48acfd;
+  --bs-btn-hover-border-color: #48acfd;
+  --bs-btn-focus-shadow-rgb: 72, 172, 253;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #48acfd;
+  --bs-btn-active-border-color: #48acfd;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #48acfd;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #48acfd;
   --bs-gradient: none; }
 
 .btn-link {
@@ -3952,6 +3986,13 @@ textarea.form-control-lg {
   .alert-blanco .alert-link {
     color: #525252; }
 
+.alert-azul {
+  --bs-alert-color: #2b6798;
+  --bs-alert-bg: #daeeff;
+  --bs-alert-border-color: #c8e6fe; }
+  .alert-azul .alert-link {
+    color: #22527a; }
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem; } }
@@ -4303,6 +4344,17 @@ textarea.form-control-lg {
     color: #fff;
     background-color: #666666;
     border-color: #666666; }
+
+.list-group-item-azul {
+  color: #2b6798;
+  background-color: #daeeff; }
+  .list-group-item-azul.list-group-item-action:hover, .list-group-item-azul.list-group-item-action:focus {
+    color: #2b6798;
+    background-color: #c4d6e6; }
+  .list-group-item-azul.list-group-item-action.active {
+    color: #fff;
+    background-color: #2b6798;
+    border-color: #2b6798; }
 
 .btn-close {
   box-sizing: content-box;
@@ -5587,6 +5639,10 @@ textarea.form-control-lg {
   color: #000 !important;
   background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important; }
 
+.text-bg-azul {
+  color: #000 !important;
+  background-color: RGBA(72, 172, 253, var(--bs-bg-opacity, 1)) !important; }
+
 .link-primary {
   color: #11684e !important; }
   .link-primary:hover, .link-primary:focus {
@@ -5641,6 +5697,11 @@ textarea.form-control-lg {
   color: #fff !important; }
   .link-blanco:hover, .link-blanco:focus {
     color: white !important; }
+
+.link-azul {
+  color: #48acfd !important; }
+  .link-azul:hover, .link-azul:focus {
+    color: #6dbdfd !important; }
 
 .ratio {
   position: relative;
@@ -6017,6 +6078,10 @@ textarea.form-control-lg {
 .border-blanco {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-blanco-rgb), var(--bs-border-opacity)) !important; }
+
+.border-azul {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-azul-rgb), var(--bs-border-opacity)) !important; }
 
 .border-white {
   --bs-border-opacity: 1;
@@ -6686,6 +6751,10 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-blanco-rgb), var(--bs-text-opacity)) !important; }
 
+.text-azul {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-azul-rgb), var(--bs-text-opacity)) !important; }
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important; }
@@ -6769,6 +6838,10 @@ textarea.form-control-lg {
 .bg-blanco {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-blanco-rgb), var(--bs-bg-opacity)) !important; }
+
+.bg-azul {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-azul-rgb), var(--bs-bg-opacity)) !important; }
 
 .bg-black {
   --bs-bg-opacity: 1;
@@ -8600,8 +8673,63 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.padding-5 {
+  padding: 6rem; }
+
+.padding-6 {
+  padding: 7.2rem; }
+
+.padding-7 {
+  padding: 8.4rem; }
+
+.padding-8 {
+  padding: 9.6rem; }
+
+.padding-9 {
+  padding: 10.8rem; }
+
+.padding-10 {
+  padding: 12rem; }
+
 .btn-success {
   color: white; }
+
+.detail__product__wrap p {
+  font-family: 'calibri'; }
+
+.detail__product__checkout-det h3, .detail__product__checkout-det .h3 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.detail__product__checkout-price p {
+  margin: 0; }
+
+.detail__product__checkout-price .number2 {
+  text-decoration: line-through;
+  font-size: 15px; }
+
+.detail__product__checkout-price .number {
+  font-size: 30px; }
+
+.detail__product__checkout-price a {
+  font-size: 16px; }
+
+.detail__product__checkout-btns {
+  width: 280px;
+  padding-top: 20px; }
+
+@media screen and (min-width: 992px) {
+  .detail__product__checkout-det h3, .detail__product__checkout-det .h3 {
+    font-size: 50px; }
+  .detail__product__checkout-price p {
+    margin: 0; }
+  .detail__product__checkout-price .number2 {
+    font-size: 25px; }
+  .detail__product__checkout-price .number {
+    font-size: 40px; }
+  .detail__product__checkout-btns {
+    width: 400px;
+    padding-top: 20px; } }
 
 /* ---- FUENTES ---- */
 @font-face {
@@ -9097,7 +9225,7 @@ textarea.form-control-lg {
 
 /*estilo seccion   man deal*/
 .man__deal__promotion__wrap {
-  background-color: #e37c73; }
+  background-color: #212529; }
   .man__deal__promotion__wrap a {
     font-family: "calibri"; }
 

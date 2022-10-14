@@ -183,8 +183,8 @@
 
 .man__deal__promotion {
     &__wrap {
-        background-color: #e37c73;
-
+       // background-color: #e37c73;
+          background-color: $dark;
         a {
             font-family: "calibri";
         }
