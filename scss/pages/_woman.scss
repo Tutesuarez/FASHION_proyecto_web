@@ -118,9 +118,6 @@
 
 /* best seller section*/
 .best__seller {
-    &__wrap {
-        background-color: #745a4d;
-    }
 
     &-items {
         .card {
@@ -181,7 +178,7 @@
 /*estilo seccion deal*/
 .deal__promotion {
     &__wrap {
-        background-color: #E37C73;
+        background-color: whitesmoke;
 
         a {
             font-family: "calibri";
@@ -193,13 +190,13 @@
             h2 {
                 font-family: "MADE TOMMY ExtraBold";
                 font-size: 30px;
-                color: whitesmoke;
+                color: 'dark';
             }
 
             p {
                 font-family: "calibri";
                 font-size: 18px;
-                color: whitesmoke;
+                color: 'dark';
             }
         }
     }

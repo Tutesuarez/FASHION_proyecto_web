@@ -1,7 +1,7 @@
 /* ----  ESTILO FOOTER  ----  */
 .footer {
     &__wrap {
-        background: #745a4d;
+        background: #212529;
         p{
             color:whitesmoke;
         }
@@ -14,9 +14,10 @@
     }
 
     &__img {
+        
         img {
             width: 394px;
-            height: 400px;
+            height: auto;
             object-fit: contain;
         }
     }

@@ -1,14 +1,9 @@
 /* --- ESTILO PAGINA CONTACTO ---*/
 .form__login {
-    &__wrap {
-        height: 500px;
-        padding-top: 20%;
-        background-color: #1F8963;
 
         .form-text {
-            color: rgba($color: #ffffff, $alpha: .5);
+            color: rgba($color: #ffffff, $alpha: .8);
         }
-    }
     &-title{
         h2{
             font-family:'calibri';
@@ -23,11 +18,11 @@
 
 /* --- formulario de contacto y mapa --*/
 .contact__form__maps {
-    background-color: #1F8963;
+    
 
     .adress {
         font-family: "calibri";
-        color: whitesmoke;
+        color: #464545;
         font-size: 18px;
 
         h2 {
@@ -36,24 +31,3 @@
     }
 }
 
-
-
-@media (min-width: 992px) {
-
-    /*  ---- ESTILO PAGINA CONTACTO -----  */
-    /*  LOG IN  */
-    .form__login {
-        background-color: whitesmoke;
-        color: rgb(70, 69, 69);
-
-        &__wrap {
-            height: 100vh;
-            padding-top: 10%;
-            background-color: #1F8963;
-
-            .form-text {
-                color: rgba($color: #000000, $alpha: .5);
-            }
-        }
-    }
-}

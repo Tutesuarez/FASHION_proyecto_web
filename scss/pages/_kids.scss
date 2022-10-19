@@ -102,7 +102,7 @@
 
 .deal__kids {
     &__wrap {
-        background-color: #1F8963;
+        background-color: whitesmoke;
 
         a {
             font-family: "calibri";
@@ -113,7 +113,7 @@
         h2 {
             font-family: "MADE TOMMY ExtraBold";
             font-size: 35px;
-            color: whitesmoke;
+            color: 'dark';
         }
 
         h5 {
@@ -130,7 +130,7 @@
     }
 
     &-detail {
-        color: whitesmoke;
+        color: 'dark';
     }
 
     &-img {
@@ -200,10 +200,6 @@
     /*  ---  Best seller section  ---  */
 
     .best__seller__kids {
-        &__wrap {
-            height: 580px;
-            background-color: #745a4d;
-        }
 
         &-title {
             h2 {

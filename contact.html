@@ -23,7 +23,7 @@
 
     <!-- header con barra de navegacion -->
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid ">
                 <a class="navbar-brand ms-3" href="index.html"><img src="asset/img/LOGO.svg" alt="logo"
                         class="d-inline-block align-top"> </a>
@@ -65,92 +65,86 @@
         </nav>
     </header>
 
-    <!-- SECCION LOGIN-->
+    <!-- SECCION CONTACT & LOGIN-->
 
-    <section class="user" id="login">
-        <div class="form__login__wrap container-fluid mb-3">
-            <form class=" row p-3 border-dark justify-content-center text-white">
-                <div class="form__login rounded-4 p-4 col-10 col-md-6">
-                    <div class="form__login-title text-center">
-                        <h2 class="text-uppercase fw-bolder">login</h2>
-                        <a class="text-reset text-decoration-none" href="inconstruction.html">You do not have an
-                            account?</a>
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="form__login-button">
-                        <button type="submit" class=" btn btn-dark">Login</button>
-                    </div>
+    <section class="user" id="#contact" >
+        <div class="row ">
+            <div class="col-12 mt-5 mb-4 pt-5 px-4 px-md-5 col-md-7 ">
+                <div class="contact__title text-center mb-md-4">
+                    <h2 class="fw-bold">Contact</h2>
                 </div>
-            </form>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="John">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Cooper">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="johncooper@gmail.com">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <label for="inputCity" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" placeholder="291 453687">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">I want be contact by</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Phone</option>
+                            <option>Email</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                i´m not a robot
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-5 bg-success">
+                <form class=" row p-3 border-dark justify-content-center text-white mt-md-5 pt-md-5">
+                    <div class="form__login rounded-4 p-4 col-10 mt-md-5 ">
+                        <div class="form__login-title text-center mb-4">
+                            <h2 class="text-uppercase fw-bolder">login</h2>
+                            <a class="text-reset text-decoration-none" href="inconstruction.html">You do not have an
+                                account?</a>
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form__login-button">
+                            <button type="submit" class=" btn btn-dark">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        </div>
-        </div>
-
     </section>
 
 
-    <!-- SECCION CONTACTO + FORMULARIO-->
-
-    <section class="contact mt-md-5" id="contact">
-        <div class="container p-3">
-            <div class="contact__title text-center mt-md-5 mb-md-4">
-                <h2 class="fw-bold">Contact</h2>
-            </div>
-            <form class="row g-3 justify-content-center">
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Name</label>
-                    <input type="text" class="form-control" placeholder="John">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Cooper">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="johncooper@gmail.com">
-                </div>
-                <div class="col-12 col-md-8">
-                    <label for="inputCity" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control" placeholder="291 453687">
-                </div>
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">I want be contact by</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>Phone</option>
-                        <option>Email</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-12">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            i´m not a robot
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-success">Send</button>
-                </div>
-            </form>
-        </div>
-
-
-
         <!--UTILIZACION DE IFRAME PARA MAPA DE google-->
-        <div class="contact__form__maps container-fluid py-md-5" id="maps">
+    <section class="maps">
+        <div class="contact__form__maps container-fluid py-md-5 bg-blanco" id="maps">
             <div class="row justify-content-center">
 
                 <iframe class="maps col-12 col-md-8 pb-5 pt-4 ps-md-5 "
@@ -172,9 +166,12 @@
 
     <footer class="footer__wrap container-fluid">
         <div class="container-fluid p-3 pt-4 pt-md-5 justify-content-center">
-            <div class="row justify-content-center">
-                <div class="footer__img d-none d-sm-none d-md-block col-md-4">
-                    <img class="rounded-1" src="asset/img/mujer con flor.svg" alt="niña saltando">
+            <div class="row justify-content-center text-center">
+                <div class="footer__img  d-none d-sm-none d-md-block col-md-4 d-md-flex flex-md-column justify-content-md-center">
+                    <a href="index.html" class="text-decoration-none">
+                        <img class="pb-3 mx-auto" src="asset/img/favicon_FASHION.svg" alt="logo de la marca">
+                        <p class="text-uppercase text-center">designed for you</p>
+                </a>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="pt-md-5 pb-md-5">
@@ -194,13 +191,17 @@
                                 <li>
                                     <p class="footer__titles fw-bold mb-0">Woman</p>
                                 </li>
-                                <li> <a href="woman.html#new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="woman.html#best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="woman.html#our_products" class=" text-decoration-none">Our
-                                        Products</a></li>
-                                <li> <a href="woman.html#deal" class=" text-decoration-none">Deals</a>
+                                <li>
+                                    <a href="woman.html#new_collection" class=" text-decoration-none">New Collection</a>
+                                </li>
+                                <li>
+                                    <a href="woman.html#best_seller" class=" text-decoration-none">Best Seller</a>
+                                </li>
+                                <li>
+                                    <a href="woman.html#our_products" class=" text-decoration-none">Our Products</a>
+                                </li>
+                                <li>
+                                    <a href="woman.html#deal" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -209,13 +210,17 @@
                                 <li>
                                     <p class="footer__titles  fw-bold mb-0">Mens</p>
                                 </li>
-                                <li> <a href="man.html#man_new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="man.html#man_best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="man.html#man_our_products" class=" text-decoration-none">Our
-                                        Products</a></li>
-                                <li> <a href="man.html#man_deal" class=" text-decoration-none">Deals</a>
+                                <li> 
+                                    <a href="man.html#man_new_collection" class=" text-decoration-none">New Collection</a>
+                                    </li>
+                                <li> 
+                                    <a href="man.html#man_best_seller" class=" text-decoration-none">Best Seller</a>
+                                    </li>
+                                <li> 
+                                    <a href="man.html#man_our_products" class=" text-decoration-none">Our Products</a>
+                                    </li>
+                                <li> 
+                                    <a href="man.html#man_deal" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -224,11 +229,14 @@
                                 <li>
                                     <p class="footer__titles  fw-bold mb-0">Kids</p>
                                 </li>
-                                <li> <a href="kids.html#kids_new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="kids.html#kids_best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="kids.html#kids_deals" class=" text-decoration-none">Deals</a>
+                                <li> 
+                                    <a href="kids.html#kids_new_collection" class=" text-decoration-none">New Collection</a>
+                                    </li>
+                                <li> 
+                                    <a href="kids.html#kids_best_seller" class=" text-decoration-none">Best Seller</a>
+                                    </li>
+                                <li> 
+                                    <a href="kids.html#kids_deals" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -237,12 +245,14 @@
                                 <li>
                                     <p class="footer__titles fw-bold mb-0">Contact</p>
                                 </li>
-                                <li> <a href="contact.html#login" class="text-decoration-none">Login</a>
+                                <li> 
+                                    <a href="contact.html#contact" class="text-decoration-none">Login</a>
                                 </li>
-                                <li> <a href="contact.html#maps" class=" text-decoration-none">Adress</a>
+                                <li> 
+                                    <a href="contact.html#maps" class=" text-decoration-none">Adress</a>
                                 </li>
-                                <li> <a href="contact.html#contact" class=" text-decoration-none">Cotact
-                                        us</a>
+                                <li> 
+                                    <a href="contact.html#contact" class=" text-decoration-none">Cotact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -252,10 +262,10 @@
                             <p>All rigths reserved 2022</p>
                         </div>
                         <div class="col-4 col-md-2 ">
-                            <a href="https://www.facebook.com/"><img src="asset/img/facebook.png"  role="img" class="social ps-2"
-                                    alt="icono-facebook"  width="32" height="auto"></a>
-                            <a href="https://www.instagram.com/"><img src="asset/img/instagram.png" role="img" class="social ps-2"
-                                    alt="icono-instagram"  width="32" height="auto"></a>
+                            <a href="https://www.facebook.com/"><img src="asset/img/facebook.png" role="img"
+                                    class="social ps-2" alt="icono-facebook" width="32" height="auto"></a>
+                            <a href="https://www.instagram.com/"><img src="asset/img/instagram.png" role="img"
+                                    class="social ps-2" alt="icono-instagram" width="32" height="auto"></a>
                         </div>
                     </div>
                 </div>

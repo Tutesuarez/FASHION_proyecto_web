@@ -8673,6 +8673,15 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.send__bar__wrap h3, .send__bar__wrap .h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'calibri'; }
+
+.send__bar__wrap p {
+  font-family: 'calibri';
+  font-size: 16px; }
+
 .padding-5 {
   padding: 6rem; }
 
@@ -8746,7 +8755,7 @@ textarea.form-control-lg {
 
 /* ----  ESTILO FOOTER  ----  */
 .footer__wrap {
-  background: #745a4d; }
+  background: #212529; }
   .footer__wrap p {
     color: whitesmoke; }
   .footer__wrap a {
@@ -8756,7 +8765,7 @@ textarea.form-control-lg {
 
 .footer__img img {
   width: 394px;
-  height: 400px;
+  height: auto;
   object-fit: contain; }
 
 .footer p {
@@ -8778,16 +8787,14 @@ textarea.form-control-lg {
 
 .navbar {
   font-family: "calibri";
-  font-size: 20px;
-  /* background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9));*/
-  /*background:rgba(0, 0, 0, 0.6);*/ }
+  font-size: 20px; }
 
 @media screen and (min-width: 992px) {
   .navbar img:hover {
     transform: rotate(360deg);
     transition: all 0.5s; }
   .navbar li a:hover {
-    background-color: #1f8963;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     font-weight: bold; } }
 
@@ -8801,9 +8808,9 @@ textarea.form-control-lg {
   font-size: 45px;
   color: whitesmoke;
   line-height: 75px;
-  text-shadow: black; }
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); }
 
-.main__title a {
+.main__title .btn {
   font-size: 16px;
   font-family: "calibri"; }
 
@@ -8833,6 +8840,18 @@ textarea.form-control-lg {
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
 
+.main__class__shop-title {
+  font-family: 'MADE TOMMY ExtraBold';
+  font-size: 30px; }
+
+.main__class__shop-img .shop-img {
+  max-width: 340px;
+  height: auto; }
+  .main__class__shop-img .shop-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
 .carousel-item h2, .carousel-item .h2 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 20px;
@@ -8850,44 +8869,17 @@ textarea.form-control-lg {
   .main__title h1, .main__title .h1 {
     font-size: 130px;
     line-height: 120px; }
-  .main__title a {
+  .main__title .btn {
     font-size: 25px; }
-  /* seccion nueva*/
-  .homePageExtra__Info {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    width: 100% !important;
-    height: 100%;
-    margin: auto; }
-    .homePageExtra__Info a {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      width: auto;
+  /* ----- SECCION WHO DO YOU BY FOR ? ---- */
+  .main__class__shop-img .shop-img {
+    max-width: 460px;
+    height: auto; }
+    .main__class__shop-img .shop-img img {
+      width: 100%;
       height: 100%;
-      color: #404040;
-      text-decoration: none;
-      font-size: 11px; }
-      .homePageExtra__Info a span:last-child {
-        margin-left: 0.5rem;
-        padding-left: 0.34rem;
-        border-left: 1px solid #000000;
-        font-size: 13px;
-        line-height: 1.503rem;
-        letter-spacing: 0.5px; }
-      .homePageExtra__Info a .loaded {
-        padding-left: 20px; }
-      .homePageExtra__Info a .last__span {
-        width: 240px; }
-    .homePageExtra__Info__Cont {
-      display: flex;
-      flex-flow: row nowrap;
-      width: 1495px;
-      height: 3.364rem;
-      margin-top: 3vw;
-      margin-left: auto;
-      margin-right: auto; }
+      object-fit: contain; }
+  /*  Carousel secction*/
   .carousel__wrap {
     max-width: 1500px !important; }
   .carousel-item h2, .carousel-item .h2 {
@@ -8897,13 +8889,20 @@ textarea.form-control-lg {
   .carousel-item p {
     font-size: 30px; }
   .carousel-item .text-kid {
-    font-size: 50px; } }
+    font-size: 50px; }
+  /* seccion nueva*/
+  .info__bar__wrap h5, .info__bar__wrap .h5 {
+    font-size: 13px; }
+  .info__bar__wrap p {
+    font-size: 13px; }
+  .info__bar__wrap .card-body {
+    border-left: 1px solid #000000; } }
 
 @media screen and (min-width: 1600px) {
   .main__title h1, .main__title .h1 {
     font-size: 180px;
     line-height: 168px; }
-  .main__title a {
+  .main__title .btn {
     font-size: 30px; } }
 
 /*----  ESTILO WOMAN  ----  */
@@ -8981,9 +8980,6 @@ textarea.form-control-lg {
     margin: 0; }
 
 /* best seller section*/
-.best__seller__wrap {
-  background-color: #745a4d; }
-
 .best__seller-items .card {
   width: 280px !important;
   height: auto; }
@@ -9016,19 +9012,19 @@ textarea.form-control-lg {
 
 /*estilo seccion deal*/
 .deal__promotion__wrap {
-  background-color: #E37C73; }
+  background-color: whitesmoke; }
   .deal__promotion__wrap a {
     font-family: "calibri"; }
 
 .deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 30px;
-  color: whitesmoke; }
+  color: 'dark'; }
 
 .deal__promotion__title-title p {
   font-family: "calibri";
   font-size: 18px;
-  color: whitesmoke; }
+  color: 'dark'; }
 
 .deal__promotion__box .card {
   width: 50px;
@@ -9220,9 +9216,6 @@ textarea.form-control-lg {
     margin: 0; }
 
 /* best seller section*/
-.man__best__seller__wrap {
-  background-color: #745a4d; }
-
 .man__best__seller-items .card {
   width: 280px !important;
   height: auto; }
@@ -9450,14 +9443,14 @@ textarea.form-control-lg {
 
 /*--- deal section---*/
 .deal__kids__wrap {
-  background-color: #1F8963; }
+  background-color: whitesmoke; }
   .deal__kids__wrap a {
     font-family: "calibri"; }
 
 .deal__kids-title h2, .deal__kids-title .h2 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 35px;
-  color: whitesmoke; }
+  color: 'dark'; }
 
 .deal__kids-title h5, .deal__kids-title .h5 {
   font-family: "MADE TOMMY ExtraBold";
@@ -9469,7 +9462,7 @@ textarea.form-control-lg {
   margin: 0; }
 
 .deal__kids-detail {
-  color: whitesmoke; }
+  color: 'dark'; }
 
 .deal__kids-img {
   width: 180px;
@@ -9511,9 +9504,6 @@ textarea.form-control-lg {
   .new__collection__kids-title p {
     font-size: 20px; }
   /*  ---  Best seller section  ---  */
-  .best__seller__kids__wrap {
-    height: 580px;
-    background-color: #745a4d; }
   .best__seller__kids-title h2, .best__seller__kids-title .h2 {
     font-size: 60px; }
   .best__seller__kids-title p {
@@ -9549,12 +9539,8 @@ textarea.form-control-lg {
       object-position: 0px; } }
 
 /* --- ESTILO PAGINA CONTACTO ---*/
-.form__login__wrap {
-  height: 500px;
-  padding-top: 20%;
-  background-color: #1F8963; }
-  .form__login__wrap .form-text {
-    color: rgba(255, 255, 255, 0.5); }
+.form__login .form-text {
+  color: rgba(255, 255, 255, 0.8); }
 
 .form__login-title h2, .form__login-title .h2 {
   font-family: 'calibri'; }
@@ -9563,27 +9549,12 @@ textarea.form-control-lg {
   font-family: "calibri"; }
 
 /* --- formulario de contacto y mapa --*/
-.contact__form__maps {
-  background-color: #1F8963; }
-  .contact__form__maps .adress {
-    font-family: "calibri";
-    color: whitesmoke;
-    font-size: 18px; }
-    .contact__form__maps .adress h2, .contact__form__maps .adress .h2 {
-      font-weight: 700; }
-
-@media (min-width: 992px) {
-  /*  ---- ESTILO PAGINA CONTACTO -----  */
-  /*  LOG IN  */
-  .form__login {
-    background-color: whitesmoke;
-    color: #464545; }
-    .form__login__wrap {
-      height: 100vh;
-      padding-top: 10%;
-      background-color: #1F8963; }
-      .form__login__wrap .form-text {
-        color: rgba(0, 0, 0, 0.5); } }
+.contact__form__maps .adress {
+  font-family: "calibri";
+  color: #464545;
+  font-size: 18px; }
+  .contact__form__maps .adress h2, .contact__form__maps .adress .h2 {
+    font-weight: 700; }
 
 /* ---  ESTILO UNDER CONSTRUCTION   --- */
 .under__construction__wrap {
