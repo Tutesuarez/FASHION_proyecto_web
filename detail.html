@@ -16,16 +16,16 @@
 
     <!-- link Css Style-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>FASHION</title>
+    <title>FASHION | your product, almost in your hands</title>
 </head>
 
 <body>
-    <!--Header con menu de navegacion-->
+    <!--NAVBAR-->
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid ">
                 <a class="navbar-brand ps-3" href="index.html"><img src="asset/img/LOGO.svg" alt="logo"
-                        class="d-inline-block align-top"> </a>
+                        class="d-inline-block align-top"></a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +33,14 @@
                 </button>
                 <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link text-white active me-3" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white me-3" href="woman.html">Woman</a>
+                            <a class="nav-link text-white me-3" href="woman.html">Women</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white me-3" href="man.html">Mens</a>
+                            <a class="nav-link text-white me-3" href="man.html">Men</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white me-3" href="kids.html">Kids</a>
@@ -49,6 +49,8 @@
                             <a class="nav-link text-white me-3" href="contact.html">Contact</a>
                         </li>
                     </ul>
+
+                    <!-- Logo carrito de compras + login -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class=" nav-link text-white me-3" aria-current="page" href="inconstruction.html"><img
@@ -68,7 +70,7 @@
         <div class="container px-md-5">
             <div class="row">
                 <div class="detail__product-img col-12 col-md-6 d-flex justify-content-center">
-                    <img src="asset/img/detail-img.png" class="" alt="foto de producto">
+                    <img src="asset/img/detail-img.png" class="" alt="PRODUCT PICTURE">
                 </div>
                 <div class="detail__product__checkout col-12 col-md-6 mb-5 ">
                     <div class="detail__product__checkout-det">
@@ -102,21 +104,18 @@
         </div>
     </main>
 
-
-
-
-
-
-
-    <!-- INICIO FOOTER-->
+    <!-- SECCION FOOTER-->
 
     <footer class="footer__wrap container-fluid">
         <div class="container-fluid p-3 pt-4 pt-md-5 justify-content-center">
-            <div class="row justify-content-center">
-                <div class="footer__img d-none d-sm-none d-md-block col-md-4">
-                    <img class="rounded-1" src="asset/img/mujer con flor.svg" alt="niña saltando">
+            <div class="row justify-content-center ">
+                <div class="footer__img  d-none d-sm-none d-md-none d-lg-block col-md-4 d-md-flex flex-md-column justify-content-md-center">
+                    <a href="index.html" class="text-decoration-none">
+                        <img class="pb-3 mx-auto" src="asset/img/favicon_FASHION.svg" alt="logo de la marca">
+                        <p class="text-uppercase text-center">designed for you</p>
+                </a>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-10 col-lg-6">
                     <div class="pt-md-5 pb-md-5">
                         <div class="input-group mb-2">
                             <input type="text" class="form-control" placeholder="email"
@@ -127,19 +126,25 @@
                             <p class="footer__coment pt-1 ">Get all our offers before anyone else</p>
                         </div>
                     </div>
-                    <div class="row links justify-content-around align-content-md-center border-bottom border-white pb-3 h-md-50">
+                    <!--general menu-->
+                    <div
+                        class="row justify-content-around align-content-md-center border-bottom border-white pb-3 h-md-50">
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
                                     <p class="footer__titles fw-bold mb-0">Woman</p>
                                 </li>
-                                <li> <a href="woman.html#new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="woman.html#best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="woman.html#our_products" class=" text-decoration-none">Our
-                                        Products</a></li>
-                                <li> <a href="woman.html#deal" class=" text-decoration-none">Deals</a>
+                                <li> 
+                                    <a href="woman.html#new_collection" class=" text-decoration-none">New Collection</a>
+                                </li>
+                                <li> 
+                                    <a href="woman.html#best_seller" class=" text-decoration-none">Best Seller</a>
+                                </li>
+                                <li> 
+                                    <a href="woman.html#our_products" class=" text-decoration-none">Our Products</a>
+                                </li>
+                                <li> 
+                                    <a href="woman.html#deal" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -148,13 +153,17 @@
                                 <li>
                                     <p class="footer__titles  fw-bold mb-0">Mens</p>
                                 </li>
-                                <li> <a href="man.html#man_new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="man.html#man_best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="man.html#man_our_products" class=" text-decoration-none">Our
-                                        Products</a></li>
-                                <li> <a href="man.html#man_deal" class=" text-decoration-none">Deals</a>
+                                <li> 
+                                    <a href="man.html#man_new_collection" class=" text-decoration-none">New Collection</a>
+                                </li>
+                                <li> 
+                                    <a href="man.html#man_best_seller" class=" text-decoration-none">Best Seller</a>
+                                </li>
+                                <li> 
+                                    <a href="man.html#man_our_products" class=" text-decoration-none">Our Products</a>
+                                </li>
+                                <li> 
+                                    <a href="man.html#man_deal" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -163,11 +172,14 @@
                                 <li>
                                     <p class="footer__titles  fw-bold mb-0">Kids</p>
                                 </li>
-                                <li> <a href="kids.html#kids_new_collection" class=" text-decoration-none">New
-                                        Collection</a></li>
-                                <li> <a href="kids.html#kids_best_seller" class=" text-decoration-none">Best
-                                        Seller</a></li>
-                                <li> <a href="kids.html#kids_deals" class=" text-decoration-none">Deals</a>
+                                <li> 
+                                    <a href="kids.html#kids_new_collection" class=" text-decoration-none">New Collection</a>
+                                </li>
+                                <li> 
+                                    <a href="kids.html#kids_best_seller" class=" text-decoration-none">Best Seller</a>
+                                </li>
+                                <li> 
+                                    <a href="kids.html#kids_deals" class=" text-decoration-none">Deals</a>
                                 </li>
                             </ul>
                         </div>
@@ -176,15 +188,17 @@
                                 <li>
                                     <p class="footer__titles fw-bold mb-0">Contact</p>
                                 </li>
-                                <li> <a href="contact.html#login" class="text-decoration-none">Login</a>
+                                <li> 
+                                    <a href="contact.html#contact" class="text-decoration-none">Login</a>
                                 </li>
-                                <li> <a href="contact.html#maps" class=" text-decoration-none">Adress</a>
+                                <li> 
+                                    <a href="contact.html#maps" class=" text-decoration-none">Adress</a>
                                 </li>
-                                <li> <a href="contact.html#contact" class=" text-decoration-none">Cotact
-                                        us</a>
+                                <li> 
+                                    <a href="contact.html#contact" class=" text-decoration-none">Cotact us</a>
                                 </li>
                             </ul>
-                        </div>
+                    </div>
                     </div>
                     <div class="row pt-2">
                         <div class="col-8 col-md-10 ">

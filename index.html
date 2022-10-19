@@ -20,12 +20,12 @@
 </head>
 
 <body>
-    <!--Header con menu de navegacion-->
+    <!--NAVBAR-->
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid ">
                 <a class="navbar-brand ps-3" href="index.html"><img src="asset/img/LOGO.svg" alt="logo"
-                        class="d-inline-block align-top"> </a>
+                        class="d-inline-block align-top"></a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,10 @@
                             <a class="nav-link text-white active me-3" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white me-3" href="woman.html">Woman</a>
+                            <a class="nav-link text-white me-3" href="woman.html">Women</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white me-3" href="man.html">Mens</a>
+                            <a class="nav-link text-white me-3" href="man.html">Men</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white me-3" href="kids.html">Kids</a>
@@ -49,6 +49,8 @@
                             <a class="nav-link text-white me-3" href="contact.html">Contact</a>
                         </li>
                     </ul>
+
+                    <!-- Logo carrito de compras + login -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class=" nav-link text-white me-3" aria-current="page" href="inconstruction.html"><img
@@ -63,8 +65,7 @@
         </nav>
     </header>
 
-    <!--SECCION MAIN-->
-
+    <!--MAIN SECTION-->
     <main>
         <div class="main__wrap">
             <div class="row container-fluid d-flex align-content-center h-100 p-0 m-0">
@@ -85,26 +86,27 @@
         </div>
     </main>
 
+    <!--Who do you uy for SECTION-->
     <section class="main__class__shop__wrap" id="buy-for">
         <div class="container-fluid">
             <div class="main__class__shop-title text-center  pt-3 mt-5 mb-3">
                 <h2>Who Do You Buy For?</h2>
             </div>
-            <div class="main__class__shop-img row container justify-content-center m-auto" >
+            <div class="main__class__shop-img row container justify-content-center m-auto">
                 <div class="shop-img col-12 col-md-4 text-center mb-4 m-md-0">
-                    <a href="woman.html" class="text-reset text-decoration-none" alt="Mujer póseando al aire libre" >
+                    <a href="woman.html" class="text-reset text-decoration-none" alt="Woman posing outdors">
                         <img src="asset/img/FWB-01.png" alt="mujer posando al aire libre">
                         <p class="p-0 m-0 fw-bold text-uppercase">woman</p>
                     </a>
                 </div>
                 <div class="shop-img  col-12 col-md-4 text-center mb-4 m-md-0">
-                    <a href="man.html" class="text-reset text-decoration-none" alt="hombre póseando" >
+                    <a href="man.html" class="text-reset text-decoration-none" alt="man posing">
                         <img src="asset/img/FWB-02.png" alt="mujer posando al aire libre">
                         <p class="p-0 m-0 fw-bold text-uppercase">men</p>
                     </a>
                 </div>
                 <div class="shop-img  col-12 col-md-4 text-center  mb-5 m-md-0">
-                    <a href="kids.html" class="text-decoration-none text-reset" alt="niños posando" >
+                    <a href="kids.html" class="text-decoration-none text-reset" alt="child posing">
                         <img src="asset/img/FWB-03.png" alt="mujer posando al aire libre">
                         <p class="p-0 m-0 fw-bold text-uppercase">Kids</p>
                     </a>
@@ -115,6 +117,7 @@
 
     <section class="carousel__wrap container py-2 py-md-5 mt-md-5">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-keyboard="true">
+            <!-- LOWER BUTTONS-->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -123,6 +126,7 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
+            <!-- CAROUSEL CONTENT-->
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="4000">
                     <a class="carousel__link text-reset  d-flex flex-column justify-content-center text-center"
@@ -155,6 +159,7 @@
                     </a>
                 </div>
             </div>
+            <!-- SIDE BUTTONS-->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -250,12 +255,13 @@
     <footer class="footer__wrap container-fluid">
         <div class="container-fluid p-3 pt-4 pt-md-5 justify-content-center">
             <div class="row justify-content-center">
-                <div
-                    class="footer__img  d-none d-sm-none d-md-block col-md-4 d-md-flex flex-md-column justify-content-md-center">
-                    <img class="pb-3 mx-auto" src="asset/img/favicon_FASHION.svg" alt="logo de la marca">
+                <!--SIDE IMAGE FOR LG VIEW-->
+                <div class="footer__img  d-none d-sm-none d-md-none d-lg-block col-lg-4 d-lg-flex flex-lg-column justify-content-lg-center">
+                    <img class="pb-3 mx-auto" src="asset/img/favicon_FASHION.svg" alt="Brand logo">
                     <p class="text-uppercase text-center">designed for you</p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <!--SUSCRIPTION INPUT-->
                     <div class="pt-md-5 pb-md-5">
                         <div class="input-group mb-2">
                             <input type="text" class="form-control" placeholder="email"
@@ -266,8 +272,8 @@
                             <p class="footer__coment pt-1 ">Get all our offers before anyone else</p>
                         </div>
                     </div>
-                    <div
-                        class="row justify-content-around align-content-md-center border-bottom border-white pb-3 h-md-50">
+                    <!--GENERAL MENU-->
+                    <div class="row justify-content-around align-content-md-center border-bottom border-white pb-3 h-md-50">
                         <div class="col-6  col-md-3 pb-3">
                             <ul>
                                 <li>
@@ -345,6 +351,7 @@
                         <div class="col-8 col-md-10 ">
                             <p>All rigths reserved 2022</p>
                         </div>
+                        <!--SOCIAL MEDIA ICONS-->
                         <div class="col-4 col-md-2 ">
                             <a href="https://www.facebook.com/"><img src="asset/img/facebook.png" role="img"
                                     class="social ps-2" alt="icono-facebook" width="32" height="auto"></a>
@@ -353,17 +360,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </footer>
-
 </body>
-
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
-
 </html>

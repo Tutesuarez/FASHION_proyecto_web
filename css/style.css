@@ -8864,13 +8864,18 @@ textarea.form-control-lg {
 .carousel-item .text-kid {
   font-size: 16px; }
 
+@media screen and (min-width: 768px) {
+  .main__title h1, .main__title .h1 {
+    font-size: 80px;
+    line-height: 100px; }
+  .main__title .btn {
+    font-size: 25px; } }
+
 @media screen and (min-width: 992px) {
   /* -----  ESTILOS DEL MAIN  -----  */
   .main__title h1, .main__title .h1 {
     font-size: 130px;
     line-height: 120px; }
-  .main__title .btn {
-    font-size: 25px; }
   /* ----- SECCION WHO DO YOU BY FOR ? ---- */
   .main__class__shop-img .shop-img {
     max-width: 460px;
@@ -8998,7 +9003,11 @@ textarea.form-control-lg {
 /*  Our products */
 .our__product__wrap .card {
   width: 280px !important;
-  height: auto; }
+  max-height: auto; }
+  .our__product__wrap .card-img {
+    width: 100%;
+    height: 186px;
+    object-fit: cover; }
   .our__product__wrap .card-body h3, .our__product__wrap .card-body .h3 {
     font-size: 20px; }
 
@@ -9050,6 +9059,58 @@ textarea.form-control-lg {
     object-fit: cover;
     object-position: -70px; }
 
+@media screen and (min-width: 768px) {
+  /* NEW COLLECTION SECTION */
+  .new__collection-title .title {
+    font-size: 30px; }
+  .new__collection-title p {
+    font-size: 20px; }
+  .new__collection__images .card {
+    width: 180px !important;
+    height: auto; }
+  /*  IMAGEN Y ESTADISTICA*/
+  .new__collection__advertising h3, .new__collection__advertising .h3 {
+    font-size: 52px; }
+  .new__collection__stadistic-numbers {
+    max-width: 140px; }
+    .new__collection__stadistic-numbers .number {
+      font-size: 34px;
+      margin: 0; }
+    .new__collection__stadistic-numbers .detail {
+      font-size: 21px;
+      margin: 0;
+      padding-bottom: 5px; }
+  /* best seller section*/
+  .best__seller-items .card {
+    width: 160px !important;
+    height: auto; }
+    .best__seller-items .card-body h3, .best__seller-items .card-body .h3 {
+      font-size: 20px; }
+  /*estilo seccion deal*/
+  .deal__promotion__box .card {
+    width: 90px !important;
+    height: 60px; }
+    .deal__promotion__box .card .card-body {
+      width: 100%; }
+      .deal__promotion__box .card .card-body .card-text {
+        font-size: 13px; }
+  .deal__promotion__title a {
+    font-size: 20px; }
+  .deal__promotion__title-title h2, .deal__promotion__title-title .h2 {
+    font-size: 70px; }
+  .deal__promotion__title-title p {
+    font-size: 25px; }
+  .deal__promotion-img {
+    width: 350px;
+    height: 600px; }
+    .deal__promotion-img img {
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0px; } }
+
 @media (min-width: 992px) {
   /* head */
   .main__woman__wrap {
@@ -9070,6 +9131,9 @@ textarea.form-control-lg {
     font-size: 40px; }
   .new__collection-title p {
     font-size: 20px; }
+  .new__collection__images .card {
+    width: 320px !important;
+    height: auto; }
   /*  IMAGEN Y ESTADISTICA*/
   .new__collection__stadistic__wrap {
     background-color: #fcfcfc; }
@@ -9089,6 +9153,9 @@ textarea.form-control-lg {
     .new__collection__stadistic-numbers .detail {
       font-size: 25px; }
   /* best seller section*/
+  .best__seller-items .card {
+    width: 280px !important;
+    height: auto; }
   .best__seller-title h2, .best__seller-title .h2 {
     font-size: 70px; }
   .best__seller-title p {
@@ -9289,6 +9356,58 @@ textarea.form-control-lg {
     object-fit: cover;
     object-position: -100px; }
 
+@media screen and (min-width: 768px) {
+  /* NEW COLLECTION SECTION */
+  .man__new__collection-title .title {
+    font-size: 30px; }
+  .man__new__collection-title p {
+    font-size: 20px; }
+  .man__new__collection__images .card {
+    width: 180px !important;
+    height: auto; }
+  /*  IMAGEN Y ESTADISTICA*/
+  .man__new__collection__advertising h3, .man__new__collection__advertising .h3 {
+    font-size: 52px; }
+  .man__new__collection__stadistic-numbers {
+    max-width: 140px; }
+    .man__new__collection__stadistic-numbers .number {
+      font-size: 34px;
+      margin: 0; }
+    .man__new__collection__stadistic-numbers .detail {
+      font-size: 21px;
+      margin: 0;
+      padding-bottom: 5px; }
+  /* best seller section*/
+  .man__best__seller-items .card {
+    width: 160px !important;
+    height: auto; }
+    .man__best__seller-items .card-body h3, .man__best__seller-items .card-body .h3 {
+      font-size: 20px; }
+  /*estilo seccion deal*/
+  .man__deal__promotion__box .card {
+    width: 90px !important;
+    height: 60px; }
+    .man__deal__promotion__box .card .card-body {
+      width: 100%; }
+      .man__deal__promotion__box .card .card-body .card-text {
+        font-size: 13px; }
+  .man__deal__promotion__title a {
+    font-size: 20px; }
+  .man__deal__promotion__title-title h2, .man__deal__promotion__title-title .h2 {
+    font-size: 70px; }
+  .man__deal__promotion__title-title p {
+    font-size: 25px; }
+  .man__deal__promotion-img {
+    width: 350px;
+    height: 600px; }
+    .man__deal__promotion-img img {
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: -100px; } }
+
 @media (min-width: 992px) {
   /*   ESTILO PAGINA HOMBRES */
   .man__main__wrap {
@@ -9308,6 +9427,9 @@ textarea.form-control-lg {
     font-size: 40px; }
   .man__new__collection-title p {
     font-size: 20px; }
+  .man__new__collection__images .card {
+    width: 320px !important;
+    height: auto; }
   /*  MAN imagen y estdistica Section   */
   .man__new__collection__stadistic__wrap {
     background-color: #fcfcfc; }
@@ -9328,6 +9450,9 @@ textarea.form-control-lg {
     .man__new__collection__stadistic-numbers .detail {
       font-size: 25px; }
   /* best seller section*/
+  .man__best__seller-items .card {
+    width: 280px !important;
+    height: auto; }
   .man__best__seller-title h2, .man__best__seller-title .h2 {
     font-size: 70px; }
   .man__best__seller-title p {
@@ -9447,16 +9572,12 @@ textarea.form-control-lg {
   .deal__kids__wrap a {
     font-family: "calibri"; }
 
-.deal__kids-title h2, .deal__kids-title .h2 {
+.deal__kids__title-title h2, .deal__kids__title-title .h2 {
   font-family: "MADE TOMMY ExtraBold";
   font-size: 35px;
   color: 'dark'; }
 
-.deal__kids-title h5, .deal__kids-title .h5 {
-  font-family: "MADE TOMMY ExtraBold";
-  margin: 0; }
-
-.deal__kids-title p {
+.deal__kids__title-title p {
   font-family: "calibri";
   font-size: 15px;
   margin: 0; }
@@ -9488,6 +9609,46 @@ textarea.form-control-lg {
       font-size: 13px;
       line-height: 3px; }
 
+@media screen and (min-width: 768px) {
+  /* NEW COLLECTION SECTION */
+  .new__collection__kids-title h2, .new__collection__kids-title .h2 {
+    font-size: 30px; }
+  .new__collection__kids-title p {
+    font-size: 20px; }
+  .new__collection__kids__images .card {
+    width: 180px !important;
+    height: auto; }
+  /* best seller section*/
+  .best__seller__kids-items .card {
+    width: 160px !important;
+    height: auto; }
+    .best__seller__kids-items .card-body h3, .best__seller__kids-items .card-body .h3 {
+      font-size: 20px; }
+  /*estilo seccion deal*/
+  .deal__kids__card__wrap .card {
+    width: 90px !important;
+    height: 60px; }
+    .deal__kids__card__wrap .card .card-body {
+      width: 100%; }
+      .deal__kids__card__wrap .card .card-body .card-text {
+        font-size: 13px; }
+  .deal__kids__title a {
+    font-size: 20px; }
+  .deal__kids__title-title h2, .deal__kids__title-title .h2 {
+    font-size: 70px; }
+  .deal__kids__title-title p {
+    font-size: 25px; }
+  .deal__kids-img {
+    width: 350px;
+    height: 600px; }
+    .deal__kids-img img {
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: -480px; } }
+
 @media screen and (min-width: 992px) {
   /* ---- ESTILO PAGINA KIDS  ----*/
   /*  ---    main section ----*/
@@ -9499,6 +9660,9 @@ textarea.form-control-lg {
   .main__kids__wrap a {
     font-size: 25px; }
   /*  ---    new collection section ----*/
+  .new__collection__kids__wrap .card {
+    width: 320px !important;
+    height: auto; }
   .new__collection__kids-title h2, .new__collection__kids-title .h2 {
     font-size: 40px; }
   .new__collection__kids-title p {
@@ -9510,6 +9674,9 @@ textarea.form-control-lg {
     font-size: 25px; }
   .best__seller__kids-title a {
     font-size: 20px; }
+  .best__seller__kids-items .card {
+    width: 280px !important;
+    height: auto; }
   /*  ---  Deal section ---  */
   .deal__kids-title h2, .deal__kids-title .h2 {
     font-size: 70px; }

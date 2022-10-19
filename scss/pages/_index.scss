@@ -93,7 +93,21 @@
 }
 
 
-
+@media screen and (min-width:768px) {
+    .main {
+        &__title {
+            h1 {
+                font-size: 80px;
+                line-height: 100px;
+            }
+    
+            .btn {
+                font-size: 25px;    
+            }
+        }
+    
+}
+}
 
 @media screen and (min-width: 992px) {
 
@@ -104,10 +118,6 @@
             h1 {
                 font-size: 130px;
                 line-height: 120px;
-            }
-
-            .btn {
-                font-size: 25px;
             }
         }
     }

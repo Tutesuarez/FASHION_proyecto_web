@@ -108,17 +108,12 @@
             font-family: "calibri";
         }
     }
-
+    &__title{
     &-title {
         h2 {
             font-family: "MADE TOMMY ExtraBold";
             font-size: 35px;
             color: 'dark';
-        }
-
-        h5 {
-            font-family: "MADE TOMMY ExtraBold";
-            margin: 0;
         }
 
         p {
@@ -128,6 +123,7 @@
         }
 
     }
+}
 
     &-detail {
         color: 'dark';
@@ -138,7 +134,7 @@
         height: auto;
 
         img {
-            @include radio(40px,40px);
+            @include radio(40px, 40px);
             object-position: -220px;
         }
     }
@@ -166,6 +162,92 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    /* NEW COLLECTION SECTION */
+
+    .new__collection__kids {
+        &-title {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        &__images {
+            .card {
+                width: 180px !important;
+                height: auto;
+            }
+        }
+    }
+
+    /* best seller section*/
+    .best__seller__kids {
+
+        &-items {
+            .card {
+                width: 160px !important;
+                height: auto;
+
+                &-body {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*estilo seccion deal*/
+
+    .deal__kids {
+        &__card__wrap {
+            .card {
+                width: 90px !important;
+                height: 60px;
+
+                .card-body {
+                    width: 100%;
+
+                    .card-text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &__title {
+            a {
+                font-size: 20px;
+            }
+
+            &-title {
+                h2 {
+                    font-size: 70px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &-img {
+            width: 350px;
+            height: 600px;
+
+            img {
+                @include radio(100px, 100px);
+                object-position: -480px;
+            }
+        }
+    }
+
+
+}
+
 @media screen and (min-width: 992px) {
 
     /* ---- ESTILO PAGINA KIDS  ----*/
@@ -186,8 +268,15 @@
     }
 
     /*  ---    new collection section ----*/
+.new__collection__kids{
+    &__wrap{
+        .card {
+            width: 320px !important;
+            height: auto;
+        }
+    }
 
-    .new__collection__kids-title {
+    &-title {
         h2 {
             font-size: 40px;
         }
@@ -196,7 +285,7 @@
             font-size: 20px;
         }
     }
-
+}
     /*  ---  Best seller section  ---  */
 
     .best__seller__kids {
@@ -212,6 +301,12 @@
 
             a {
                 font-size: 20px;
+            }
+        }
+        &-items {
+            .card {
+                width: 280px !important;
+                height: auto;
             }
         }
     }
@@ -259,7 +354,7 @@
             height: auto;
 
             img {
-                @include radio(100px,100px);
+                @include radio(100px, 100px);
                 object-position: 0px;
             }
         }
