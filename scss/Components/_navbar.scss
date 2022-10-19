@@ -1,4 +1,4 @@
-   /*  ----- ESTILOS DEL HEADER  -----  */
+/*  ----- ESTILOS DEL HEADER  -----  */
 
 .header {
     position: absolute;
@@ -12,15 +12,18 @@
 }
 
 
-@media screen and (min-width: 992px){
-    .navbar img:hover {
-        transform: rotate(360deg);
-        transition: all 0.5s;
-    }
+@media screen and (min-width: 992px) {
+    .navbar {
+        img:hover {
+            transform: rotate(360deg);
+            transition: all 0.5s;
+        }
 
-    .navbar li a:hover {
-        background-color: rgba($color: white, $alpha: .2);
-        border-radius: 5px;
-        font-weight: bold;
-    } 
+        li a:hover {
+            background-color: rgba($color: white, $alpha: .2);
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+    }
 }

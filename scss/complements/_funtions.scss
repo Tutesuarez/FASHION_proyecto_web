@@ -1,7 +1,6 @@
-
 // Modificador de radios de una imagen incrustada.
-@mixin radio($radius,$radius2) {
-    border-top-left-radius:$radius;
+@mixin radio($radius, $radius2) {
+    border-top-left-radius: $radius;
     border-bottom-right-radius: $radius2;
     height: 100%;
     width: 100%;
@@ -11,8 +10,7 @@
 // creacion de padding de clase 5 a 10.
 
 @for $i from 5 through 10 {
-    .padding-#{$i}{
+    .padding-#{$i} {
         padding: 1.2rem*$i;
-    }    
+    }
 }
-

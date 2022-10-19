@@ -1,12 +1,13 @@
 /* --- ESTILO PAGINA CONTACTO ---*/
 .form__login {
 
-        .form-text {
-            color: rgba($color: #ffffff, $alpha: .8);
-        }
-    &-title{
-        h2{
-            font-family:'calibri';
+    .form-text {
+        color: rgba($color: #ffffff, $alpha: .8);
+    }
+
+    &-title {
+        h2 {
+            font-family: 'calibri';
         }
     }
 
@@ -18,7 +19,7 @@
 
 /* --- formulario de contacto y mapa --*/
 .contact__form__maps {
-    
+
 
     .adress {
         font-family: "calibri";
@@ -30,4 +31,3 @@
         }
     }
 }
-

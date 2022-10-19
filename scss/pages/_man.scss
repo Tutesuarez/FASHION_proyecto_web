@@ -180,7 +180,8 @@
 
 .man__deal__promotion {
     &__wrap {
-          background-color: $dark;
+        background-color: $dark;
+
         a {
             font-family: "calibri";
         }
@@ -238,19 +239,21 @@
         }
     }
 }
+
 @media screen and (min-width:768px) {
     /* NEW COLLECTION SECTION */
 
-    .man__new__collection { 
+    .man__new__collection {
         &-title {
             .title {
                 font-size: 30px;
             }
-    
+
             p {
                 font-size: 20px;
             }
-        }   
+        }
+
         &__images {
             .card {
                 width: 180px !important;
@@ -260,48 +263,49 @@
     }
 
     /*  IMAGEN Y ESTADISTICA*/
-.man__new__collection {
-    
-    &__advertising {
-        h3 {
-            font-size: 52px;
-        }
-    }
+    .man__new__collection {
 
-    &__stadistic {
-        &-numbers {
-            max-width: 140px;
-
-            .number {
-                font-size: 34px;
-                margin: 0;
-            }
-
-            .detail {
-                font-size: 21px;
-                margin: 0;
-                padding-bottom: 5px;
+        &__advertising {
+            h3 {
+                font-size: 52px;
             }
         }
-    }
-}
 
-/* best seller section*/
-.man__best__seller {
+        &__stadistic {
+            &-numbers {
+                max-width: 140px;
 
-    &-items {
-        .card {
-            width: 160px !important;
-            height: auto;
+                .number {
+                    font-size: 34px;
+                    margin: 0;
+                }
 
-            &-body {
-                h3 {
-                    font-size: 20px;
+                .detail {
+                    font-size: 21px;
+                    margin: 0;
+                    padding-bottom: 5px;
                 }
             }
         }
     }
-}
+
+    /* best seller section*/
+    .man__best__seller {
+
+        &-items {
+            .card {
+                width: 160px !important;
+                height: auto;
+
+                &-body {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     /*estilo seccion deal*/
 
     .man__deal__promotion {
@@ -341,7 +345,7 @@
             height: 600px;
 
             img {
-                @include radio(100px,100px);
+                @include radio(100px, 100px);
                 object-position: -100px;
             }
         }
@@ -349,9 +353,11 @@
 
 
 }
+
 @media (min-width: 992px) {
 
     /*   ESTILO PAGINA HOMBRES */
+    // main
     .man__main {
         &__wrap {
             height: 100vh;
@@ -377,25 +383,27 @@
     }
 
     /*  MAN New Collection Section   */
- 
-    .man__new__collection{
 
-    &-title {
-        .title {
-            font-size: 40px;
+    .man__new__collection {
+
+        &-title {
+            .title {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
         }
 
-        p {
-            font-size: 20px;
+        &__images {
+            .card {
+                width: 320px !important;
+                height: auto;
+            }
         }
     }
-    &__images {
-        .card {
-            width: 320px !important;
-            height: auto;
-        }
-    }
-    }
+
     /*  MAN imagen y estdistica Section   */
 
     .man__new__collection {
@@ -441,29 +449,31 @@
     }
 
     /* best seller section*/
-    .man__best__seller{
+    .man__best__seller {
         &-items {
             .card {
                 width: 280px !important;
                 height: auto;
             }
         }
-    &-title {
-        
-        h2 {
-            font-size: 70px;
-        }
 
-        p {
-            font-size: 28px;
-        }
+        &-title {
 
-        .btn {
-            --bs-btn-font-size: 1.5rem;
-            --bs-btn-font-family: "calibri";
+            h2 {
+                font-size: 70px;
+            }
+
+            p {
+                font-size: 28px;
+            }
+
+            .btn {
+                --bs-btn-font-size: 1.5rem;
+                --bs-btn-font-family: "calibri";
+            }
         }
     }
-    }
+
     /*estilo seccion deal*/
 
     .man__deal__promotion {
@@ -511,39 +521,48 @@
 }
 
 @media screen and (min-width:1600px) {
-    .man__main {
 
+    //main
+    .man__main {
         &-title {
             height: 350px;
-    
+
             h1 {
                 font-size: 144px;
                 line-height: 10rem;
             }
-    
+
             p {
                 padding-top: 15px;
             }
-    
+
             a {
                 font-size: 30px;
-           }
+            }
         }
-        
-    }
-    .man__new__collection__stadistic__numbers__wrap{
-        margin-bottom: 9rem !important;
-    }
-    .man__new__collection__advertising{
-        padding-top: 150px;
-    }
-    .man__deal__promotion__title-title{
-        max-width: 405px;
-    
-    h2 {
-        font-size: 90px;
 
-}
-}
-    
+    }
+
+    // new collection section
+
+    .man__new__collection {
+        &__stadistic__numbers__wrap {
+            margin-bottom: 9rem !important;
+        }
+
+        &__advertising {
+            padding-top: 150px;
+        }
+    }
+
+
+    // Deal section
+    .man__deal__promotion__title-title {
+        max-width: 405px;
+
+        h2 {
+            font-size: 90px;
+        }
+    }
+
 }

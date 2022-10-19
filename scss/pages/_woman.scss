@@ -1,6 +1,5 @@
 /*----  ESTILO WOMAN  ----  */
 
-
 /*  main section  */
 .main__woman {
     &__wrap {
@@ -35,7 +34,7 @@
 .new__collection {
     &__wrap {
         background-color: whitesmoke;
-        
+
     }
 
     &-title {
@@ -154,10 +153,10 @@
         width: 280px !important;
         max-height: auto;
 
-        &-img{
-                width: 100%;
-                height: 186px;
-                object-fit: cover;
+        &-img {
+            width: 100%;
+            height: 186px;
+            object-fit: cover;
         }
 
         &-body {
@@ -244,16 +243,17 @@
 @media screen and (min-width:768px) {
     /* NEW COLLECTION SECTION */
 
-    .new__collection { 
+    .new__collection {
         &-title {
             .title {
                 font-size: 30px;
             }
-    
+
             p {
                 font-size: 20px;
             }
-        }   
+        }
+
         &__images {
             .card {
                 width: 180px !important;
@@ -263,48 +263,49 @@
     }
 
     /*  IMAGEN Y ESTADISTICA*/
-.new__collection {
-    
-    &__advertising {
-        h3 {
-            font-size: 52px;
-        }
-    }
+    .new__collection {
 
-    &__stadistic {
-        &-numbers {
-            max-width: 140px;
-
-            .number {
-                font-size: 34px;
-                margin: 0;
-            }
-
-            .detail {
-                font-size: 21px;
-                margin: 0;
-                padding-bottom: 5px;
+        &__advertising {
+            h3 {
+                font-size: 52px;
             }
         }
-    }
-}
 
-/* best seller section*/
-.best__seller {
+        &__stadistic {
+            &-numbers {
+                max-width: 140px;
 
-    &-items {
-        .card {
-            width: 160px !important;
-            height: auto;
+                .number {
+                    font-size: 34px;
+                    margin: 0;
+                }
 
-            &-body {
-                h3 {
-                    font-size: 20px;
+                .detail {
+                    font-size: 21px;
+                    margin: 0;
+                    padding-bottom: 5px;
                 }
             }
         }
     }
-}
+
+    /* best seller section*/
+    .best__seller {
+
+        &-items {
+            .card {
+                width: 160px !important;
+                height: auto;
+
+                &-body {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     /*estilo seccion deal*/
 
     .deal__promotion {
@@ -344,7 +345,7 @@
             height: 600px;
 
             img {
-                @include radio(100px,100px);
+                @include radio(100px, 100px);
                 object-position: 0px;
             }
         }
@@ -386,22 +387,23 @@
     /* seccion nueva coleccion */
     .new__collection {
 
-    &-title {
-        .title {
-            font-size: 40px;
+        &-title {
+            .title {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
         }
 
-        p {
-            font-size: 20px;
+        &__images {
+            .card {
+                width: 320px !important;
+                height: auto;
+            }
         }
     }
-    &__images {
-        .card {
-            width: 320px !important;
-            height: auto;
-        }
-    }
-}
 
     /*  IMAGEN Y ESTADISTICA*/
     .new__collection {
@@ -446,23 +448,23 @@
     }
 
     /* best seller section*/
-    .best__seller{
+    .best__seller {
         &-items {
             .card {
                 width: 280px !important;
                 height: auto;
             }
         }
-        
+
         &-title {
             h2 {
                 font-size: 70px;
             }
-    
+
             p {
                 font-size: 28px;
             }
-    
+
             .btn {
                 --bs-btn-font-size: 1.5rem;
                 --bs-btn-font-family: "calibri";
@@ -510,7 +512,7 @@
             height: 600px;
 
             img {
-                @include radio(100px,100px);
+                @include radio(100px, 100px);
                 object-position: 0px;
             }
         }
@@ -518,7 +520,9 @@
 }
 
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
+
+    // main
     .main__woman {
         &-title {
             h1 {
@@ -542,19 +546,23 @@
         }
     }
 
-    .new__collection__stadistic__numbers__wrap{
-        margin-bottom: 9rem !important;
-    }
-    .new__collection__advertising{
-        padding-top: 150px;
+    .new__collection {
+        &__stadistic__numbers__wrap {
+            margin-bottom: 9rem !important;
+        }
+
+        &__advertising {
+            padding-top: 150px;
+        }
     }
 
-    .deal__promotion__title-title{
-            max-width: 405px;
-        
+    // Deal section
+    .deal__promotion__title-title {
+        max-width: 405px;
+
         h2 {
             font-size: 90px;
 
-    }
+        }
     }
 }

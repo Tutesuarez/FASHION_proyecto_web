@@ -2,19 +2,22 @@
 .footer {
     &__wrap {
         background: #212529;
-        p{
-            color:whitesmoke;
-        }
-        a{
+
+        p {
             color: whitesmoke;
         }
-         ul{
+
+        a {
+            color: whitesmoke;
+        }
+
+        ul {
             padding-left: 1.5rem;
         }
     }
 
     &__img {
-        
+
         img {
             width: 394px;
             height: auto;
@@ -26,18 +29,16 @@
         font-family: "calibri";
         color: whitesmoke;
     }
-    
+
 
     &__titles {
         font-size: 18px;
         color: whitesmoke;
-       
-    
+
     }
 
     &__coment {
         color: whitesmoke;
     }
-    
-}
 
+}
