@@ -8779,6 +8779,14 @@ textarea.form-control-lg {
 .footer__coment {
   color: whitesmoke; }
 
+@media screen and (min-width: 992px) {
+  .footer__img img {
+    max-width: 300px; } }
+
+@media screen and (min-width: 1400px) {
+  .footer__img img {
+    max-width: 350px; } }
+
 /*  ----- ESTILOS DEL HEADER  -----  */
 .header {
   position: absolute;
@@ -9132,7 +9140,7 @@ textarea.form-control-lg {
   .new__collection-title p {
     font-size: 20px; }
   .new__collection__images .card {
-    width: 320px !important;
+    width: 256px !important;
     height: auto; }
   /*  IMAGEN Y ESTADISTICA*/
   .new__collection__stadistic__wrap {
@@ -9144,7 +9152,7 @@ textarea.form-control-lg {
     height: 80%;
     object-fit: contain; }
   .new__collection__advertising h3, .new__collection__advertising .h3 {
-    font-size: 100px; }
+    font-size: 64px; }
   .new__collection__stadistic-numbers {
     max-width: 230px;
     padding: 10px !important; }
@@ -9154,10 +9162,10 @@ textarea.form-control-lg {
       font-size: 25px; }
   /* best seller section*/
   .best__seller-items .card {
-    width: 280px !important;
+    width: 233px !important;
     height: auto; }
   .best__seller-title h2, .best__seller-title .h2 {
-    font-size: 70px; }
+    font-size: 61px; }
   .best__seller-title p {
     font-size: 28px; }
   .best__seller-title .btn {
@@ -9188,7 +9196,25 @@ textarea.form-control-lg {
       object-fit: cover;
       object-position: 0px; } }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 1200px) {
+  /* seccion nueva coleccion */
+  .new__collection__images .card {
+    width: 320px !important;
+    height: auto; }
+  /*  IMAGEN Y ESTADISTICA*/
+  .new__collection__advertising h3, .new__collection__advertising .h3 {
+    font-size: 100px; }
+  .new__collection__stadistic-numbers {
+    max-width: 230px;
+    padding: 10px !important; }
+  /* best seller section*/
+  .best__seller-items .card {
+    width: 280px !important;
+    height: auto; }
+  .best__seller-title h2, .best__seller-title .h2 {
+    font-size: 70px; } }
+
+@media (min-width: 1600px) {
   .main__woman-title h1, .main__woman-title .h1 {
     font-size: 180px;
     line-height: 178px; }
@@ -9428,7 +9454,7 @@ textarea.form-control-lg {
   .man__new__collection-title p {
     font-size: 20px; }
   .man__new__collection__images .card {
-    width: 320px !important;
+    width: 256px !important;
     height: auto; }
   /*  MAN imagen y estdistica Section   */
   .man__new__collection__stadistic__wrap {
@@ -9441,7 +9467,7 @@ textarea.form-control-lg {
     object-fit: contain;
     border-top-right-radius: 200px; }
   .man__new__collection__advertising h3, .man__new__collection__advertising .h3 {
-    font-size: 100px; }
+    font-size: 64px; }
   .man__new__collection__stadistic-numbers {
     max-width: 230px;
     padding: 10px !important; }
@@ -9451,10 +9477,10 @@ textarea.form-control-lg {
       font-size: 25px; }
   /* best seller section*/
   .man__best__seller-items .card {
-    width: 280px !important;
+    width: 233px !important;
     height: auto; }
   .man__best__seller-title h2, .man__best__seller-title .h2 {
-    font-size: 70px; }
+    font-size: 61px; }
   .man__best__seller-title p {
     font-size: 28px; }
   .man__best__seller-title .btn {
@@ -9485,7 +9511,22 @@ textarea.form-control-lg {
       object-fit: cover;
       object-position: 0px; } }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 1200px) {
+  /*  MAN New Collection Section   */
+  .man__new__collection__images .card {
+    width: 320px !important;
+    height: auto; }
+  /*  MAN imagen y estdistica Section   */
+  .man__new__collection__advertising h3, .man__new__collection__advertising .h3 {
+    font-size: 100px; }
+  /* best seller section*/
+  .man__best__seller-items .card {
+    width: 280px !important;
+    height: auto; }
+  .man__best__seller-title h2, .man__best__seller-title .h2 {
+    font-size: 70px; } }
+
+@media (min-width: 1600px) {
   .man__main-title {
     height: 350px; }
     .man__main-title h1, .man__main-title .h1 {
@@ -9661,7 +9702,7 @@ textarea.form-control-lg {
     font-size: 25px; }
   /*  ---    new collection section ----*/
   .new__collection__kids__wrap .card {
-    width: 320px !important;
+    width: 256px !important;
     height: auto; }
   .new__collection__kids-title h2, .new__collection__kids-title .h2 {
     font-size: 40px; }
@@ -9675,7 +9716,7 @@ textarea.form-control-lg {
   .best__seller__kids-title a {
     font-size: 20px; }
   .best__seller__kids-items .card {
-    width: 280px !important;
+    width: 233px !important;
     height: auto; }
   /*  ---  Deal section ---  */
   .deal__kids-title h2, .deal__kids-title .h2 {
@@ -9703,7 +9744,20 @@ textarea.form-control-lg {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      object-position: 0px; } }
+      object-position: -177px; } }
+
+@media (min-width: 1200px) {
+  /*  ---    new collection section ----*/
+  .new__collection__kids__wrap .card {
+    width: 320px !important;
+    height: auto; }
+  /*  ---  Best seller section  ---  */
+  .best__seller__kids-items .card {
+    width: 280px !important;
+    height: auto; }
+  /*  ---  Deal section ---  */
+  .deal__kids-img img {
+    object-position: -177px; } }
 
 /* --- ESTILO PAGINA CONTACTO ---*/
 .form__login .form-text {
@@ -9725,28 +9779,20 @@ textarea.form-control-lg {
 
 /* ---  ESTILO UNDER CONSTRUCTION   --- */
 .under__construction__wrap {
-  background: whitesmoke;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 1fr; }
-  .under__construction__wrap .message-construction {
-    width: 310px;
-    height: auto;
-    justify-self: center; }
-    .under__construction__wrap .message-construction h1, .under__construction__wrap .message-construction .h1 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 40px;
-      font-weight: 700; }
-    .under__construction__wrap .message-construction h2, .under__construction__wrap .message-construction .h2 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 18px;
-      line-height: 50px;
-      text-transform: uppercase; }
+  background: whitesmoke; }
+  .under__construction__wrap .message-construction h1, .under__construction__wrap .message-construction .h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700; }
+  .under__construction__wrap .message-construction p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase; }
 
 .under__construction-img {
   width: 320px;
   height: auto;
-  padding: 15px;
   margin-top: 100px; }
   .under__construction-img img {
     width: 100%;
@@ -9755,28 +9801,11 @@ textarea.form-control-lg {
 
 @media (min-width: 992px) {
   /*  ---- ESTILO PAGINA UNDER CONTRUCTION -----  */
-  .under__construction__wrap {
-    background: whitesmoke;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; }
-    .under__construction__wrap .message-construction {
-      width: 700px;
-      justify-self: start; }
-      .under__construction__wrap .message-construction h1, .under__construction__wrap .message-construction .h1 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 90px;
-        font-weight: 700; }
-      .under__construction__wrap .message-construction h2, .under__construction__wrap .message-construction .h2 {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 30px;
-        line-height: 50px;
-        text-transform: uppercase; }
+  .under__construction__wrap .message-construction h1, .under__construction__wrap .message-construction .h1 {
+    font-size: 80px; }
   .under__construction-img {
-    width: 600px;
+    width: 500px;
     height: auto;
-    padding: 30px;
     transform: skewY(5deg); }
     .under__construction-img img {
       width: 100%;

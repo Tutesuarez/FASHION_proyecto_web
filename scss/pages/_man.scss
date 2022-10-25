@@ -398,7 +398,7 @@
 
         &__images {
             .card {
-                width: 320px !important;
+                width: 256px !important;
                 height: auto;
             }
         }
@@ -428,7 +428,7 @@
 
         &__advertising {
             h3 {
-                font-size: 100px;
+                font-size: 64px;
             }
         }
 
@@ -452,7 +452,7 @@
     .man__best__seller {
         &-items {
             .card {
-                width: 280px !important;
+                width: 233px !important;
                 height: auto;
             }
         }
@@ -460,7 +460,7 @@
         &-title {
 
             h2 {
-                font-size: 70px;
+                font-size: 61px;
             }
 
             p {
@@ -520,7 +520,48 @@
     }
 }
 
-@media screen and (min-width:1600px) {
+@media (min-width: 1200px) {
+
+    /*  MAN New Collection Section   */
+    .man__new__collection {
+        &__images {
+            .card {
+                width: 320px !important;
+                height: auto;
+            }
+        }
+    }
+
+    /*  MAN imagen y estdistica Section   */
+    .man__new__collection {
+
+        &__advertising {
+            h3 {
+                font-size: 100px;
+            }
+        }
+    }
+
+    /* best seller section*/
+    .man__best__seller {
+        &-items {
+            .card {
+                width: 280px !important;
+                height: auto;
+            }
+        }
+
+        &-title {
+
+            h2 {
+                font-size: 70px;
+            }
+        }
+    }
+
+}
+
+@media (min-width:1600px) {
 
     //main
     .man__main {
