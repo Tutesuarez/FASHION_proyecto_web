@@ -7,8 +7,9 @@
     object-fit: cover;
 }
 
-// creacion de padding de clase 5 a 10.
 
+// creacion de padding de clase 5 a 10.
+//creada a fines prcaticos del curso.
 @for $i from 5 through 10 {
     .padding-#{$i} {
         padding: 1.2rem*$i;
