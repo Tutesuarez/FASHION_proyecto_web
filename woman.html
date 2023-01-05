@@ -55,8 +55,9 @@
                     <!-- Logo carrito de compras + login -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class=" nav-link text-white me-3" aria-current="page" href="inconstruction.html">
+                            <a class=" nav-link text-white me-3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="asset/img/001-comprar.png" alt="carrito-compra">
+                                <p id="basketnumber" style="display:contents"></p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -67,6 +68,30 @@
             </div>
         </nav>
     </header>
+
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Shopping Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <!-- div dinamico-->
+            </div>
+            <div class="modal-footer">
+                <p> Total: </p>
+                <p id="totalPrice">0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="emptyCart">Empty Cart</button>
+                <button type="button" class="btn btn-dark" id="checkOut">Check Out</button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- MAIN SECTION -->
 
@@ -231,127 +256,8 @@
             </div>
         </div>
         <!--Grid with products cards-->
-        <div class="our__product__items row row-cols-1 row-cols-sm-2 row-cols-lg-4 m-auto g-3 mb-4 " style="max-width: 1270px;">
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-01.png" alt="perfume">
-                    <div class="card-body">
-                        <h3>Perfume</h3>
-                        <p>$250</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-02.png" alt="Handbag">
-                    <div class="card-body">
-                        <h3>Handbags</h3>
-                        <p>$550</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-03.png" alt="lipstick">
-                    <div class="card-body">
-                        <h3>Lipsticks</h3>
-                        <p>$100</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-04.png" alt="whatch">
-                    <div class="card-body">
-                        <h3>Watches</h3>
-                        <p>$550</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-05.png" alt="brushes">
-                    <div class="card-body">
-                        <h3>Brushes</h3>
-                        <p>$70</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-06.png" alt="Sunglasess">
-                    <div class="card-body">
-                        <h3>Sunglasess</h3>
-                        <p>$230</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-07.png" alt="shoes">
-                    <div class="card-body">
-                        <h3>Shoes</h3>
-                        <p>$350</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card m-auto shadow-sm">
-                    <img class="card-img" src="asset/img/pr-08.png" alt="Jewellery">
-                    <div class="card-body">
-                        <h3>Jewellery</h3>
-                        <p>$800</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a class="btn btn-dark" href="detail.html">Details</a>
-                            </div>
-                            <a class="btn btn-outline-dark" href="inconstruction.html">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="our__product__items row row-cols-1 row-cols-sm-2 row-cols-lg-4 m-auto g-3 mb-4 " id="womanProductsContainer" style="max-width: 1270px;">
+            <!--Dinamic div-->
         </div>
     </section>
 
@@ -534,6 +440,7 @@
         </div>
     </footer>
 </body>
+<script src="js/arrays.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

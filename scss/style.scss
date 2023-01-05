@@ -4,6 +4,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+@import "./Components/modal";
 @import "./Components/servicebar";
 @import "./complements/funtions";
 @import "./complements/buttons";
@@ -17,6 +18,7 @@
 @import "./pages/kids";
 @import "./pages/contact";
 @import "./pages/inconstruction";
+@import "./pages/shoppingcart";
 
 
 /*  -----  ESTILO GENERAL -----*/

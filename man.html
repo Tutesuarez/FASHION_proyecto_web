@@ -53,8 +53,9 @@
                     <!-- Logo carrito de compras + login -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class=" nav-link text-white me-3" aria-current="page" href="inconstruction.html">
+                            <a class=" nav-link text-white me-3" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="asset/img/001-comprar.png" alt="carrito-compra">
+                                <p id="basketnumber" style="display:contents"></p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -65,6 +66,29 @@
             </div>
         </nav>
     </header>
+    <!-- Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Shopping Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <!-- div dinamico-->
+            </div>
+            <div class="modal-footer">
+                <p> Total: </p>
+                <p id="totalPrice">0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="emptyCart">Empty Cart</button>
+                <button type="button" class="btn btn-dark" id="checkOut">Check Out</button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- SECCION MAIN-->
 
@@ -229,7 +253,7 @@
             </div>
         </div>
         <!--cards with product pictures-->
-        <div class="man__our__product__items row row-cols-1 row-cols-sm-2 row-cols-lg-4 m-auto g-3 mb-4" style="max-width: 1270px;">
+        <div class="man__our__product__items row row-cols-1 row-cols-sm-2 row-cols-lg-4 m-auto g-3 mb-4" id="manProductsContainer" style="max-width: 1270px;">
             <div class="col">
                 <div class="card m-auto shadow-sm">
                     <img class="card-img" src="asset/img/man-belts.png" alt="belts">
@@ -529,6 +553,8 @@
         </div>
     </footer>
 </body>
+
+<script src="js/arrays.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -8673,6 +8673,18 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.modal-img {
+  max-width: 100px;
+  height: auto; }
+  .modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+.modal-name {
+  font-size: large;
+  font-family: 'calibri'; }
+
 .send__bar__wrap h3, .send__bar__wrap .h3 {
   font-size: 20px;
   font-weight: 700;
@@ -9811,6 +9823,18 @@ textarea.form-control-lg {
       width: 100%;
       height: 100%;
       object-fit: cover; } }
+
+.cart__list-img {
+  max-width: 35px;
+  height: auto; }
+  .cart__list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+.cart__list-name {
+  font-size: x-large;
+  font-family: 'calibri'; }
 
 /*  -----  ESTILO GENERAL -----*/
 * {

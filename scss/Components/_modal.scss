@@ -1,0 +1,16 @@
+.modal{
+ &-img{
+        max-width: 100px;
+        height: auto;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:contain;        
+    }
+}
+    &-name{
+        font-size: large ;
+        font-family: 'calibri';
+    }
+}
