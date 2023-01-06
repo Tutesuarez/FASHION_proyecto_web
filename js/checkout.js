@@ -1,5 +1,9 @@
 const finalCheckOut=document.querySelector('#finalCheckOut');
 const formSection=document.querySelector('#formSection');
+const buyer={
+    
+}
+
 
 //Muestra Formularios para terminar la compra. 
 finalCheckOut.addEventListener('click',()=>{
