@@ -5,7 +5,9 @@ const basketContainer = document.querySelector('#basketnumber');
 
 document.addEventListener('DOMContentLoaded',()=>{
     basket=JSON.parse(localStorage.getItem("basket")) || [];
+    products = JSON.parse(localStorage.getItem("products")) || [];
     showShoppingCart();
-    filterMan();
+    filter(products,'man',manContainer);
+    timer = setInterval(showRemaining, 1000);
 });
 

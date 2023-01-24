@@ -45,16 +45,13 @@ paybutton.addEventListener('click', (e) => {
     e.preventDefault();
     if (document.getElementById('gridCheck').checked) {
         let newBuyer = new buyers(buyerName.value, buyerSurname.value, buyerEmail.value, buyerAddress.value, buyerphone.value, buyerCity.value, buyerZip.value)
-        console.log(newBuyer);
         creatBuyer(newBuyer);
         saveBuyer(buyers);
         completedPurchase();
     } else {
-        Swal.fire("you don't look like a robot, please check the box");
+        Swal.fire("You don't look like a robot, please check the box");
     }
 });
-
-//const quantity= document.querySelectorAll('#modcantidad');
 
 // renderizacion de la orden de compra.
 function processOrder() {
@@ -95,7 +92,7 @@ function increaseQuantity(e) {
         const { cantidad, id } = prod;
         console.log(prod.id);
         (prod.id == e.target.id) ? prod.cantidad = Number(e.target.value) : null;
-        
+
     })
     processOrder();
     savingStorage();
@@ -170,4 +167,3 @@ function cleanTheStorage() {
     localStorage.removeItem('basket');
     localStorage.removeItem('buyer');
 }
-

@@ -1,40 +1,25 @@
-//Definicion de un objeto de productos
-let ourProductsItems = [
-    { id: 0, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-01.png', nombre: 'Perfume', precio: 250 },
-    { id: 1, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-02.png', nombre: 'Handbags', precio: 550 },
-    { id: 2, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-03.png', nombre: 'Lipsticks', precio: 150 },
-    { id: 3, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-04.png', nombre: 'Watches', precio: 600 },
-    { id: 4, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-05.png', nombre: 'Brushes', precio: 70 },
-    { id: 5, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-06.png', nombre: 'Sunglasess', precio: 300 },
-    { id: 6, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-07.png', nombre: 'Shoes', precio: 350 },
-    { id: 7, cantidad: 1, categoria: 'woman', img: 'asset/img/pr-08.png', nombre: 'Jyeweller', precio: 800 },
-    { id: 8, cantidad: 1, categoria: 'man', img: 'asset/img/man-belts.png', nombre: 'Belts', precio: 250 },
-    { id: 9, cantidad: 1, categoria: 'man', img: 'asset/img/man-caps.png', nombre: 'Caps', precio: 100 },
-    { id: 10, cantidad: 1, categoria: 'man', img: 'asset/img/man-shoes.png', nombre: 'Shoes', precio: 500 },
-    { id: 11, cantidad: 1, categoria: 'man', img: 'asset/img/man-long-sleeves.png', nombre: 'Sleeves', precio: 600 },
-    { id: 12, cantidad: 1, categoria: 'man', img: 'asset/img/man-t-shirt.png', nombre: 'T-Shirts', precio: 70 },
-    { id: 13, cantidad: 1, categoria: 'man', img: 'asset/img/man-sunglasses.png', nombre: 'Sunglasess', precio: 230 },
-    { id: 14, cantidad: 1, categoria: 'man', img: 'asset/img/man-watches.png', nombre: 'Watches', precio: 800 },
-    { id: 15, cantidad: 1, categoria: 'man', img: 'asset/img/man-wallet.png', nombre: 'Wallets', precio: 150 }
-];
 
 let basket = [],
-    products = [],
-    prodDetail = [];
+    products = [];
 
 const emptyCart = document.querySelector('#emptyCart'),
     totalPrice = document.querySelector('#totalPrice'),
-    checkOut = document.querySelector('#checkOut'),
-    detail = document.querySelector('#detail');
+    checkOut = document.querySelector('#checkOut');
 
-savingStorage1();
+//Variable timer seccion Deal
+const end = new Date('2/20/2023 9:30 AM');
+let second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24,
+    timer;
 
 // Eventos para acciones del MOdal
 emptyCart.addEventListener('click', () => {
     basket.length = [];
     showShoppingCart();
     processOrder();
-})
+});
 
 checkOut.addEventListener('click', () => {
     if (basket.length === 0) {
@@ -43,7 +28,8 @@ checkOut.addEventListener('click', () => {
         location.href = 'shoppingcart.html';
         processOrder();
     }
-})
+});
+
 //Mostrar carrito en formato Modal
 const showShoppingCart = () => {
     const modalBody = document.querySelector('.modal .modal-body');
@@ -83,26 +69,23 @@ function deleteProduct(id) {
 
 // Almancenamiento de ourProductsItems en Local Stroage,
 // para poder ser llamado dessde diferentes parte de la pagina.
-function savingStorage1() {
-    localStorage.setItem("products", JSON.stringify(ourProductsItems));
+function savingStorage1(objet, arr) {
+    localStorage.setItem(objet, JSON.stringify(arr));
 }
 
 // Impracieon de cards
-function printCards(ABC, CDE) {
+function printCards(arr, section) {
 
-    ABC.forEach((prod) => {
+    arr.forEach((prod) => {
         const { id, img, nombre, precio } = prod;
-        CDE.innerHTML +=
+        section.innerHTML +=
             `<div class="col">
                     <div class="card m-auto shadow-sm">
                         <img class="card-img" src="${img}" alt="perfume">
                         <div class="card-body">
                             <h3>${nombre}</h3>
                             <p>$${precio}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a class="btn btn-dark"  onclick="showProductDetail(${id})">Details</a>
-                                </div>
+                            <div class="d-flex justify-content-end align-items-center">
                                 <a class="btn btn-outline-dark" onclick="addProductToBasket(${id})">Add</a>
                             </div>
                         </div>
@@ -111,25 +94,17 @@ function printCards(ABC, CDE) {
     })
 }
 
-//Filtros para objetos por categoria de Mujer u Hombre
-function filterMan() {
-    products = JSON.parse(localStorage.getItem("products")) || [];
-    const resultMan = products.filter((el) => el.categoria === 'man');
-    console.log(resultMan);
-    printCards(resultMan, manContainer);
+// fUNCION FILTADO POR CATEGORIA.
+function filter(arr, prodName, position) {
+    const result = arr.filter((el) => el.category === prodName);
+    printCards(result, position);
 }
-function filterWoman() {
-    products = JSON.parse(localStorage.getItem("products")) || [];
-    //const resultWoman=ourProductsItems.filter((el)=>el.categoria==='woman');
-    const resultWoman = products.filter((el) => el.categoria === 'woman');
-    console.log(resultWoman);
-    printCards(resultWoman, womanContainer);
-}
+
 //Almacenamiento del Basket(Carito en local storage)
 function savingStorage() {
     localStorage.setItem("basket", JSON.stringify(basket));
 }
-//Carga de productos en el Basket
+//Carga de productos en el Basket.
 function addProductToBasket(id) {
     const exists = basket.some(prod => prod.id === id);
     if (exists) {
@@ -145,9 +120,74 @@ function addProductToBasket(id) {
     showShoppingCart();
 }
 
+// Llamo al archivo contenedor de productos json y lo guardio en local storage.
+fetch('./data/data.json')
+    .then(res => res.json())
+    .then(datos => {
+        savingStorage1("products", datos);
+    });
 
+// Funcion cuenta regresiva para promocion en secciones women, men y kids
+function showRemaining() {
+    const item = document.querySelector('.countdown');
+    let now = new Date();
+    let distance = end - now;
+    if (distance <= 0) {
+        // Hacer desaparecer seccion
+        clearInterval(timer);
+        return;
+    }
+    let days = Math.floor(distance / day);
+    let hours = Math.floor((distance % day) / hour);
+    let minutes = Math.floor((distance % hour) / minute);
+    let seconds = Math.floor((distance % minute) / second);
 
+    item.innerHTML = `
+        <div class="card col-4 me-md-4">
+        <div class="card-body">
+            <p class="card-title days number fw-bold m-0">${days}</p>
+            <p class="card-text">Days</p>
+        </div>
+    </div>
+    <div class="card col-4 me-md-4">
+        <div class="card-body">
+            <p class="card-title hours number fw-bold m-0">${hours}</p>
+            <p class="card-text">Hours</p>
+        </div>
+    </div>
+    <div class="card col-4 me-md-4">
+        <div class="card-body">
+            <p class="card-title minutes number fw-bold m-0 ">${minutes}</p>
+            <p class="card-text">Minutes</p>
+        </div>
+    </div>`;
 
+}
 
+// Consumo de un API
+async function fetchAPI(cat) {
+    const URL = `https://fakestoreapi.com/products/category/${cat}`;
+    fetch(URL)
+        .then(response => response.json())
+        .then(dataProduct => {
+            console.log(dataProduct);
+            pintarAPI(dataProduct);
+        })
+}
 
-
+const pintarAPI = (arr) => {
+    const imgAPI = document.querySelector('#imgAPI');
+    let html;
+    imgAPI.innerHTML = '';
+    for (const item of arr) {
+        const { image, title } = item;
+        html =
+            `
+            <div class="row container">
+                <div class="col d-flex justify-content-center">
+                    <img src="${image}" class="card-img m-auto api__img" alt='${title}'>
+                </div>
+            </div> `
+        imgAPI.innerHTML += html;
+    }
+}

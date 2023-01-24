@@ -69,8 +69,6 @@ const formvalidation=(e)=>{
 const fieldvalidation=(exp,input,fields)=>{
     if (exp.test(input.value)) {
         field[fields]=true;
-        console.log(field);
-        console.log(fields);
         habilitarButton();
     }else{
         Toastify({

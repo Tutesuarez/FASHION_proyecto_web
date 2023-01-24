@@ -8715,43 +8715,6 @@ textarea.form-control-lg {
 .btn-success {
   color: white; }
 
-.detail__product__wrap p {
-  font-family: 'calibri'; }
-
-.detail__product__checkout-det h3, .detail__product__checkout-det .h3 {
-  font-size: 30px;
-  font-family: 'MADE TOMMY ExtraBold'; }
-
-.detail__product__checkout-price p {
-  margin: 0; }
-
-.detail__product__checkout-price .number2 {
-  text-decoration: line-through;
-  font-size: 15px; }
-
-.detail__product__checkout-price .number {
-  font-size: 30px; }
-
-.detail__product__checkout-price a {
-  font-size: 16px; }
-
-.detail__product__checkout-btns {
-  width: 280px;
-  padding-top: 20px; }
-
-@media screen and (min-width: 992px) {
-  .detail__product__checkout-det h3, .detail__product__checkout-det .h3 {
-    font-size: 50px; }
-  .detail__product__checkout-price p {
-    margin: 0; }
-  .detail__product__checkout-price .number2 {
-    font-size: 25px; }
-  .detail__product__checkout-price .number {
-    font-size: 40px; }
-  .detail__product__checkout-btns {
-    width: 400px;
-    padding-top: 20px; } }
-
 /* ---- FUENTES ---- */
 @font-face {
   font-family: "calibri";
@@ -8883,6 +8846,10 @@ textarea.form-control-lg {
 
 .carousel-item .text-kid {
   font-size: 16px; }
+
+.api__img {
+  width: 100px;
+  height: auto; }
 
 @media screen and (min-width: 768px) {
   .main__title h1, .main__title .h1 {
@@ -9618,6 +9585,21 @@ textarea.form-control-lg {
 .best__seller__kids-items .card {
   width: 280px !important;
   height: auto; }
+
+/*--------  Our products section ----*/
+.kids__our__product__wrap .card {
+  width: 280px !important;
+  height: auto; }
+  .kids__our__product__wrap .card-body h3, .kids__our__product__wrap .card-body .h3 {
+    font-size: 20px; }
+
+.kids__our__product__links h2, .kids__our__product__links .h2 {
+  font-family: "MADE TOMMY ExtraBold";
+  font-size: 40px; }
+
+.kids__our__product__links a {
+  font-family: "calibri";
+  font-size: 16px; }
 
 /*--- deal section---*/
 .deal__kids__wrap {

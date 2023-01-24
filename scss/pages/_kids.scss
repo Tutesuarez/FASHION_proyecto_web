@@ -97,6 +97,32 @@
 
 }
 
+/*--------  Our products section ----*/
+
+.kids__our__product {
+    &__wrap .card {
+        width: 280px !important;
+        height: auto;
+
+        &-body {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__links {
+        h2 {
+            font-family: "MADE TOMMY ExtraBold";
+            font-size: 40px;
+        }
+
+        a {
+            font-family: "calibri";
+            font-size: 16px;
+        }
+    }
+}
 
 /*--- deal section---*/
 
